@@ -5,5 +5,6 @@ public class Demo {
         System.out.println("Team D");
         System.out.println("Supriya");
         System.out.println("Vani");
+        System.out.println("Krishna");
     }
 }
