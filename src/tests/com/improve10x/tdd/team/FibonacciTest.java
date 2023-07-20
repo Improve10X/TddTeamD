@@ -31,10 +31,6 @@ public class FibonacciTest {
         assertEquals(0, zero);
 
     }
-//-1,-1,
-// -2,-1,
-//  -3,-1,
-//  -4,-1
     @Test
     public void givenNegativeNumber4_returnsNegativeMinusOne(){
         Fibonacci fibonacci = new Fibonacci();
