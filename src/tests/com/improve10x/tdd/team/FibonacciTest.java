@@ -56,4 +56,10 @@ public class FibonacciTest {
         int minus1 = fibonacci.find(-4);
         Assertions.assertEquals(-1,minus1);
     }
+    @Test
+    public void givenTwo_returnsOne(){
+        Fibonacci fibonacci = new Fibonacci();
+        int one = fibonacci.find(2);
+        assertEquals(1, one);
+    }
 }
