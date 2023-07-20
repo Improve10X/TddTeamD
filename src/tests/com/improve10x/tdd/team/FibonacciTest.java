@@ -22,6 +22,13 @@ public class FibonacciTest {
         Fibonacci fibonacci = new Fibonacci();
         int  minusOne = fibonacci.find(0);
         Assertions.assertEquals(-1,minusOne);
+    }
+
+    @Test
+    public void givenOne_returnsZero(){
+        Fibonacci fibonacci = new Fibonacci();
+        int zero = fibonacci.find(1);
+        assertEquals(0, zero);
 
     }
 }
