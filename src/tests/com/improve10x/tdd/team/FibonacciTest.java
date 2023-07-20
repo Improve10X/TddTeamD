@@ -29,6 +29,12 @@ public class FibonacciTest {
         Fibonacci fibonacci = new Fibonacci();
         int zero = fibonacci.find(1);
         assertEquals(0, zero);
+    }
 
+    @Test
+    public void givenMinusThree_returnsMinusOne(){
+        Fibonacci fibonacci = new Fibonacci();
+        int minusThree = fibonacci.find(-3);
+        assertEquals(-1, minusThree);
     }
 }
