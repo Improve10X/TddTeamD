@@ -37,4 +37,11 @@ public class FibonacciTest {
         int minusOne = fibonacci.find(-2);
         assertEquals(-1, minusOne);
     }
+
+    @Test
+    public void givenMinusFive_returnsMinusOne(){
+        Fibonacci fibonacci = new Fibonacci();
+        int minusOne = fibonacci.find(-5);
+        assertEquals(-1, minusOne);
+    }
 }
