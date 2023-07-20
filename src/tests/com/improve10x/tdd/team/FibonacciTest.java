@@ -16,4 +16,12 @@ public class FibonacciTest {
         int minusOne = fibonacci.find(-1);
         assertEquals(-1, minusOne);
     }
+
+    @Test
+    public void givenZero_returnsMinusOne(){
+        Fibonacci fibonacci = new Fibonacci();
+        int  minusOne = fibonacci.find(0);
+        Assertions.assertEquals(-1,minusOne);
+
+    }
 }
