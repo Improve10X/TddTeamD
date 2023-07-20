@@ -34,9 +34,9 @@ public class FibonacciTest {
 //-1,-1,
 // -2,-1,
 //  -3,-1,
-//  -4,-1  
+//  -4,-1
     @Test
-    public void givenNegativeNumber4_returnsNegative2(){
+    public void givenNegativeNumber4_returnsNegativeMinusOne(){
         Fibonacci fibonacci = new Fibonacci();
         int minus4 = fibonacci.find(-4);
         Assertions.assertEquals(-1,minus4);
