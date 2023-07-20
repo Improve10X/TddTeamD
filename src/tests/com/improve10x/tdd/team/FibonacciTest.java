@@ -39,10 +39,11 @@ public class FibonacciTest {
     }
 
     @Test
-    public void givenMinusFive_returnsMinusOne(){
+    public void givenMinusFive_returnsMinusOne() {
         Fibonacci fibonacci = new Fibonacci();
         int minusOne = fibonacci.find(-5);
         assertEquals(-1, minusOne);
+    }
     @Test
     public void givenMinusThree_returnsMinusOne(){
         Fibonacci fibonacci = new Fibonacci();
