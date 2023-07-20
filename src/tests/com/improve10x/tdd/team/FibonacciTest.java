@@ -62,4 +62,10 @@ public class FibonacciTest {
         int one = fibonacci.find(2);
         assertEquals(1, one);
     }
+    @Test
+    public void givenThree_returnsOne(){
+        Fibonacci fibonacci = new Fibonacci();
+        int one = fibonacci.find(3);
+        assertEquals(1, one);
+    }
 }
