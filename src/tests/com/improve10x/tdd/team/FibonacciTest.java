@@ -68,4 +68,10 @@ public class FibonacciTest {
         int one = fibonacci.find(3);
         assertEquals(1, one);
     }
+    @Test
+    public void givenFour_returnsTwo(){
+        Fibonacci fibonacci = new Fibonacci();
+        int two = fibonacci.find(4);
+        assertEquals(2,two);
+    }
 }
