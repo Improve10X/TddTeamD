@@ -21,4 +21,11 @@ public class AddUpTheNumbersTest {
         int ten = addUpTheNumbers.addUp(4);
         assertEquals(10, ten);
     }
+
+    @Test
+    public void givenThirteen_returnsNinetyOne(){
+        AddUpTheNumbers addUpTheNumbers = new AddUpTheNumbers();
+        int ninetyOne = addUpTheNumbers.addUp(13);
+        assertEquals(91, ninetyOne);
+    }
 }
