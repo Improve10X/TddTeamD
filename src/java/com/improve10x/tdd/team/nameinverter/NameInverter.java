@@ -14,7 +14,10 @@ public class NameInverter {
             for (int i = 0; i < names.size(); i++) {
             }
             removeHonorifics(names);
-            String postNominal = names.size() > 2 ? names.get(2) : "";
+            String postNominal = "";
+            for (int i = 2; i < names.size(); i++){
+                 postNominal += names.get(i)+ " ";
+            }
             return (names.get(1) + ", " + names.get(0) + " " + postNominal).trim();
         }
     }
