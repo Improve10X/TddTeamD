@@ -44,30 +44,35 @@ public class FibonacciTest {
         int minusOne = fibonacci.find(-5);
         assertEquals(-1, minusOne);
     }
+
     @Test
     public void givenMinusThree_returnsMinusOne(){
         Fibonacci fibonacci = new Fibonacci();
         int minusThree = fibonacci.find(-3);
         assertEquals(-1, minusThree);
     }
+
     @Test
     public void givenNegativeNumber4_returnsNegativeMinusOne(){
         Fibonacci fibonacci = new Fibonacci();
         int minus1 = fibonacci.find(-4);
         Assertions.assertEquals(-1,minus1);
     }
+
     @Test
     public void givenTwo_returnsOne(){
         Fibonacci fibonacci = new Fibonacci();
         int one = fibonacci.find(2);
         assertEquals(1, one);
     }
+
     @Test
     public void givenThree_returnsOne(){
         Fibonacci fibonacci = new Fibonacci();
         int one = fibonacci.find(3);
         assertEquals(1, one);
     }
+
     @Test
     public void givenFour_returnsTwo(){
         Fibonacci fibonacci = new Fibonacci();
