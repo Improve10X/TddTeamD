@@ -8,6 +8,8 @@ public class Scoring {
                 char c = score.charAt(i);
                 if (c == 'A') {
                     result[0] = 1;
+                }else if(c == 'B'){
+                    result[1] = 1;
                 }
             }
         }
