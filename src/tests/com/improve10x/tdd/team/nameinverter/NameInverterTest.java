@@ -58,4 +58,10 @@ public class NameInverterTest {
         String removeMr = nameInverter.invertName("mr. first last");
         assertEquals("last, first", removeMr);
     }
+
+    @Test
+    public void givenPostNominal_StayAtEnd(){
+        String stayAtEnd = nameInverter.invertName("first last phd");
+        assertEquals("last, first phd", stayAtEnd);
+    }
 }
