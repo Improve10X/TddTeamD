@@ -58,4 +58,22 @@ public class NameInverterTest {
         String removeMr = nameInverter.invertName("mr. first last");
         assertEquals("last, first", removeMr);
     }
+
+    @Test
+    public void givenPostNominal_StayAtEnd(){
+        String stayAtEnd = nameInverter.invertName("first last phd");
+        assertEquals("last, first phd", stayAtEnd);
+    }
+
+    @Test
+    public void givenMultiPostNominal_multiStayAtEnd(){
+        String multiStayAtEnd = nameInverter.invertName("first last phd. msc.");
+        assertEquals("last, first phd. msc.", multiStayAtEnd);
+    }
+
+    @Test
+    public void integrationTest(){
+        String invertName = nameInverter.invertName("mrs. first last phd. msc.");
+        assertEquals("last, first phd. msc.", invertName);
+    }
 }
