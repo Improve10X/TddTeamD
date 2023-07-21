@@ -28,4 +28,16 @@ public class FarmProblemTest {
         int animals = farmProblem.findCalculate(2,3,5);
         Assertions.assertEquals(36,animals);
     }
+    @Test
+    public void givensOneTwoThree_returnsTwentyTwo(){
+        FarmProblem farmProblem = new FarmProblem();
+        int animals = farmProblem.findCalculate(1,2,3);
+        Assertions.assertEquals(22, animals);
+    }
+    @Test
+    public void givenFiveTwoEight_returnsFifty(){
+        FarmProblem farmProblem = new FarmProblem();
+        int animals = farmProblem.findCalculate(5,2,8);
+        Assertions.assertEquals(50,animals);
+    }
 }
