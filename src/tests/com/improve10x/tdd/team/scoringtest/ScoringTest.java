@@ -19,4 +19,10 @@ public class ScoringTest {
         int[] allZeros = scoring.calculateScores(null);
         assertArrayEquals(new int[3], allZeros);
     }
+    @Test
+    public void givenEmpty_returnsAllZeros(){
+        Scoring scoring = new Scoring();
+        int[] allZeros = scoring.calculateScores("");
+        assertArrayEquals(new int[3], allZeros);
+    }
 }
