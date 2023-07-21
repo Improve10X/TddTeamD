@@ -16,7 +16,5 @@ public class ScoringSystem {
             }
         }
         return scores;
-
     }
-
 }
