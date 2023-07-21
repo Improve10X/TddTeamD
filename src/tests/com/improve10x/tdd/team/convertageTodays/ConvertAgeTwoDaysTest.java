@@ -20,6 +20,12 @@ public class ConvertAgeTwoDaysTest {
         int days = convertAgeToDays.find(22);
         Assertions.assertEquals(8030,days);
     }
+    @Test
+    public void givenThirtySix_returnsOneThreeOneFourZero() {
+        ConvertAgeToDays convertAgeToDays = new ConvertAgeToDays();
+        int days = convertAgeToDays.find(36);
+        Assertions.assertEquals(13140,days);
+    }
 }
 
 
