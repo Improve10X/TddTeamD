@@ -21,4 +21,10 @@ public class EqualityOfThreeValuesTest {
         int result = equalityOfThreeValues.findEquality(3, 4, 3);
         assertEquals(2,result);
     }
+    @Test
+    public void givenOneOneOne_returnsThree(){
+        EqualityOfThreeValues equalityOfThreeValues = new EqualityOfThreeValues();
+        int result = equalityOfThreeValues.findEquality(1, 1, 1);
+        assertEquals(3,result);
+    }
 }
