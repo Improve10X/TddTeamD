@@ -56,8 +56,8 @@ public class ScoringTest {
     @Test
     public void givenAABC_returnsTwoOneOne(){
         Scoring scoring = new Scoring();
-        int[] twoOneOne = scoring.calculateScores("AABC");
-        assertArrayEquals(new int[]{2, 1, 1}, twoOneOne);
+        int[] aabcScores = scoring.calculateScores("AABC");
+        assertArrayEquals(new int[]{2, 1, 1}, aabcScores);
     }
     @Test
     public void givenABBC_returnsOneTwoOne(){
