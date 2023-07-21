@@ -55,4 +55,10 @@ public class ScoringTest {
         int[] oneOneOne = scoring.calculateScores("ABC");
         assertArrayEquals(new int[]{1, 1, 1}, oneOneOne);
     }
+    @Test
+    public void givenAABC_returnsTwoOneOne(){
+        Scoring scoring = new Scoring();
+        int[] twoOneOne = scoring.calculateScores("AABC");
+        assertArrayEquals(new int[]{2, 1, 1}, twoOneOne);
+    }
 }
