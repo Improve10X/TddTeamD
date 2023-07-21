@@ -9,7 +9,7 @@ public class Scoring {
                 if (c == 'A') {
                     result[0]++;
                 }else if(c == 'B'){
-                    result[1] = 1;
+                    result[1]++;
                 }else if(c == 'C'){
                     result[2] = 1;
                 }

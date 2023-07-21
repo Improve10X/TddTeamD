@@ -3,8 +3,6 @@ package com.improve10x.tdd.team.scoringtest;
 import com.improve10x.tdd.team.scoring.Scoring;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class ScoringTest {
@@ -60,5 +58,11 @@ public class ScoringTest {
         Scoring scoring = new Scoring();
         int[] twoOneOne = scoring.calculateScores("AABC");
         assertArrayEquals(new int[]{2, 1, 1}, twoOneOne);
+    }
+    @Test
+    public void givenABBC_returnsOneTwoOne(){
+        Scoring scoring = new Scoring();
+        int[] oneTwoOne = scoring.calculateScores("ABBC");
+        assertArrayEquals(new int[]{1, 2, 1}, oneTwoOne);
     }
 }
