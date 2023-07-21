@@ -30,4 +30,10 @@ public class NameInverterTest {
         String invertedName = nameInverterOne.invertName("name   ");
         assertEquals("name",invertedName);
     }
+    @Test
+    public void givenNameWithBeginning_returnsName(){
+        NameInverterOne nameInverterOne = new NameInverterOne();
+        String invertedName = nameInverterOne.invertName("  Name  ");
+        assertEquals("Name", invertedName);
+    }
 }
