@@ -27,4 +27,10 @@ public class NameInverterTwoTest {
         String invertedName = nameInverterTwo.invertName("Surya  ");
         assertEquals("Surya", invertedName);
     }
+    @Test
+    public void givenSingleWordWithBeginningSpaces_returnsSingleWord(){
+        NameInverterTwo nameInverterTwo = new NameInverterTwo();
+        String invertedName = nameInverterTwo.invertName(" Surya  ");
+        assertEquals("Surya", invertedName);
+    }
 }
