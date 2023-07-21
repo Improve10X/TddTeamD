@@ -38,8 +38,8 @@ public class ScoringTest {
     @Test
     public void givenC_returnsZeroZeroOne(){
         Scoring scoring = new Scoring();
-        int[] zeroZeroOne = scoring.calculateScores("C");
-        assertArrayEquals(new int[]{0, 0, 1}, zeroZeroOne);
+        int[] onlyCScores = scoring.calculateScores("C");
+        assertArrayEquals(new int[]{0, 0, 1}, onlyCScores);
     }
     @Test
     public void givenAB_returnsOneOneZero(){
