@@ -13,8 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class AddUpTheNumbersTest {
 
     @Test
-    public void nothing() {
-    }
+    public void nothing() {}
 
     @Test
     public void givenFour_returnsTen() {
