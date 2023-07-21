@@ -11,7 +11,7 @@ public class Scoring {
                 }else if(c == 'B'){
                     result[1]++;
                 }else if(c == 'C'){
-                    result[2] = 1;
+                    result[2]++;
                 }
             }
         }
