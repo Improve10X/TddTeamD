@@ -70,4 +70,10 @@ public class NameInverterTest {
         String multiStayAtEnd = nameInverter.invertName("first last phd. msc.");
         assertEquals("last, first phd. msc.", multiStayAtEnd);
     }
+
+    @Test
+    public void integrationTest(){
+        String invertName = nameInverter.invertName("mrs. first last phd. msc.");
+        assertEquals("last, first phd. msc.", invertName);
+    }
 }
