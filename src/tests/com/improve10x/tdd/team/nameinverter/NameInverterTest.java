@@ -46,4 +46,16 @@ public class NameInverterTest {
        String lastFirst = nameInverter.invertName("first last");
        assertEquals("last, first", lastFirst);
     }
+
+    @Test
+    public void givenHonorifics_removeHonorifics(){
+        String removeHonorifics = nameInverter.invertName("mrs. first last");
+        assertEquals("last, first", removeHonorifics);
+    }
+
+    @Test
+    public void givenMrHonorifics_removeMr(){
+        String removeMr = nameInverter.invertName("mr. first last");
+        assertEquals("last, first", removeMr);
+    }
 }
