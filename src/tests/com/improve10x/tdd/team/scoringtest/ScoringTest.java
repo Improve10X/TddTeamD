@@ -26,8 +26,8 @@ public class ScoringTest {
     @Test
     public void givenA_returnsOneZeroZero(){
         Scoring scoring = new Scoring();
-        int[] oneZeroZero = scoring.calculateScores("A");
-        assertArrayEquals(new int[]{1, 0, 0}, oneZeroZero);
+        int[] onlyAScores = scoring.calculateScores("A");
+        assertArrayEquals(new int[]{1, 0, 0}, onlyAScores);
     }
     @Test
     public void givenB_returnsZeroOneZero(){
