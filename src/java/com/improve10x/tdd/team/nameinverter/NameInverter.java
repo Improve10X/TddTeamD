@@ -12,7 +12,7 @@ public class NameInverter {
         }else {
             ArrayList<String> names =  new ArrayList<>(Arrays.asList(name.trim().split("\\s+")));
             for (int i = 0; i < names.size(); i++){
-                if (names.get(0).matches("ms.|mrs.|miss.")){
+                if (names.get(0).matches("mr.|mrs.|miss.")){
                     names.remove(0);
                 }
             }
