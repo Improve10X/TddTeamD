@@ -1,6 +1,4 @@
 package com.improve10x.tdd.team.nameinvertertest2;
-
-import com.improve10x.tdd.team.nameinverter.NameInverter;
 import com.improve10x.tdd.team.nameinverter2.NameInverterTwo;
 import org.junit.jupiter.api.Test;
 
@@ -21,6 +19,18 @@ public class NameInverterTwoTest {
     public void givenSingleWord_returnsSingleWord(){
         NameInverterTwo nameInverterTwo = new NameInverterTwo();
         String invertedName = nameInverterTwo.invertName("Surya");
+        assertEquals("Surya", invertedName);
+    }
+    @Test
+    public void givenSingleWordWithTrailingSpaces_returnsSingleWord(){
+        NameInverterTwo nameInverterTwo = new NameInverterTwo();
+        String invertedName = nameInverterTwo.invertName("Surya  ");
+        assertEquals("Surya", invertedName);
+    }
+    @Test
+    public void givenSingleWordWithBeginningSpaces_returnsSingleWord(){
+        NameInverterTwo nameInverterTwo = new NameInverterTwo();
+        String invertedName = nameInverterTwo.invertName(" Surya  ");
         assertEquals("Surya", invertedName);
     }
 }
