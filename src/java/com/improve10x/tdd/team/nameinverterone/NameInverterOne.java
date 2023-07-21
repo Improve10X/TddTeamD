@@ -4,6 +4,8 @@ public class NameInverterOne {
     public String invertName(String word) {
         if (word.equals("")){
             return "";
+        }else if (!word.contains(" ")){
+            return word;
         }
         return null;
     }
