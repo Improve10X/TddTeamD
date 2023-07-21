@@ -1,5 +1,8 @@
 package com.improve10x.tdd.team.nameinverterone;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class NameInverterOne {
     public String invertName(String word) {
         if (word.equals("")){
@@ -7,8 +10,11 @@ public class NameInverterOne {
         }else if (!word.trim().contains(" ")){
             return word.trim();
         }else {
-            String[] names = word.trim().split("\\s+");
-            return names[1] + ", " + names[0];
+            ArrayList<String> names = new ArrayList<>(Arrays.asList(word.trim().split("\\s+")));
+            if (names.get(0).matches("Mr.|Mrs.|Miss.") && names.size()>2){
+                names.remove(0);
+            }
+            return names.get(1) + ", " + names.get(0);
         }
     }
 }
