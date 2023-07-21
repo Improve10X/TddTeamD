@@ -36,4 +36,10 @@ public class NameInverterTest {
         String invertedName = nameInverterOne.invertName("  Name  ");
         assertEquals("Name", invertedName);
     }
+    @Test
+    public void givenFirstLast_returnsInvertedName(){
+        NameInverterOne nameInverterOne = new NameInverterOne();
+        String invertedName = nameInverterOne.invertName("first last");
+        assertEquals("last, first", invertedName);
+    }
 }

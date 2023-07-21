@@ -6,7 +6,9 @@ public class NameInverterOne {
             return "";
         }else if (!word.trim().contains(" ")){
             return word.trim();
+        }else {
+            String[] names = word.trim().split("\\s+");
+            return names[1] + ", " + names[0];
         }
-        return null;
     }
 }
