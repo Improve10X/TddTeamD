@@ -28,4 +28,10 @@ public class NameInverterTest {
         String singleWord = nameInverter.invertName("vani");
         assertEquals("vani", singleWord);
     }
+
+    @Test
+    public void givenSingleWordWithTrailingSpaces_returnsName(){
+        String name = nameInverter.invertName("mom  ");
+        assertEquals("mom", name);
+    }
 }
