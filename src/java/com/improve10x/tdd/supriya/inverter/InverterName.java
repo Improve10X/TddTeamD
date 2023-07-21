@@ -31,7 +31,6 @@ public class InverterName {
         for (int i = 0; i < postNominalList.size(); i++) {
             postNominal += postNominalList.get(i) + " ";
         }
-
         return postNominal;
     }
 
