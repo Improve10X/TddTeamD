@@ -13,12 +13,27 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class AddUpTheNumbersTest {
 
     @Test
-    public void nothing(){}
+    public void nothing() {
+    }
 
     @Test
-    public void givenFour_returnsTen(){
+    public void givenFour_returnsTen() {
         AddUpTheNumbers addUpTheNumbers = new AddUpTheNumbers();
         int ten = addUpTheNumbers.addUp(4);
         assertEquals(10, ten);
+    }
+
+    @Test
+    public void givenThirteen_returnsNinetyOne() {
+        AddUpTheNumbers addUpTheNumbers = new AddUpTheNumbers();
+        int ninetyOne = addUpTheNumbers.addUp(13);
+        assertEquals(91, ninetyOne);
+    }
+
+    @Test
+    public void givenSixHundred_returnsOneEightZeroThreeZeroZero() {
+        AddUpTheNumbers addUpTheNumbers = new AddUpTheNumbers();
+        int oneEightZeroThreeZeroZero = addUpTheNumbers.addUp(600);
+        assertEquals(180300, oneEightZeroThreeZeroZero);
     }
 }
