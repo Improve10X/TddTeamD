@@ -10,6 +10,8 @@ public class Scoring {
                     result[0] = 1;
                 }else if(c == 'B'){
                     result[1] = 1;
+                }else if(c == 'C'){
+                    result[2] = 1;
                 }
             }
         }
