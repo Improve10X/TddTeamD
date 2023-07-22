@@ -50,5 +50,9 @@ public class NameInverterTest {
         assertEquals("devi, karthika", removeHonorifics);
     }
 
-
+    @Test
+    public void givenMrHonorifics_removeMrHonorifics(){
+        String removeMrHonorifics = nameInverter.nameInvert("mr. pulla reddy");
+        assertEquals("reddy, pulla", removeMrHonorifics);
+    }
 }
