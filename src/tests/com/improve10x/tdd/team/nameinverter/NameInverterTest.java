@@ -43,4 +43,12 @@ public class NameInverterTest {
         String lastFirst = nameInverter.nameInvert("first last");
         assertEquals("last, first", lastFirst);
     }
+
+    @Test
+    public void givenHonorifics_ignoreHonorifics(){
+        String removeHonorifics = nameInverter.nameInvert("miss. karthika devi");
+        assertEquals("devi, karthika", removeHonorifics);
+    }
+
+
 }
