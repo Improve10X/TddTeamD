@@ -61,4 +61,10 @@ public class NameInverterTest {
         String stayAtEnd = nameInverter.nameInvert("deepu manasa phd.");
         assertEquals("manasa, deepu phd.", stayAtEnd);
     }
+
+    @Test
+    public void givenMultiPostNominals_stayAtEnd(){
+        String stayAtEnd = nameInverter.nameInvert("shanti kala msc. phd.");
+        assertEquals("kala, shanti msc. phd.", stayAtEnd);
+    }
 }
