@@ -5,8 +5,8 @@ public class NameInverter {
     public String nameInvert(String name) {
         if (name.equals("")){
             return "";
-        } else if (!name.contains(" ")) {
-            return name;
+        } else if (!name.trim().contains(" ")) {
+            return name.trim();
         }
         return null;
     }
