@@ -55,4 +55,10 @@ public class NameInverterTest {
         String removeMrHonorifics = nameInverter.nameInvert("mr. pulla reddy");
         assertEquals("reddy, pulla", removeMrHonorifics);
     }
+
+    @Test
+    public void givenPostNominal_stayAtEnd(){
+        String stayAtEnd = nameInverter.nameInvert("deepu manasa phd.");
+        assertEquals("manasa, deepu phd.", stayAtEnd);
+    }
 }

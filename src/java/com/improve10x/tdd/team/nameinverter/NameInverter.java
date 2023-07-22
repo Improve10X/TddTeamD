@@ -6,16 +6,21 @@ import java.util.Arrays;
 public class NameInverter {
 
     public String nameInvert(String name) {
-        if (name.equals("")){
+        if (name.equals("")) {
             return "";
         } else if (!name.trim().contains(" ")) {
             return name.trim();
-        }else {
+        } else {
             ArrayList<String> names = new ArrayList<>(Arrays.asList(name.trim().split("\\s+")));
-            if (names.get(0).matches("miss.|mrs.|mr.|") && names.size() > 2){
-                names.remove(0);
+            removeHonorifics(names);
+            String postNominal = names.size() > 2 ? names.get(2) : "";
+                return (names.get(1) + ", " + names.get(0) + " " + postNominal).trim();
             }
-            return names.get(1) + ", "+ names.get(0);
+        }
+
+    private static void removeHonorifics(ArrayList<String> names) {
+        if (names.get(0).matches("miss.|mrs.|mr.|") && names.size() > 2) {
+            names.remove(0);
         }
     }
 }
