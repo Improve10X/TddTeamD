@@ -21,4 +21,9 @@ public class EulersPhiTest {
         int divisors = eulersPhi.findDivisors(0);
         assertEquals(0, divisors);
     }
+    @Test
+    public void givenOne_returnsOne(){
+        int divisors = eulersPhi.findDivisors(1);
+        assertEquals(1, divisors);
+    }
 }
