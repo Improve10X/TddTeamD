@@ -14,6 +14,5 @@ public class LessThanHundredTest {
         LessThanHundred lessThanHundred = new LessThanHundred();
         boolean status = lessThanHundred.findStatus(0,1);
         assertEquals(true, status);
-
     }
 }
