@@ -35,12 +35,8 @@ public class NameInverter {
     }
 
     private static void removeHonorifics(ArrayList<String> names) {
-        if (hasHonorifics(names) && names.size() > 2){
+        if (names.get(0).matches("mrs.|mr.|miss.") && names.size() > 2){
             names.remove(0);
         }
-    }
-
-    private static boolean hasHonorifics(ArrayList<String> names) {
-        return names.get(0).matches("mrs.|mr.|miss.");
     }
 }

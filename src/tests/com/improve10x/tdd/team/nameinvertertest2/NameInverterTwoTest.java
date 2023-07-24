@@ -45,4 +45,22 @@ public class NameInverterTwoTest {
         String invertedName = nameInverterTwo.invertName("Mrs. SivaKumar Surya");
         assertEquals("Surya, SivaKumar", invertedName);
     }
+    @Test
+    public void givenHonorifics_stayAtEnd(){
+        NameInverterTwo nameInverterTwo = new NameInverterTwo();
+        String invertedName = nameInverterTwo.invertName("SivaKumar Surya MSc.");
+        assertEquals("Surya, SivaKumar MSc.", invertedName);
+    }
+    @Test
+    public void givenPostNominals_stayAtEnd(){
+        NameInverterTwo nameInverterTwo = new NameInverterTwo();
+        String invertedName = nameInverterTwo.invertName("SivaKumar Surya MSc. PhD.");
+        assertEquals("Surya, SivaKumar MSc. PhD.", invertedName);
+    }
+    @Test
+    public void integrationTest(){
+        NameInverterTwo nameInverterTwo = new NameInverterTwo();
+        String invertedName = nameInverterTwo.invertName("Mr. SivaKumar Surya MSc. PhD.");
+        assertEquals("Surya, SivaKumar MSc. PhD.", invertedName);
+    }
 }
