@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.practise.sumofallarrayelements;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,13 +13,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class SumOfAllArrayElementsTest {
+    SumOfAllArrayElements sumOfAllArrayElements;
+
+    @BeforeEach
+    public void setUp(){
+        sumOfAllArrayElements = new SumOfAllArrayElements();
+    }
     @Test
     public void nothing(){}
+
     @Test
     public void givenZeros_returnsZero(){
-        SumOfAllArrayElements sumOfAllArrayElements = new SumOfAllArrayElements();
         int zero = sumOfAllArrayElements.sum(new int[]{0,0,0});
         assertEquals(0,zero);
     }
+
+    @Test
+    public void givenOneOne_returnsTwo(){
+        int two = sumOfAllArrayElements.sum(new int[]{1,1});
+        assertEquals(2, two);
+    }
+
 
 }
