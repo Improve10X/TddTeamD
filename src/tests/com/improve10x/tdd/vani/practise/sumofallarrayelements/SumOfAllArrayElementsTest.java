@@ -46,5 +46,9 @@ public class SumOfAllArrayElementsTest {
         assertEquals(48, fortyEight);
     }
 
-
+    @Test
+    public void givenMinusTwoEightyFourTwentyThree_returnsOneZeroFive(){
+        int value = sumOfAllArrayElements.sum(new int[]{-2,84,23});
+        assertEquals(105,value);
+    }
 }
