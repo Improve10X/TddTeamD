@@ -27,4 +27,11 @@ public class AreTheNumbersEqualTest {
         boolean status = areTheNumbersEqual.findStatus(4,8);
         Assertions.assertEquals(false, status);
     }
+
+    @Test
+    public void givenTwoTwo_returnTrue(){
+        AreTheNumbersEqual areTheNumbersEqual = new AreTheNumbersEqual();
+        boolean status = areTheNumbersEqual.findStatus(2,2);
+        Assertions.assertEquals(true, status);
+    }
 }
