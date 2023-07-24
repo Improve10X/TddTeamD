@@ -61,8 +61,4 @@ public class CombinationTest {
         int numbers = combination.findCombination(new int[]{3,7,4});
         assertEquals(84,numbers);
     }
-
-
-
-
 }

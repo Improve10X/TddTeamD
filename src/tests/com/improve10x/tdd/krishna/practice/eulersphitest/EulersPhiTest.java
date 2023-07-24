@@ -26,4 +26,19 @@ public class EulersPhiTest {
         int divisors = eulersPhi.findDivisors(1);
         assertEquals(1, divisors);
     }
+    @Test
+    public void givenTwo_returnsOneTwo(){
+        int divisors = eulersPhi.findDivisors(2);
+        assertEquals(2, divisors);
+    }
+    @Test
+    public void givenThree_returnsTwo(){
+        int divisors = eulersPhi.findDivisors(3);
+        assertEquals(2, divisors);
+    }
+    @Test
+    public void givenEight_returnsFour(){
+        int divisors = eulersPhi.findDivisors(8);
+        assertEquals(4, divisors);
+    }
 }
