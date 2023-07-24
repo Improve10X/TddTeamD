@@ -53,4 +53,9 @@ public class CombinationsTest {
         int combinationValue = combinations.findCombination(new int[]{2, 3});
         assertEquals(6, combinationValue);
     }
+    @Test
+    public void giveThreeSevenFour_returnsEightyFour(){
+        int combinationValue = combinations.findCombination(new int[]{3, 7, 4});
+        assertEquals(84, combinationValue);
+    }
 }
