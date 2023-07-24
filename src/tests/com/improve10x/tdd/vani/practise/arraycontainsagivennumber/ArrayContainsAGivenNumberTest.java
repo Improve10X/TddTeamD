@@ -54,4 +54,10 @@ public class ArrayContainsAGivenNumberTest {
         assertEquals(true,statement);
     }
 
+    @Test
+    public void givenEmpty_returnsFalse(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{}, 5);
+        assertEquals(false,statement);
+    }
+
 }
