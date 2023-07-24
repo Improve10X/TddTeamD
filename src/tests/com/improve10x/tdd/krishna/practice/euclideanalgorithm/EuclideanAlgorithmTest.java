@@ -41,4 +41,9 @@ public class EuclideanAlgorithmTest {
         int euclidean = euclideanAlgorithm.findEuclidean(25, 5);
         assertEquals(5, euclidean);
     }
+    @Test
+    public void givenFortyNineFourteen_returnsSeven(){
+        int euclidean = euclideanAlgorithm.findEuclidean(49, 14);
+        assertEquals(7, euclidean);
+    }
 }
