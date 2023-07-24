@@ -38,4 +38,9 @@ public class ThreeDVisualBlocksTest {
         int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(3);
         assertEquals(20, noOfBlocks);
     }
+    @Test
+    public void givenFour_returnsTwentyNine(){
+        int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(4);
+        assertEquals(29, noOfBlocks);
+    }
 }
