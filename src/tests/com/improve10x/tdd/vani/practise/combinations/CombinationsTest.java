@@ -34,5 +34,11 @@ public class CombinationsTest {
         assertEquals(0,zero);
     }
 
+    @Test
+    public void givenOneOne_returnsOne(){
+        int one = combinations.combination(new int[]{1,1});
+        assertEquals(1,one);
+    }
+
 
 }
