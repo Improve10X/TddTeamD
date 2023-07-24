@@ -22,4 +22,12 @@ public class LessThanHundredTest {
         boolean status = lessThanHundred.findStatus(22,30);
         assertEquals(true, status);
     }
+
+    @Test
+    public void givenNumbers_returnFalse(){
+        LessThanHundred lessThanHundred = new LessThanHundred();
+        boolean status = lessThanHundred.findStatus(83,30);
+        assertEquals(false, status);
+        
+    }
 }
