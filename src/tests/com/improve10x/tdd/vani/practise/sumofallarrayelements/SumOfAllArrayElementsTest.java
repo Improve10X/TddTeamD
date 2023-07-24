@@ -34,5 +34,11 @@ public class SumOfAllArrayElementsTest {
         assertEquals(2, two);
     }
 
+    @Test
+    public void givenTwoSevenFour_returnsThirteen(){
+        int thirteen = sumOfAllArrayElements.sum(new int[]{2,7,4});
+        assertEquals(13,thirteen);
+    }
+
 
 }
