@@ -20,4 +20,11 @@ public class AreTheNumbersEqualTest {
         boolean status = areTheNumbersEqual.findStatus(0,1);
         Assertions.assertEquals(false, status);
     }
+
+    @Test
+    public void givenFourEight_returnFalse(){
+        AreTheNumbersEqual areTheNumbersEqual = new AreTheNumbersEqual();
+        boolean status = areTheNumbersEqual.findStatus(4,8);
+        Assertions.assertEquals(false, status);
+    }
 }
