@@ -28,4 +28,24 @@ public class ThreeDVisualBlocksTest {
         int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(1);
         assertEquals(5, noOfBlocks);
     }
+    @Test
+    public void givenTwo_returnsTwelve(){
+        int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(2);
+        assertEquals(12, noOfBlocks);
+    }
+    @Test
+    public void givenThree_returnsTwenty(){
+        int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(3);
+        assertEquals(20, noOfBlocks);
+    }
+    @Test
+    public void givenFour_returnsTwentyNine(){
+        int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(4);
+        assertEquals(29, noOfBlocks);
+    }
+    @Test
+    public void givenFive_returnsThirtyNine(){
+        int noOfBlocks = threeDVisualBlocks.find3DVisualBlocks(5);
+        assertEquals(39, noOfBlocks);
+    }
 }
