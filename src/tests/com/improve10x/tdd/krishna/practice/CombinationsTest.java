@@ -40,12 +40,27 @@ public class CombinationsTest {
     }
     @Test
     public void givenOneOne_returnsOne(){
-        int zero = combinations.findCombination(new int[]{1, 1});
-        assertEquals(1, zero);
+        int combinationValue = combinations.findCombination(new int[]{1, 1});
+        assertEquals(1, combinationValue);
     }
     @Test
     public void givenOneTwo_returnsTwo(){
-        int zero = combinations.findCombination(new int[]{1, 2});
-        assertEquals(2, zero);
+        int combinationValue = combinations.findCombination(new int[]{1, 2});
+        assertEquals(2, combinationValue);
+    }
+    @Test
+    public void givenTwoThree_returnsSix(){
+        int combinationValue = combinations.findCombination(new int[]{2, 3});
+        assertEquals(6, combinationValue);
+    }
+    @Test
+    public void giveThreeSevenFour_returnsEightyFour(){
+        int combinationValue = combinations.findCombination(new int[]{3, 7, 4});
+        assertEquals(84, combinationValue);
+    }
+    @Test
+    public void giveTwoThreeFourFive_returnsOneHundredAndTwo(){
+        int combinationValue = combinations.findCombination(new int[]{2, 3, 4, 5});
+        assertEquals(120, combinationValue);
     }
 }
