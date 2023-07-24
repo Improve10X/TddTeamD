@@ -40,5 +40,11 @@ public class CombinationsTest {
         assertEquals(1,one);
     }
 
+    @Test
+    public void givenTwoThree_returnsSix(){
+        int six = combinations.combination(new int[]{2,3});
+        assertEquals(6,six);
+    }
+
 
 }
