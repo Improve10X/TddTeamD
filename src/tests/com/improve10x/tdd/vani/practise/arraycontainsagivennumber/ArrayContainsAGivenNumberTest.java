@@ -48,10 +48,10 @@ public class ArrayContainsAGivenNumberTest {
         assertEquals(false, statement);
     }
 
-//    @Test
-//    public void givenFiveFiveFiveSix_returnsFive(){
-//        boolean statement = arrayContainsAGivenNumber.check(new int[]{5,5,5,6},5);
-//        assertEquals(true,statement);
-//    }
+    @Test
+    public void givenFiveFiveFiveSix_returnsTrue(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{5,5,5,6},5);
+        assertEquals(true,statement);
+    }
 
 }
