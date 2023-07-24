@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.practise.arethenumbersequal;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,13 +12,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        isSameNum(42, 32) ➞  false
 
 public class AreTheNumbersEqualTest {
+    AreTheNumbersEqual areTheNumbersEqual;
+
+    @BeforeEach
+    public void setUp(){
+        areTheNumbersEqual = new AreTheNumbersEqual();
+    }
     @Test
     public void nothing(){}
 
     @Test
     public void givenZeros_returnsTrue(){
-        AreTheNumbersEqual areTheNumbersEqual = new AreTheNumbersEqual();
         boolean statement = areTheNumbersEqual.isSameNumber(0,0);
         assertEquals(true, statement);
     }
+
+    @Test
+    public void givenZeroOne_returnsFalse(){
+        boolean statement = areTheNumbersEqual.isSameNumber(0,1);
+        assertEquals(false, statement);
+    }
+
+
 }
