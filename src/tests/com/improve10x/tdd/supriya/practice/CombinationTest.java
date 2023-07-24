@@ -33,4 +33,11 @@ public class CombinationTest {
         int numbers = combination.findCombination(new int[]{0,1});
         assertEquals(0, numbers);
     }
+
+    @Test
+    public void givensOneOne_returnsOne(){
+        Combination combination = new Combination();
+        int numbers = combination.findCombination(new int[]{1,1});
+        assertEquals(1,numbers);
+    }
 }
