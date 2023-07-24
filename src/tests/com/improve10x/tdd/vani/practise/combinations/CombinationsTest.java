@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.practise.combinations;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,14 +12,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        combinations(2, 3, 4, 5) ➞ 120
 
 public class CombinationsTest {
+    Combinations combinations;
+
+    @BeforeEach
+    public void setUp(){
+        combinations = new Combinations();
+    }
+
     @Test
     public void nothing(){}
 
     @Test
     public void givenZeros_returnsZero(){
-        Combinations combinations = new Combinations();
-        int empty = combinations.combination(new int[]{0,0});
-        assertEquals(0,empty);
+        int zero = combinations.combination(new int[]{0,0});
+        assertEquals(0,zero);
+    }
+
+    @Test
+    public void givenOneZero_returnsZero(){
+        int zero = combinations.combination(new int[]{1,0});
+        assertEquals(0,zero);
     }
 
 
