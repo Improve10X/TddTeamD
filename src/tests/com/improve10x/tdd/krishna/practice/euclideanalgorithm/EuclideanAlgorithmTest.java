@@ -26,4 +26,24 @@ public class EuclideanAlgorithmTest {
         int euclidean = euclideanAlgorithm.findEuclidean(1, 0);
         assertEquals(0, euclidean);
     }
+    @Test
+    public void givenOneOne_returnsOne(){
+        int euclidean = euclideanAlgorithm.findEuclidean(1, 1);
+        assertEquals(1, euclidean);
+    }
+    @Test
+    public void givenEightSix_returnsTwo(){
+        int euclidean = euclideanAlgorithm.findEuclidean(8, 6);
+        assertEquals(2, euclidean);
+    }
+    @Test
+    public void givenTwentyFiftyFive_returns(){
+        int euclidean = euclideanAlgorithm.findEuclidean(25, 5);
+        assertEquals(5, euclidean);
+    }
+    @Test
+    public void givenFortyNineFourteen_returnsSeven(){
+        int euclidean = euclideanAlgorithm.findEuclidean(49, 14);
+        assertEquals(7, euclidean);
+    }
 }
