@@ -45,5 +45,9 @@ public class AreTheNumbersEqualTest {
         assertEquals(true, statement);
     }
 
-
+    @Test
+    public void givenFortyTwoThirtyTwo_returnsFalse(){
+        boolean statement = areTheNumbersEqual.isSameNumber(42,32);
+        assertEquals(false, statement);
+    }
 }
