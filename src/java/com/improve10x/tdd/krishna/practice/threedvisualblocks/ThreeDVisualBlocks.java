@@ -10,6 +10,8 @@ public class ThreeDVisualBlocks {
             return 20;
         }else if(number == 4){
             return 29;
+        }else if(number == 5){
+            return 39;
         }
         return 0;
     }
