@@ -40,4 +40,13 @@ public class CombinationTest {
         int numbers = combination.findCombination(new int[]{1,1});
         assertEquals(1,numbers);
     }
+
+    @Test
+    public void givensTwoThree_returnsSix(){
+        Combination combination = new Combination();
+        int numbers = combination.findCombination(new int[]{2,3});
+        assertEquals(6,numbers);
+    }
+
+
 }
