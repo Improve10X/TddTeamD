@@ -26,4 +26,9 @@ public class EuclideanAlgorithmTest {
         int euclidean = euclideanAlgorithm.findEuclidean(1, 0);
         assertEquals(0, euclidean);
     }
+    @Test
+    public void givenOneOne_returnsOne(){
+        int euclidean = euclideanAlgorithm.findEuclidean(1, 1);
+        assertEquals(1, euclidean);
+    }
 }
