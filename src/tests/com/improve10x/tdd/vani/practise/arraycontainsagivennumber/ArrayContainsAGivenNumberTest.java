@@ -37,9 +37,21 @@ public class ArrayContainsAGivenNumberTest {
     }
 
     @Test
-    public void givenVariables_returnsFalse(){
+    public void givenVariables_returnsTrue(){
         boolean statement = arrayContainsAGivenNumber.check(new int[]{1,2,3,4,5},3);
         assertEquals(true, statement);
     }
+
+    @Test
+    public void givenIntegers_returnsFalse(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{1,1,2,1,1},3);
+        assertEquals(false, statement);
+    }
+
+//    @Test
+//    public void givenFiveFiveFiveSix_returnsFive(){
+//        boolean statement = arrayContainsAGivenNumber.check(new int[]{5,5,5,6},5);
+//        assertEquals(true,statement);
+//    }
 
 }
