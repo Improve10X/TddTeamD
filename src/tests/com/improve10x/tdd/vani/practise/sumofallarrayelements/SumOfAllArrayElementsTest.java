@@ -40,5 +40,11 @@ public class SumOfAllArrayElementsTest {
         assertEquals(13,thirteen);
     }
 
+    @Test
+    public void givenFortyFiveThree_returnsFortyEight(){
+        int fortyEight = sumOfAllArrayElements.sum(new int[]{45,3,0});
+        assertEquals(48, fortyEight);
+    }
+
 
 }
