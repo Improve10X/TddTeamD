@@ -58,4 +58,9 @@ public class CombinationsTest {
         int combinationValue = combinations.findCombination(new int[]{3, 7, 4});
         assertEquals(84, combinationValue);
     }
+    @Test
+    public void giveTwoThreeFourFive_returnsOneHundredAndTwo(){
+        int combinationValue = combinations.findCombination(new int[]{2, 3, 4, 5});
+        assertEquals(120, combinationValue);
+    }
 }
