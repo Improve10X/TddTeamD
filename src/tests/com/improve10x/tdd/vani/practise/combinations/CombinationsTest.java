@@ -52,5 +52,9 @@ public class CombinationsTest {
         assertEquals(84, eightyFour);
     }
 
-
+    @Test
+    public void givenTwoThreeFourFive_returnsOneTwenty(){
+        int oneTwenty = combinations.combination(new int[]{2,3,4,5});
+        assertEquals(120, oneTwenty);
+    }
 }
