@@ -6,6 +6,8 @@ public class ThreeDVisualBlocks {
             return 5;
         }else if(number == 2){
             return 12;
+        }else if(number == 3){
+            return 20;
         }
         return 0;
     }
