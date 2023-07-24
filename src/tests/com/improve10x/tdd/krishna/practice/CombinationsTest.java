@@ -43,4 +43,9 @@ public class CombinationsTest {
         int zero = combinations.findCombination(new int[]{1, 1});
         assertEquals(1, zero);
     }
+    @Test
+    public void givenOneTwo_returnsTwo(){
+        int zero = combinations.findCombination(new int[]{1, 2});
+        assertEquals(2, zero);
+    }
 }
