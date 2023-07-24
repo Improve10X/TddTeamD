@@ -1,4 +1,4 @@
-package com.improve10x.tdd.krishna.practice;
+package com.improve10x.tdd.krishna.practice.combinations;
 
 public class Combinations {
     public int findCombination(int[] numbers) {

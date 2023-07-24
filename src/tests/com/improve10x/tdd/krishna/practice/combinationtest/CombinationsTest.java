@@ -1,5 +1,6 @@
-package com.improve10x.tdd.krishna.practice;
+package com.improve10x.tdd.krishna.practice.combinationtest;
 
+import com.improve10x.tdd.krishna.practice.combinations.Combinations;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
