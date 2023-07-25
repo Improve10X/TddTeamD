@@ -64,4 +64,10 @@ public class EncryptionTest {
         assertEquals("1aca", oneAca);
     }
 
+    @Test
+    public void givenI_returns2Aca(){
+        String twoAca = encryption.encrypt("i");
+        assertEquals("2aca", twoAca);
+    }
+
 }
