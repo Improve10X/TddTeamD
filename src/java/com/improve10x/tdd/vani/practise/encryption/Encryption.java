@@ -13,6 +13,8 @@ public class Encryption {
                 return 2 + "aca";
             } else if (word.equals("o")) {
                 return 3 + "aca";
+            } else if (word.equals("u")) {
+                return 4 + "aca";
             }
         }
         return "aca";
