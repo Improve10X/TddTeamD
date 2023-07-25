@@ -35,7 +35,7 @@ public class EncryptionTest {
     public void nothing(){}
 //    input("") - "0"
 //    input("a") - "0"
-//    input("") - "0"
+//    input("b") - "b"
 
     @Test
     public void givenEmpty_returnsZero(){
@@ -47,6 +47,12 @@ public class EncryptionTest {
     public void givenA_returnsZero(){
         String zero = encryption.encrypt("a");
         assertEquals("0", zero);
+    }
+
+    @Test
+    public void givenB_returnsB(){
+        String b = encryption.encrypt("b");
+        assertEquals("b", b);
     }
 
 
