@@ -21,7 +21,7 @@ public class ArrayContainsAGivenNumberTest {
     }
 
     @Test
-    public void nothing() {
+    public void nothing() { // [{0},0 - true] [{1},1 - true] [{0},1 - false] [{0,1}-0 true] [{0,1},1 - true] [{0,1},2 - false}
     }
 
     @Test
@@ -32,8 +32,32 @@ public class ArrayContainsAGivenNumberTest {
 
     @Test
     public void givenNumbers_returnsFalse() {
-        boolean  statement = arrayContainsAGivenNumber.check(new int[]{1,2,3,4,5},6);
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{1,2,3,4,5},6);
         assertEquals(false, statement);
+    }
+
+    @Test
+    public void givenVariables_returnsTrue(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{1,2,3,4,5},3);
+        assertEquals(true, statement);
+    }
+
+    @Test
+    public void givenIntegers_returnsFalse(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{1,1,2,1,1},3);
+        assertEquals(false, statement);
+    }
+
+    @Test
+    public void givenFiveFiveFiveSix_returnsTrue(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{5,5,5,6},5);
+        assertEquals(true,statement);
+    }
+
+    @Test
+    public void givenEmpty_returnsFalse(){
+        boolean statement = arrayContainsAGivenNumber.check(new int[]{}, 5);
+        assertEquals(false,statement);
     }
 
 }
