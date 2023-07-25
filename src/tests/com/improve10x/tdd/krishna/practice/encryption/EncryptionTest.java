@@ -1,13 +1,23 @@
 package com.improve10x.tdd.krishna.practice.encryption;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class EncryptionTest {
+
+    Encryption encryption;
+
+    @BeforeEach
+    public void setup(){
+        encryption = new Encryption();
+    }
+
     @Test
     public void nothing(){
     }
+
 //The Karaca's Encryption Algorithm
 //Make a function that encrypts a given input with these steps:
 //Input: "apple"
@@ -26,10 +36,16 @@ public class EncryptionTest {
 //encrypt("karaca") ➞ "0c0r0kaca"
 //encrypt("burak") ➞ "k0r3baca"
 //encrypt("alpaca") ➞ "0c0pl0aca"
+
     @Test
     public void givenEmpty_returnsZero(){
-        Encryption encryption = new Encryption();
         String result = encryption.findEncryption("");
+        assertEquals("0", result);
+    }
+
+    @Test
+    public void givenZero_returnsZero(){
+        String result = encryption.findEncryption("a");
         assertEquals("0", result);
     }
 }
