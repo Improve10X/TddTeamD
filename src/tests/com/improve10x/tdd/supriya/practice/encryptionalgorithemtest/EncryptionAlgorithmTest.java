@@ -51,4 +51,11 @@ public class EncryptionAlgorithmTest {
         String replace = encryptionAlgorithm.findEncryption("b");
         assertEquals("b", replace);
     }
-}
+
+    @Test
+    public void givenAb_returnb0(){
+        String replace = encryptionAlgorithm.findEncryption("ab");
+            assertEquals("b0", replace);
+        }
+    }
+
