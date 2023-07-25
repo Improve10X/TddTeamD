@@ -40,4 +40,10 @@ public class EncryptionTest {
         assertEquals("aca", aca);
     }
 
+    @Test
+    public void givenEmpty_returnsAca(){
+        String aca = encryption.encrypt("");
+        assertEquals("aca", aca);
+    }
+
 }
