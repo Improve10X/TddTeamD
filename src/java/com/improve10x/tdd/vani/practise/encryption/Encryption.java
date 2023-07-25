@@ -5,6 +5,8 @@ public class Encryption {
         if (word != null) {
             if (word.equals("b")) {
                 return word + "aca";
+            } else if (word.equals("a")) {
+                return 0 + "aca";
             }
         }
         return "aca";

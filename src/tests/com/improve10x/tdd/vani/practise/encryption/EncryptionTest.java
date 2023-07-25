@@ -52,4 +52,10 @@ public class EncryptionTest {
         assertEquals("baca", bAca);
     }
 
+    @Test
+    public void givenA_returns0Aca(){
+        String zeroAca = encryption.encrypt("a");
+        assertEquals("0aca",zeroAca);
+    }
+
 }
