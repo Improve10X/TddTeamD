@@ -12,15 +12,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        a => 0
 //        e => 1
 //        i => 2
-//        o => 2
-//        u => 3
+//        o => 3
+//        u => 4
 //// "1lpp0"
 //        Step 3: Add "aca" to the end of the word: "1lpp0aca"
 //        Output: "1lpp0aca"
 //        Examples
 //        encrypt("banana") ➞ "0n0n0baca"
 //        encrypt("karaca") ➞ "0c0r0kaca"
-//        encrypt("burak") ➞ "k0r3baca"
+//        encrypt("burak") ➞ "k0r4baca"
 //        encrypt("alpaca") ➞ "0c0pl0aca"
 
 public class EncryptionTest {
@@ -50,6 +50,24 @@ public class EncryptionTest {
     public void givenB_returnsBAca(){
         String bAca = encryption.encrypt("b");
         assertEquals("baca", bAca);
+    }
+
+    @Test
+    public void givenA_returns0Aca(){
+        String zeroAca = encryption.encrypt("a");
+        assertEquals("0aca",zeroAca);
+    }
+
+    @Test
+    public void givenE_returns1aca(){
+        String oneAca = encryption.encrypt("e");
+        assertEquals("1aca", oneAca);
+    }
+
+    @Test
+    public void givenI_returns2Aca(){
+        String twoAca = encryption.encrypt("i");
+        assertEquals("2aca", twoAca);
     }
 
 }
