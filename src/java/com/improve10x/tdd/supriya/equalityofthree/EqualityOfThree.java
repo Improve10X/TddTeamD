@@ -5,7 +5,6 @@ public class EqualityOfThree {
         int result = 0;
         if (a == b && a == c) {
             result += 3;
-
         }
         if (a == b || b == c || a == c) {
             result += 2;
