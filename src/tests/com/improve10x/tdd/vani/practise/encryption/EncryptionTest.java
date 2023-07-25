@@ -46,4 +46,10 @@ public class EncryptionTest {
         assertEquals("aca", aca);
     }
 
+    @Test
+    public void givenB_returnsBAca(){
+        String bAca = encryption.encrypt("b");
+        assertEquals("baca", bAca);
+    }
+
 }
