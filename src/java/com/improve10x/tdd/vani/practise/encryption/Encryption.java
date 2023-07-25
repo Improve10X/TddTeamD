@@ -7,6 +7,8 @@ public class Encryption {
                 return word + "aca";
             } else if (word.equals("a")) {
                 return 0 + "aca";
+            } else if (word.equals("e")) {
+                return 1 + "aca";
             }
         }
         return "aca";
