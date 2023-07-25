@@ -36,4 +36,34 @@ public class EncryptionOneTest {
         String bValue = encryptionone.encrypt("b");
         assertEquals("baca", bValue);
     }
+
+    @Test
+    public void givena_returns0aca(){
+        String aValue = encryptionone.encrypt("a");
+        assertEquals("0aca", aValue);
+    }
+
+    @Test
+    public void givene_returns1aca(){
+        String eValue = encryptionone.encrypt("e");
+        assertEquals("1aca", eValue);
+    }
+
+    @Test
+    public void giveni_returns2aca(){
+        String iValue = encryptionone.encrypt("i");
+        assertEquals("2aca", iValue);
+    }
+
+    @Test
+    public void giveno_returns3aca(){
+        String oValue = encryptionone.encrypt("o");
+        assertEquals("3aca", oValue);
+    }
+
+    @Test
+    public void givenu_returns4aca(){
+        String uValue = encryptionone.encrypt("u");
+        assertEquals("4aca", uValue);
+    }
 }
