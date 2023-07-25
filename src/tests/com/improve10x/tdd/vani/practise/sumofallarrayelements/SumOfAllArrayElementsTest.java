@@ -14,13 +14,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SumOfAllArrayElementsTest {
     SumOfAllArrayElements sumOfAllArrayElements;
+    TestClass testClass = new TestClass();
 
     @BeforeEach
     public void setUp(){
         sumOfAllArrayElements = new SumOfAllArrayElements();
     }
     @Test
-    public void nothing(){}
+    public void nothing(){} //  {} {0} {1} {-1} {-1,0} {0,0} {0,1} {1,1} {-1,-1}
 
     @Test
     public void givenZeros_returnsZero(){
