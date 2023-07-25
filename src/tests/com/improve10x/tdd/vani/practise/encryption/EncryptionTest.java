@@ -33,27 +33,11 @@ public class EncryptionTest {
 
     @Test
     public void nothing(){}
-//    input("") - "0"
-//    input("a") - "0"
-//    input("b") - "b"
 
     @Test
-    public void givenEmpty_returnsZero(){
-        String zero = encryption.encrypt("");
-        assertEquals("0", zero);
+    public void givenNull_returnsAca(){
+        String aca = encryption.encrypt("null");
+        assertEquals("aca", aca);
     }
-
-    @Test
-    public void givenA_returnsZero(){
-        String zero = encryption.encrypt("a");
-        assertEquals("0", zero);
-    }
-
-    @Test
-    public void givenB_returnsB(){
-        String b = encryption.encrypt("b");
-        assertEquals("b", b);
-    }
-
 
 }
