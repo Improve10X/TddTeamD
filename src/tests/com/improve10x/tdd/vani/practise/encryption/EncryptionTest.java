@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.practise.encryption;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,6 +24,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        encrypt("alpaca") ➞ "0c0pl0aca"
 
 public class EncryptionTest {
+    Encryption encryption;
+
+    @BeforeEach
+    public void setUp(){
+        encryption = new Encryption();
+    }
+
     @Test
     public void nothing(){}
 //    input("") - "0"
@@ -31,9 +39,15 @@ public class EncryptionTest {
 
     @Test
     public void givenEmpty_returnsZero(){
-        Encryption encryption = new Encryption();
         String zero = encryption.encrypt("");
         assertEquals("0", zero);
     }
+
+    @Test
+    public void givenA_returnsZero(){
+        String zero = encryption.encrypt("a");
+        assertEquals("0", zero);
+    }
+
 
 }
