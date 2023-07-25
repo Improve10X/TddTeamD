@@ -108,4 +108,22 @@ public class EncryptionOneTest {
         String aeValue = encryptionone.encrypt("ae");
         assertEquals("10aca", aeValue);
     }
+
+    @Test
+    public void givenone_returns1n3aca(){
+        String oneValue = encryptionone.encrypt("one");
+        assertEquals("1n3aca", oneValue);
+    }
+
+    @Test
+    public void givenapple_returns1lpp0aca(){
+        String apple = encryptionone.encrypt("apple");
+        assertEquals("1lpp0aca", apple);
+    }
+
+    @Test
+    public void givenB_returnsbaca(){
+        String bValue = encryptionone.encrypt("B");
+        assertEquals("baca", bValue);
+    }
 }
