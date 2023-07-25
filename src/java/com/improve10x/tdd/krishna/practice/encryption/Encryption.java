@@ -16,6 +16,7 @@ public class Encryption {
 
     public String encrypt(String word) {
         if(word != null){
+            word = word.toLowerCase();
             String reverseWord = "";
             for(int i = word.length() - 1; i >= 0; i--){
                 reverseWord = reverseWord + word.charAt(i);
