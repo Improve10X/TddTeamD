@@ -45,4 +45,10 @@ public class EncryptionAlgorithmTest {
         String zero = encryptionAlgorithm.findEncryption("a");
         assertEquals("0", zero);
     }
+
+    @Test
+    public void givenB_returnB(){
+        String replace = encryptionAlgorithm.findEncryption("b");
+        assertEquals("b", replace);
+    }
 }
