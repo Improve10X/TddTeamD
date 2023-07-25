@@ -44,8 +44,14 @@ public class EncryptionTest {
     }
 
     @Test
-    public void givenZero_returnsZero(){
-        String result = encryption.findEncryption("a");
-        assertEquals("0", result);
+    public void givena_returnsZero(){
+        String aValue = encryption.findEncryption("a");
+        assertEquals("0", aValue);
+    }
+
+    @Test
+    public void givenb_returnsb(){
+        String bValue = encryption.findEncryption("b");
+        assertEquals("b", bValue);
     }
 }
