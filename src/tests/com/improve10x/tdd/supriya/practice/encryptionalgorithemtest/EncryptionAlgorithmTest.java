@@ -2,7 +2,10 @@ package com.improve10x.tdd.supriya.practice.encryptionalgorithemtest;
 
 import com.improve10x.tdd.supriya.practice.encryptionalgorithem.EncryptionAlgorithm;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 //The Karaca's Encryption Algorithm
 //        Make a function that encrypts a given input with these steps:
@@ -23,13 +26,23 @@ import org.junit.jupiter.api.Test;
 //        encrypt("burak") ➞ "k0r3baca"
 //        encrypt("alpaca") ➞ "0c0pl0aca"
 public class EncryptionAlgorithmTest {
+    EncryptionAlgorithm encryptionAlgorithm;
+    @BeforeEach
+    public void setUp() {
+        encryptionAlgorithm = new EncryptionAlgorithm();
+    }
     @Test
     public void nothing(){}
-    
+
     @Test
     public void givenEmpty_returnZero(){
-        EncryptionAlgorithm encryptionAlgorithm = new EncryptionAlgorithm();
         String zero = encryptionAlgorithm.findEncryption("");
-        Assertions.assertEquals("0", zero);
+        assertEquals("0", zero);
+    }
+
+    @Test
+    public void givenA_returnZero(){
+        String zero = encryptionAlgorithm.findEncryption("a");
+        assertEquals("0", zero);
     }
 }
