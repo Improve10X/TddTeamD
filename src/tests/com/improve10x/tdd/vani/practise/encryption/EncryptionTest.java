@@ -70,4 +70,10 @@ public class EncryptionTest {
         assertEquals("2aca", twoAca);
     }
 
+    @Test
+    public void givenO_returns3aca(){
+        String threeAca = encryption.encrypt("o");
+        assertEquals("3aca", threeAca);
+    }
+
 }
