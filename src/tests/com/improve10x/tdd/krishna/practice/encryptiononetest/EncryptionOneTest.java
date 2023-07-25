@@ -66,4 +66,46 @@ public class EncryptionOneTest {
         String uValue = encryptionone.encrypt("u");
         assertEquals("4aca", uValue);
     }
+
+    @Test
+    public void givenbc_returnscbaca(){
+        String bcValue = encryptionone.encrypt("bc");
+        assertEquals("cbaca", bcValue);
+    }
+
+    @Test
+    public void givenac_returnsc0aca(){
+        String acValue = encryptionone.encrypt("ac");
+        assertEquals("c0aca", acValue);
+    }
+
+    @Test
+    public void givened_returnsd1aca(){
+        String edValue = encryptionone.encrypt("ed");
+        assertEquals("d1aca", edValue);
+    }
+
+    @Test
+    public void givenif_returnsf2aca(){
+        String ifValue = encryptionone.encrypt("if");
+        assertEquals("f2aca", ifValue);
+    }
+
+    @Test
+    public void givenog_returnsg3aca(){
+        String ogValue = encryptionone.encrypt("og");
+        assertEquals("g3aca", ogValue);
+    }
+
+    @Test
+    public void givenuh_returnsh4aca(){
+        String uhValue = encryptionone.encrypt("uh");
+        assertEquals("h4aca", uhValue);
+    }
+
+    @Test
+    public void givenae_returns10aca(){
+        String aeValue = encryptionone.encrypt("ae");
+        assertEquals("10aca", aeValue);
+    }
 }
