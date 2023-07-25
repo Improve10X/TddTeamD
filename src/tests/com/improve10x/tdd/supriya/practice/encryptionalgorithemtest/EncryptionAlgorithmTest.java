@@ -25,7 +25,7 @@ import org.junit.jupiter.api.Test;
 public class EncryptionAlgorithmTest {
     @Test
     public void nothing(){}
-
+    
     @Test
     public void givenEmpty_returnZero(){
         EncryptionAlgorithm encryptionAlgorithm = new EncryptionAlgorithm();
