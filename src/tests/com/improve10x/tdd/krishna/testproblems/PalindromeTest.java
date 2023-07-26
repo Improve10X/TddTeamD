@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PalindromeTest {
 
@@ -40,5 +41,11 @@ public class PalindromeTest {
     public void givenZero_returnsTrue(){
         boolean result = palindrome.isPalindrome("0");
         assertEquals(true, result);
+    }
+
+    @Test
+    public void givena_returnsTrue(){
+        boolean result = palindrome.isPalindrome("a");
+        assertTrue(result);
     }
 }
