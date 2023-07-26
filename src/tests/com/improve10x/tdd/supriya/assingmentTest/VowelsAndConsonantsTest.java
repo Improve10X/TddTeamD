@@ -13,7 +13,6 @@ public class VowelsAndConsonantsTest {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String  findValue = vowelsAndConsonants.findVowelsOrConsonants("");
         Assertions.assertEquals(null, findValue);
-
     }
 
 //    @Test
