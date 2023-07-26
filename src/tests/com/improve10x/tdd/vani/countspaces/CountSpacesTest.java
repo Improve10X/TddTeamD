@@ -14,8 +14,7 @@ public class CountSpacesTest {
     }
 
     @Test
-    public void nothing() {
-    }
+    public void nothing() {}
 
     @Test
     public void givenNull_returns0() {
@@ -56,5 +55,20 @@ public class CountSpacesTest {
     public void givenName_returns0(){
         int zero = countSpaces.findSpaces("vani");
         assertEquals(0,zero);
+    }
+    @Test
+    public void givenName_returns1(){
+        int one = countSpaces.findSpaces("improve 10x");
+        assertEquals(1,one);
+    }
+    @Test
+    public void givenname_returns1(){
+        int one = countSpaces.findSpaces("Ammulu ");
+        assertEquals(1,one);
+    }
+    @Test
+    public void givenWord_returns1(){
+        int one = countSpaces.findSpaces(" Ammulu");
+        assertEquals(1,one);
     }
 }
