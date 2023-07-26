@@ -66,4 +66,9 @@ public class CountSpacesTest {
         int one = countSpaces.findSpaces("Ammulu ");
         assertEquals(1,one);
     }
+    @Test
+    public void givenWord_returns1(){
+        int one = countSpaces.findSpaces(" Ammulu");
+        assertEquals(1,one);
+    }
 }
