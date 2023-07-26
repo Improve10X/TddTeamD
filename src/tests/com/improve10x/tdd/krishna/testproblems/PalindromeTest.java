@@ -131,4 +131,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("good");
         assertFalse(result);
     }
+
+    @Test
+    public void givenRefer_returnsTrue(){
+        boolean result = palindrome.isPalindrome("Refer");
+        assertTrue(result);
+    }
 }
