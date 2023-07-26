@@ -28,24 +28,30 @@ public class PalindromeTest {
     @Test
     public void givenString_returnsTrue(){
         boolean result = palindrome.isPalindrome("");
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
     public void givenEmptyString_returnsTrue(){
         boolean result = palindrome.isPalindrome(" ");
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
     public void givenZero_returnsTrue(){
         boolean result = palindrome.isPalindrome("0");
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
     public void givena_returnsTrue(){
         boolean result = palindrome.isPalindrome("a");
+        assertTrue(result);
+    }
+
+    @Test
+    public void givenA_returnsTrue(){
+        boolean result = palindrome.isPalindrome("A");
         assertTrue(result);
     }
 }
