@@ -7,9 +7,7 @@ public class Palindrome {
             String reverseWord = "";
             for(int i = word.length() - 1; i >= 0; i--){
                 reverseWord = reverseWord + word.charAt(i);
-            }if(word.equals(reverseWord)){
-                return true;
-            }else{
+            }if(!word.equals(reverseWord)){
                 return false;
             }
         }

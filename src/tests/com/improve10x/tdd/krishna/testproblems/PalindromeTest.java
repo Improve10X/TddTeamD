@@ -77,4 +77,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("CC");
         assertTrue(result);
     }
+
+    @Test
+    public void givencd_returnsFalse(){
+        boolean result = palindrome.isPalindrome("cd");
+        assertFalse(result);
+    }
 }
