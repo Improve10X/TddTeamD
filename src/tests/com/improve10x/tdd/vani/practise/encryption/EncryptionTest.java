@@ -136,4 +136,10 @@ public class EncryptionTest {
         assertEquals("1lpp0aca", oneLpp0Aca);
     }
 
+    @Test
+    public void givenB_returnsBaca(){
+        String bAca = encryption.encrypt("B");
+        assertEquals("baca", bAca);
+    }
+
 }
