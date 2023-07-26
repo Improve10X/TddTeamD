@@ -37,4 +37,14 @@ public class CountSpacesTest {
         int zero = countSpaces.findSpaces("A");
         assertEquals(0, zero);
     }
+    @Test
+    public void givenab_returns0(){
+        int zero = countSpaces.findSpaces("ab");
+        assertEquals(0,zero);
+    }
+    @Test
+    public void givenAB_returns0(){
+        int zero = countSpaces.findSpaces("AB");
+        assertEquals(0,zero);
+    }
 }
