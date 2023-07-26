@@ -118,6 +118,12 @@ public class EncryptionAlgorithmTest {
         assertEquals("h4aca", aValue);
     }
 
+    @Test
+    public void giveae_returns10aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("ae");
+        assertEquals("10aca", aValue);
+    }
+
 
     }
 
