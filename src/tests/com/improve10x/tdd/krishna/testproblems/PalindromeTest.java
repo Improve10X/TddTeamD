@@ -119,4 +119,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("ACA");
         assertTrue(result);
     }
+
+    @Test
+    public void givenfour_returnsFalse(){
+        boolean result = palindrome.isPalindrome("four");
+        assertFalse(result);
+    }
 }
