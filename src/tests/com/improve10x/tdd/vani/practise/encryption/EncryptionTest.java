@@ -118,4 +118,10 @@ public class EncryptionTest {
         assertEquals("h4aca", h4Aca);
     }
 
+    @Test
+    public void givenAe_returns10aca(){
+        String oneZeroAca = encryption.encrypt("ae");
+        assertEquals("10aca", oneZeroAca);
+    }
+
 }
