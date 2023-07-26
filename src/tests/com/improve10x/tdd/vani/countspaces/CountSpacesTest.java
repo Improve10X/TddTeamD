@@ -52,4 +52,9 @@ public class CountSpacesTest {
         int zero = countSpaces.findSpaces("Ab");
         assertEquals(0, zero);
     }
+    @Test
+    public void givenName_returns0(){
+        int zero = countSpaces.findSpaces("vani");
+        assertEquals(0,zero);
+    }
 }
