@@ -88,4 +88,10 @@ public class EncryptionTest {
         assertEquals("cbaca", cbAca);
     }
 
+    @Test
+    public void givenAc_returnsC0Aca(){
+        String c0Aca = encryption.encrypt("ac");
+        assertEquals("c0aca", c0Aca);
+    }
+
 }
