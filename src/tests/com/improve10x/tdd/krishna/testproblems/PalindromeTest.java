@@ -125,4 +125,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("four");
         assertFalse(result);
     }
+
+    @Test
+    public void givengood_returnsFalse(){
+        boolean result = palindrome.isPalindrome("good");
+        assertFalse(result);
+    }
 }
