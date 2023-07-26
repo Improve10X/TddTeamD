@@ -12,15 +12,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        a => 0
 //        e => 1
 //        i => 2
-//        o => 2
-//        u => 3
+//        o => 3
+//        u => 4
 //// "1lpp0"
 //        Step 3: Add "aca" to the end of the word: "1lpp0aca"
 //        Output: "1lpp0aca"
 //        Examples
 //        encrypt("banana") ➞ "0n0n0baca"
 //        encrypt("karaca") ➞ "0c0r0kaca"
-//        encrypt("burak") ➞ "k0r3baca"
+//        encrypt("burak") ➞ "k0r4baca"
 //        encrypt("alpaca") ➞ "0c0pl0aca"
 
 public class EncryptionTest {
@@ -33,27 +33,53 @@ public class EncryptionTest {
 
     @Test
     public void nothing(){}
-//    input("") - "0"
-//    input("a") - "0"
-//    input("b") - "b"
 
     @Test
-    public void givenEmpty_returnsZero(){
-        String zero = encryption.encrypt("");
-        assertEquals("0", zero);
+    public void givenNull_returnsAca(){
+        String aca = encryption.encrypt("null");
+        assertEquals("aca", aca);
     }
 
     @Test
-    public void givenA_returnsZero(){
-        String zero = encryption.encrypt("a");
-        assertEquals("0", zero);
+    public void givenEmpty_returnsAca(){
+        String aca = encryption.encrypt("");
+        assertEquals("aca", aca);
     }
 
     @Test
-    public void givenB_returnsB(){
-        String b = encryption.encrypt("b");
-        assertEquals("b", b);
+    public void givenB_returnsBAca(){
+        String bAca = encryption.encrypt("b");
+        assertEquals("baca", bAca);
     }
 
+    @Test
+    public void givenA_returns0Aca(){
+        String zeroAca = encryption.encrypt("a");
+        assertEquals("0aca",zeroAca);
+    }
+
+    @Test
+    public void givenE_returns1aca(){
+        String oneAca = encryption.encrypt("e");
+        assertEquals("1aca", oneAca);
+    }
+
+    @Test
+    public void givenI_returns2Aca(){
+        String twoAca = encryption.encrypt("i");
+        assertEquals("2aca", twoAca);
+    }
+
+    @Test
+    public void givenO_returns3aca(){
+        String threeAca = encryption.encrypt("o");
+        assertEquals("3aca", threeAca);
+    }
+
+    @Test
+    public void givenU_returns4aca(){
+        String fourAca = encryption.encrypt("u");
+        assertEquals("4aca", fourAca);
+    }
 
 }
