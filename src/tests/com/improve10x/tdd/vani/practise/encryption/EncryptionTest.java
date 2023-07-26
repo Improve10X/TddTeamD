@@ -100,4 +100,10 @@ public class EncryptionTest {
         assertEquals("d1aca", d1Aca);
     }
 
+    @Test
+    public void givenIf_returnsF2aca(){
+        String f2Aca = encryption.encrypt("if");
+        assertEquals("f2aca", f2Aca);
+    }
+
 }
