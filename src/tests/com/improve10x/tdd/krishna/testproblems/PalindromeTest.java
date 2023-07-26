@@ -101,4 +101,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("abc");
         assertFalse(result);
     }
+
+    @Test
+    public void givencac_returnsTrue(){
+        boolean result = palindrome.isPalindrome("cac");
+        assertTrue(result);
+    }
 }
