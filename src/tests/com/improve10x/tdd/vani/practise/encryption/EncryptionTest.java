@@ -94,4 +94,10 @@ public class EncryptionTest {
         assertEquals("c0aca", c0Aca);
     }
 
+    @Test
+    public void givenEd_returnsD1aca(){
+        String d1Aca = encryption.encrypt("ed");
+        assertEquals("d1aca", d1Aca);
+    }
+
 }
