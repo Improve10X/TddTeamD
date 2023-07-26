@@ -107,9 +107,15 @@ public class EncryptionTest {
     }
 
     @Test
-    public void givenOg_returnsg3aca(){
+    public void givenOg_returnsG3aca(){
         String g3Aca = encryption.encrypt("og");
         assertEquals("g3aca", g3Aca);
+    }
+
+    @Test
+    public void givenUh_returnsH4aca(){
+        String h4Aca = encryption.encrypt("uh");
+        assertEquals("h4aca", h4Aca);
     }
 
 }
