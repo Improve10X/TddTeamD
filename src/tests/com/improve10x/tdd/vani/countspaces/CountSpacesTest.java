@@ -32,4 +32,9 @@ public class CountSpacesTest {
         int zero = countSpaces.findSpaces("a");
         assertEquals(0, zero);
     }
+    @Test
+    public void givenA_returns0(){
+        int zero = countSpaces.findSpaces("A");
+        assertEquals(0, zero);
+    }
 }
