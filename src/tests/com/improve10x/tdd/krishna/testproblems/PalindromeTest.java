@@ -3,8 +3,7 @@ package com.improve10x.tdd.krishna.testproblems;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PalindromeTest {
 
@@ -59,5 +58,11 @@ public class PalindromeTest {
     public void givenD_returnsTrue(){
         boolean result = palindrome.isPalindrome("D");
         assertTrue(result);
+    }
+
+    @Test
+    public void givenab_returnsFalse(){
+        boolean result = palindrome.isPalindrome("ab");
+        assertFalse(result);
     }
 }
