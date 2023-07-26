@@ -22,7 +22,7 @@ public class PalindromeTest {
     @Test
     public void givenNull_returnsTrue(){
         boolean result = palindrome.isPalindrome(null);
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -52,6 +52,12 @@ public class PalindromeTest {
     @Test
     public void givenA_returnsTrue(){
         boolean result = palindrome.isPalindrome("A");
+        assertTrue(result);
+    }
+
+    @Test
+    public void givenD_returnsTrue(){
+        boolean result = palindrome.isPalindrome("D");
         assertTrue(result);
     }
 }
