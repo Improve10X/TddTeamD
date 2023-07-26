@@ -126,4 +126,22 @@ public class EncryptionOneTest {
         String bValue = encryptionone.encrypt("B");
         assertEquals("baca", bValue);
     }
+
+    @Test
+    public void givenAa_returns00aca(){
+        String aaValue = encryptionone.encrypt("Aa");
+        assertEquals("00aca", aaValue);
+    }
+
+    @Test
+    public void integrationTest(){
+        String banana = encryptionone.encrypt("banana");
+        assertEquals("0n0n0baca", banana);
+        String karaca = encryptionone.encrypt("karaca");
+        assertEquals("0c0r0kaca", karaca);
+        String burak = encryptionone.encrypt("burak");
+        assertEquals("k0r4baca", burak);
+        String alpaca = encryptionone.encrypt("alpaca");
+        assertEquals("0c0pl0aca", alpaca);
+    }
 }
