@@ -135,5 +135,11 @@ public class EncryptionAlgorithmTest {
         String aValue = encryptionAlgorithm.findEncrypt("apple");
         assertEquals("1lpp0aca", aValue);
     }
+
+    @Test
+    public void giveB_returnsbaca(){
+        String aValue = encryptionAlgorithm.findEncrypt("B");
+        assertEquals("baca", aValue);
+    }
     }
 
