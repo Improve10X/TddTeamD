@@ -123,7 +123,5 @@ public class EncryptionAlgorithmTest {
         String aValue = encryptionAlgorithm.findEncrypt("ae");
         assertEquals("10aca", aValue);
     }
-
-
     }
 
