@@ -95,4 +95,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("11");
         assertTrue(result);
     }
+
+    @Test
+    public void givenabc_returnsFalse(){
+        boolean result = palindrome.isPalindrome("abc");
+        assertFalse(result);
+    }
 }
