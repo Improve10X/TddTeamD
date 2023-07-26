@@ -113,4 +113,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("did");
         assertTrue(result);
     }
+
+    @Test
+    public void givenACA_returnsTrue(){
+        boolean result = palindrome.isPalindrome("ACA");
+        assertTrue(result);
+    }
 }
