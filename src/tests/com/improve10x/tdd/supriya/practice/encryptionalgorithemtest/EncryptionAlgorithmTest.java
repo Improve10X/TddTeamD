@@ -69,5 +69,55 @@ public class EncryptionAlgorithmTest {
         String aValue = encryptionAlgorithm.findEncrypt("i");
         assertEquals("2aca", aValue);
     }
+
+    @Test
+    public void giveno_returns3aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("o");
+        assertEquals("3aca", aValue);
+    }
+
+    @Test
+    public void givenu_returns4aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("u");
+        assertEquals("4aca", aValue);
+    }
+
+    @Test
+    public void givebc_returnscbaca(){
+        String aValue = encryptionAlgorithm.findEncrypt("bc");
+        assertEquals("cbaca", aValue);
+    }
+
+    @Test
+    public void giveac_returnc0aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("ac");
+        assertEquals("c0aca", aValue);
+    }
+
+    @Test
+    public void giveed_returnsd1aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("ed");
+        assertEquals("d1aca", aValue);
+    }
+
+    @Test
+    public void giveif_returnsf2aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("if");
+        assertEquals("f2aca", aValue);
+    }
+
+    @Test
+    public void giveog_returnsg3aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("og");
+        assertEquals("g3aca", aValue);
+    }
+
+    @Test
+    public void giveuh_returnsh4aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("uh");
+        assertEquals("h4aca", aValue);
+    }
+
+
     }
 
