@@ -35,4 +35,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome(" ");
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenZero_returnsTrue(){
+        boolean result = palindrome.isPalindrome("0");
+        assertEquals(true, result);
+    }
 }
