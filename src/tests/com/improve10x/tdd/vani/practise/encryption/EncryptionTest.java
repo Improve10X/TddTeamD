@@ -148,4 +148,15 @@ public class EncryptionTest {
         assertEquals("00aca", zeroZeroAca);
     }
 
+    @Test
+    public void integrationTest(){
+        String banana = encryption.encrypt("banana");
+        assertEquals("0n0n0baca",banana);
+        String karaca = encryption.encrypt("karaca");
+        assertEquals("0c0r0kaca",karaca);
+        String burak = encryption.encrypt("burak");
+        assertEquals("k0r4baca",burak);
+        String alpaca = encryption.encrypt("alpaca");
+        assertEquals("0c0pl0aca",alpaca);
+    }
 }
