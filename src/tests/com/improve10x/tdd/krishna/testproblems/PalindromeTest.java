@@ -16,4 +16,11 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome(null);
         assertEquals(true, result);
     }
+
+    @Test
+    public void givenString_returnsTrue(){
+        Palindrome palindrome = new Palindrome();
+        boolean result = palindrome.isPalindrome("");
+        assertEquals(true, result);
+    }
 }
