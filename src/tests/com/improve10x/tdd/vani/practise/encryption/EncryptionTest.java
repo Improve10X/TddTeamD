@@ -130,4 +130,10 @@ public class EncryptionTest {
         assertEquals("1n3aca", oneNThreeAca);
     }
 
+    @Test
+    public void givenApple_returns1lpp0aca(){
+        String oneLpp0Aca = encryption.encrypt("apple");
+        assertEquals("1lpp0aca", oneLpp0Aca);
+    }
+
 }
