@@ -22,11 +22,11 @@ public class CountSpacesTest {
         int zero = countSpaces.findSpaces(null);
         assertEquals(0, zero);
     }
-//    @Test
-//    public void givenEmpty_returns0(){
-//        int zero = countSpaces.findSpaces("");
-//        assertEquals(0, zero);
-//    }
+    @Test
+    public void givenEmpty_returns0(){
+        int zero = countSpaces.findSpaces("");
+        assertEquals(0, zero);
+    }
 //    @Test
 //    public void givenName_returns0(){
 //        int zero = countSpaces.findSpaces("vani");
