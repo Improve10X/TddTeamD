@@ -35,27 +35,39 @@ public class EncryptionAlgorithmTest {
     public void nothing(){}
 
     @Test
-    public void givenEmpty_returnZero(){
-        String zero = encryptionAlgorithm.findEncryption("");
-        assertEquals("0", zero);
+    public void givenNull_returnsaca(){
+        String  value = encryptionAlgorithm.findEncrypt(null);
+        assertEquals("aca", value);
     }
 
     @Test
-    public void givenA_returnZero(){
-        String zero = encryptionAlgorithm.findEncryption("a");
-        assertEquals("0", zero);
+    public void givenEmpty_returnsaca(){
+        String value = encryptionAlgorithm.findEncrypt("");
+        assertEquals("aca", value);
     }
 
     @Test
-    public void givenB_returnB(){
-        String replace = encryptionAlgorithm.findEncryption("b");
-        assertEquals("b", replace);
+    public void givenb_returnsbaca(){
+        String bValue = encryptionAlgorithm.findEncrypt("b");
+        assertEquals("baca", bValue);
     }
 
     @Test
-    public void givenAb_returnb0(){
-        String replace = encryptionAlgorithm.findEncryption("ab");
-            assertEquals("b0", replace);
-        }
+    public void givena_returns0aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("a");
+        assertEquals("0aca", aValue);
+    }
+
+    @Test
+    public void givene_returns1aca(){
+        String eValue = encryptionAlgorithm.findEncrypt("e");
+        assertEquals("1aca", eValue);
+    }
+
+    @Test
+    public void giveni_returns2aca(){
+        String aValue = encryptionAlgorithm.findEncrypt("i");
+        assertEquals("2aca", aValue);
+    }
     }
 

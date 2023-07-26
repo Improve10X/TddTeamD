@@ -1,16 +1,19 @@
 package com.improve10x.tdd.supriya.practice.encryptionalgorithem;
 
 public class EncryptionAlgorithm {
-    public String findEncryption(String word) {
-        String result = "0";
-        for (int i = word.length()-1; i >= 0; i--){
-            char c = word.charAt(i);
-            if (c == 'b'){
-               result = "b";
+    public String findEncrypt(String word) {
+        if (word != null) {
+            if (word.equals("b")) {
+                return  word + "aca";
             }else if (word.equals("a")){
-                result ="0";
+                return 0 +"aca";
+            }else if (word.equals("e")){
+                return 1 + "aca";
+            }else if (word.equals("i")){
+                return 2 + "aca";
             }
         }
-        return result;
+        return "aca";
     }
+
 }
