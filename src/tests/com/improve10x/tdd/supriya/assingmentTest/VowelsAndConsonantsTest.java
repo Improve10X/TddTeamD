@@ -15,6 +15,13 @@ public class VowelsAndConsonantsTest {
         Assertions.assertEquals(null, findValue);
     }
 
+    @Test
+    public void givenNull_returnNull(){
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
+        String  findValue = vowelsAndConsonants.findVowelsOrConsonants(null);
+        Assertions.assertEquals(null, findValue);
+    }
+
 //    @Test
 //    public void givena_returnsvowels(){
 //        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
