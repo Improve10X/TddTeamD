@@ -36,7 +36,7 @@ public class EncryptionTest {
 
     @Test
     public void givenNull_returnsAca(){
-        String aca = encryption.encrypt("null");
+        String aca = encryption.encrypt(null);
         assertEquals("aca", aca);
     }
 
@@ -80,6 +80,12 @@ public class EncryptionTest {
     public void givenU_returns4aca(){
         String fourAca = encryption.encrypt("u");
         assertEquals("4aca", fourAca);
+    }
+
+    @Test
+    public void givenBc_returnsCbAca(){
+        String cbAca = encryption.encrypt("bc");
+        assertEquals("cbaca", cbAca);
     }
 
 }
