@@ -83,4 +83,10 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("cd");
         assertFalse(result);
     }
+
+    @Test
+    public void given12_returnsFalse(){
+        boolean result = palindrome.isPalindrome("12");
+        assertFalse(result);
+    }
 }
