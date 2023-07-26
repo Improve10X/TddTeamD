@@ -141,5 +141,20 @@ public class EncryptionAlgorithmTest {
         String aValue = encryptionAlgorithm.findEncrypt("B");
         assertEquals("baca", aValue);
     }
+//    encrypt("banana") ➞ "0n0n0baca"
+//        encrypt("karaca") ➞ "0c0r0kaca"
+//        encrypt("burak") ➞ "k0r3baca"
+//        encrypt("alpaca") ➞ "0c0pl0aca"
+    @Test
+    public void integrations_integrations(){
+        String banana = encryptionAlgorithm.findEncrypt("banana");
+        assertEquals("0n0n0baca", banana);
+        String karaca = encryptionAlgorithm.findEncrypt("karaca");
+        assertEquals("0c0r0kaca", karaca);
+        String burak = encryptionAlgorithm.findEncrypt("burak");
+        assertEquals("k0r4baca", burak);
+        String alpaca = encryptionAlgorithm.findEncrypt("alpaca");
+        assertEquals("0c0pl0aca", alpaca);
+    }
     }
 
