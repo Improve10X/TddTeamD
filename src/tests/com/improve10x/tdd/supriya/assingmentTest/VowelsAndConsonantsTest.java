@@ -8,14 +8,14 @@ import org.junit.jupiter.api.Test;
 public class VowelsAndConsonantsTest {
     @Test
     public void nothing(){}
-@Disabled
+
     @Test
     public void givenEmpty_returnNull(){
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String  findValue = vowelsAndConsonants.findVowelsOrConsonants("");
         Assertions.assertEquals(null, findValue);
     }
-@Disabled
+
     @Test
     public void givenNull_returnNull(){
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
@@ -74,6 +74,13 @@ public class VowelsAndConsonantsTest {
     public void givenz_returnsConsonant(){
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findz = vowelsAndConsonants.findVowelsOrConsonants("z");
+        Assertions.assertEquals("consonant", findz);
+    }
+
+    @Test
+    public void givenx_returnsConsonant(){
+        VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
+        String findz = vowelsAndConsonants.findVowelsOrConsonants("x");
         Assertions.assertEquals("consonant", findz);
     }
 }
