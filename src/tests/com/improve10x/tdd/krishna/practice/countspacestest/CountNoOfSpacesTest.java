@@ -2,6 +2,7 @@ package com.improve10x.tdd.krishna.practice.countspacestest;
 
 import com.improve10x.tdd.krishna.practice.countnoofspcaces.CountNoOfSpaces;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -35,5 +36,18 @@ public class CountNoOfSpacesTest {
     public void givenEmpty_returns1(){
         int noOfSpaces = countNoOfSpaces.count(" ");
         assertEquals(1, noOfSpaces);
+    }
+
+    @Test
+    public void givena_returns0(){
+        int noOfSpaces = countNoOfSpaces.count("a");
+        assertEquals(0, noOfSpaces);
+    }
+
+    @Disabled
+    @Test
+    public void givenB_returns0(){
+        int noOfSpaces = countNoOfSpaces.count("B");
+        assertEquals(0, noOfSpaces);
     }
 }
