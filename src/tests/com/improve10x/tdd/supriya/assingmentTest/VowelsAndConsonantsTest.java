@@ -7,78 +7,81 @@ import org.junit.jupiter.api.Test;
 
 public class VowelsAndConsonantsTest {
     @Test
-    public void nothing(){}
+    public void nothing() {
+    }
 
     @Test
-    public void givenEmpty_returnNull(){
+    public void givenEmpty_returnNull() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String  findValue = vowelsAndConsonants.findVowelsOrConsonants("");
+        String findValue = vowelsAndConsonants.findVowelsOrConsonants("");
         Assertions.assertEquals(null, findValue);
     }
 
     @Test
-    public void givenNull_returnNull(){
+    public void givenNull_returnNull() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String  findValue = vowelsAndConsonants.findVowelsOrConsonants(null);
+        String findValue = vowelsAndConsonants.findVowelsOrConsonants(null);
         Assertions.assertEquals(null, findValue);
     }
 
     @Test
-    public void givena_returnsvowels(){
+    public void givena_returnsvowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String  findValue = vowelsAndConsonants.findVowelsOrConsonants("a");
+        String findValue = vowelsAndConsonants.findVowelsOrConsonants("a");
         Assertions.assertEquals("vowel", findValue);
     }
+
     @Test
-    public void givenb_returnsConsonant(){
+    public void givenb_returnsConsonant() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findb = vowelsAndConsonants.findVowelsOrConsonants("b");
-        Assertions.assertEquals("consonant",findb);
+        Assertions.assertEquals("consonant", findb);
     }
 
     @Test
-    public void givene_returnsVowels(){
+    public void givene_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String finde = vowelsAndConsonants.findVowelsOrConsonants("e");
         Assertions.assertEquals("vowel", finde);
     }
 
     @Test
-    public void giveni_returnsVowels(){
+    public void giveni_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String finde = vowelsAndConsonants.findVowelsOrConsonants("i");
         Assertions.assertEquals("vowel", finde);
     }
 
     @Test
-    public void given0_returnsVowels(){
+    public void given0_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String finde = vowelsAndConsonants.findVowelsOrConsonants("o");
         Assertions.assertEquals("vowel", finde);
     }
 
     @Test
-    public void givenu_returnsVowels(){
+    public void givenu_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String finde = vowelsAndConsonants.findVowelsOrConsonants("u");
         Assertions.assertEquals("vowel", finde);
     }
+
     @Test
-    public void givend_returnsConsonant(){
+    public void givend_returnsConsonant() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findd = vowelsAndConsonants.findVowelsOrConsonants("d");
         Assertions.assertEquals("consonant", findd);
     }
 
     @Test
-    public void givenz_returnsConsonant(){
+    public void givenz_returnsConsonant() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findz = vowelsAndConsonants.findVowelsOrConsonants("z");
         Assertions.assertEquals("consonant", findz);
     }
 
     @Test
-    public void givenx_returnsConsonant(){
+    public void givenx_returnsConsonant() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findz = vowelsAndConsonants.findVowelsOrConsonants("x");
         Assertions.assertEquals("consonant", findz);
