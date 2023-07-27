@@ -5,6 +5,8 @@ public class VowelOrConsonant {
         if(text != null){
             if(text.equals("b")){
                 return "consonant";
+            }else if(text.equals("a")){
+                return "vowel";
             }
         }
         return text;
