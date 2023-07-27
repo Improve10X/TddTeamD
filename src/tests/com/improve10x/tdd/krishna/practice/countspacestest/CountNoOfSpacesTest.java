@@ -90,4 +90,10 @@ public class CountNoOfSpacesTest {
         int noOfSpaces = countNoOfSpaces.count("ab  cd ");
         assertEquals(3, noOfSpaces);
     }
+
+    @Test
+    public void givenThink3Spaces123ThreeSpacesHi_returns6(){
+        int noOfSpaces = countNoOfSpaces.count("Think   123   Hi");
+        assertEquals(6, noOfSpaces);
+    }
 }
