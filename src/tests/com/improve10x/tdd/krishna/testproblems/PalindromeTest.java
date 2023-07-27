@@ -137,4 +137,15 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("Refer");
         assertTrue(result);
     }
+    @Test
+    public void given12kk_returnsFalse() {
+        boolean result = palindrome.isPalindrome("12kk");
+        assertFalse(result);
+    }
+
+    @Test
+    public void given1G4k_returnsFalse(){
+        boolean result = palindrome.isPalindrome("1G4k");
+        assertFalse(result);
+    }
 }
