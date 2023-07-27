@@ -12,9 +12,16 @@ public class CountNoOfSpacesTest {
     }
 
     @Test
-    public void givenNull_returns(){
+    public void givenNull_returns0(){
         CountNoOfSpaces countNoOfSpaces = new CountNoOfSpaces();
         int noOfSpaces = countNoOfSpaces.count(null);
+        assertEquals(0, noOfSpaces);
+    }
+
+    @Test
+    public void givenString_returns(){
+        CountNoOfSpaces countNoOfSpaces = new CountNoOfSpaces();
+        int noOfSpaces = countNoOfSpaces.count("");
         assertEquals(0, noOfSpaces);
     }
 }
