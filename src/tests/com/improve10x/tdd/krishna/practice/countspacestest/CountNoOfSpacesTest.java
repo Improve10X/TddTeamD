@@ -55,4 +55,10 @@ public class CountNoOfSpacesTest {
         int noOfSpaces = countNoOfSpaces.count("aa");
         assertEquals(0, noOfSpaces);
     }
+
+    @Test
+    public void givenaB_returns0(){
+        int noOfSpaces = countNoOfSpaces.count("aB");
+        assertEquals(0, noOfSpaces);
+    }
 }
