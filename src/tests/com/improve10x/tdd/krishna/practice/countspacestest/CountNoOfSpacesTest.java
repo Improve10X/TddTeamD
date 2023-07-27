@@ -44,7 +44,6 @@ public class CountNoOfSpacesTest {
         assertEquals(0, noOfSpaces);
     }
 
-    @Disabled
     @Test
     public void givenB_returns0(){
         int noOfSpaces = countNoOfSpaces.count("B");
