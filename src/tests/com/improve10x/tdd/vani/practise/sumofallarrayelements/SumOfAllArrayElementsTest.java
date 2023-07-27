@@ -14,7 +14,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SumOfAllArrayElementsTest {
     SumOfAllArrayElements sumOfAllArrayElements;
-    TestClass testClass = new TestClass();
 
     @BeforeEach
     public void setUp(){

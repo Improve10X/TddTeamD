@@ -130,4 +130,33 @@ public class EncryptionTest {
         assertEquals("1n3aca", oneNThreeAca);
     }
 
+    @Test
+    public void givenApple_returns1lpp0aca(){
+        String oneLpp0Aca = encryption.encrypt("apple");
+        assertEquals("1lpp0aca", oneLpp0Aca);
+    }
+
+    @Test
+    public void givenB_returnsBaca(){
+        String bAca = encryption.encrypt("B");
+        assertEquals("baca", bAca);
+    }
+
+    @Test
+    public void givenAa_returns00aca(){
+        String zeroZeroAca = encryption.encrypt("Aa");
+        assertEquals("00aca", zeroZeroAca);
+    }
+
+    @Test
+    public void integrationTest(){
+        String banana = encryption.encrypt("banana");
+        assertEquals("0n0n0baca",banana);
+        String karaca = encryption.encrypt("karaca");
+        assertEquals("0c0r0kaca",karaca);
+        String burak = encryption.encrypt("burak");
+        assertEquals("k0r4baca",burak);
+        String alpaca = encryption.encrypt("alpaca");
+        assertEquals("0c0pl0aca",alpaca);
+    }
 }

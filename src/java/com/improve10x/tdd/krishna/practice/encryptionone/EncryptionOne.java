@@ -13,11 +13,7 @@ public class EncryptionOne {
             reversed = reversed.replace('i', '2');
             reversed = reversed.replace('o', '3');
             reversed = reversed.replace('u', '4');
-            if (word.equals("b")) {
-                return word + "aca";
-            }else {
-                return reversed + "aca";
-            }
+            return reversed + "aca";
         }
         return  "aca";
     }
