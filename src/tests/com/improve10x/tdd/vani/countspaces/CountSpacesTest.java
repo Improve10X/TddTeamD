@@ -71,4 +71,14 @@ public class CountSpacesTest {
         int one = countSpaces.findSpaces(" Ammulu");
         assertEquals(1,one);
     }
+    @Test
+    public void givenWord_returns2(){
+        int two = countSpaces.findSpaces("mummy  ");
+        assertEquals(2,two);
+    }
+//    @Test
+//    public void givenNames_returns2(){
+//        int two = countSpaces.findSpaces("  mummy");
+//        assertEquals(2,two);
+//    }
 }
