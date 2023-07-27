@@ -17,4 +17,11 @@ public class VowelOrConsonantTest {
         String result = vowelOrConsonant.isVowelOrConsonant(null);
         assertEquals(null, result);
     }
+
+    @Test
+    public void givenString_returnsString(){
+        VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
+        String result = vowelOrConsonant.isVowelOrConsonant("");
+        assertEquals("", result);
+    }
 }
