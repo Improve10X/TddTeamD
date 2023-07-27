@@ -8,7 +8,9 @@ public class VowelOrConsonant {
             return "vowel";
         } else if (text.equals("e")) {
             return "vowel";
-        } else {
+        } else if (text.equals("i")) {
+            return "vowel";
+        }else {
             return "consonant";
         }
     }
