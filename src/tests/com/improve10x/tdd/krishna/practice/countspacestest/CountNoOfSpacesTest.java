@@ -84,4 +84,10 @@ public class CountNoOfSpacesTest {
         int noOfSpaces = countNoOfSpaces.count("  ");
         assertEquals(2, noOfSpaces);
     }
+
+    @Test
+    public void givenabDoubleSpacecdSigleSpace_returns3(){
+        int noOfSpaces = countNoOfSpaces.count("ab  cd ");
+        assertEquals(3, noOfSpaces);
+    }
 }
