@@ -71,4 +71,10 @@ public class VowelOrConsonantTest {
         String result = vowelOrConsonant.isVowelOrConsonant("o");
         assertEquals( "vowel", result);
     }
+
+    @Test
+    public void givenu_returnsvowel(){
+        String result = vowelOrConsonant.isVowelOrConsonant("u");
+        assertEquals( "vowel", result);
+    }
 }
