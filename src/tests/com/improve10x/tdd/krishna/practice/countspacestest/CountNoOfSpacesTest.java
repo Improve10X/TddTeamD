@@ -96,4 +96,10 @@ public class CountNoOfSpacesTest {
         int noOfSpaces = countNoOfSpaces.count("Think   123   Hi");
         assertEquals(6, noOfSpaces);
     }
+
+    @Test
+    public void given10Spaces_returns10(){
+        int noOfSpaces = countNoOfSpaces.count("          ");
+        assertEquals(10, noOfSpaces);
+    }
 }
