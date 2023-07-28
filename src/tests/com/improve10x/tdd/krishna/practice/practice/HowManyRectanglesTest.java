@@ -47,4 +47,16 @@ public class HowManyRectanglesTest {
         int noOfRectangle = howManyRectangles.findNoOfRectangles(4);
         assertEquals(100, noOfRectangle);
     }
+
+    @Test
+    public void givenFive_returns225(){
+        int noOfRectangle = howManyRectangles.findNoOfRectangles(5);
+        assertEquals(225, noOfRectangle);
+    }
+
+    @Test
+    public void givenTen_returns3025(){
+        int noOfRectangle = howManyRectangles.findNoOfRectangles(10);
+        assertEquals(3025, noOfRectangle);
+    }
 }
