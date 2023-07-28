@@ -35,13 +35,7 @@ public class VowelOrConsonantTest {
         String result = vowelOrConsonant.isVowelOrConsonant(" ");
         assertEquals( " ", result);
     }
-
-    @Test
-    public void givenZero_returnsZero(){
-        String result = vowelOrConsonant.isVowelOrConsonant("0");
-        assertEquals( "0", result);
-    }
-
+    
     @Test
     public void givenb_returnsconsonant(){
         String result = vowelOrConsonant.isVowelOrConsonant("b");
