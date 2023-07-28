@@ -98,4 +98,14 @@ public class DNATomRNATest {
         String converted = dnaTomRNA.convertTomRNA("ATGC");
         assertEquals("UACG", converted);
     }
+
+    @Test
+    public void integrationTest(){
+        String converted = dnaTomRNA.convertTomRNA("ATTAGCGCGATATACGCGTAC");
+        assertEquals("UAAUCGCGCUAUAUGCGCAUG", converted);
+        String result = dnaTomRNA.convertTomRNA("CGATATA");
+        assertEquals("GCUAUAU", result);
+        String result1 = dnaTomRNA.convertTomRNA("GTCATACGACGTA");
+        assertEquals("CAGUAUGCUGCAU", result1);
+    }
 }
