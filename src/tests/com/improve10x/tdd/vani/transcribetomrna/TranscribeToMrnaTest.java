@@ -29,4 +29,14 @@ public class TranscribeToMrnaTest {
         String empty = transcribeToMrna.dnaToRna("");
         assertEquals("",empty);
     }
+    @Test
+    public void givenA_returnsU(){
+        String u = transcribeToMrna.dnaToRna("A");
+        assertEquals("U", u);
+    }
+//    @Test
+//    public void givenT_returnsA(){
+//        String a = transcribeToMrna.dnaToRna("T");
+//        assertEquals("A", a);
+//    }
 }
