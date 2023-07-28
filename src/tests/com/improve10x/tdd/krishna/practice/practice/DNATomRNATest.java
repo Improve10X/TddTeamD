@@ -9,4 +9,10 @@ public class DNATomRNATest {
     @Test
     public void nothing(){
     }
+    @Test
+    public void givennull_returnsEmpty(){
+        DNATomRNA dnaTomRNA = new DNATomRNA();
+        String converted = dnaTomRNA.convertTomRNA(null);
+        assertEquals("", converted);
+    }
 }
