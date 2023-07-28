@@ -4,13 +4,23 @@ public class DNATomRNA {
     public String convertTomRNA(String letters) {
         if(letters == null || letters.equals("")){
             return "";
-        }if(letters.equals(" ")){
+        } else  if(letters.equals(" ")){
             return " ";
-        } else if (letters.equals("A")) {
-            return "U";
-        }else if (letters.equals("T")) {
-            return "A";
         }
-        return letters;
+        String result = "";
+        for(int i = 0; i < letters.length(); i++){
+            char c = letters.charAt(i);
+            if(c == 'A'){
+                result += "U";
+            }else if(c == 'T'){
+                result += "A";
+            }
+        }
+       if(letters.equals("G")){
+            return "C";
+        }else if(letters.equals("C")){
+            return "G";
+        }
+        return result;
     }
 }

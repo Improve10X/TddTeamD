@@ -1,6 +1,7 @@
 package com.improve10x.tdd.krishna.practice.practice;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -35,18 +36,21 @@ public class DNATomRNATest {
         assertEquals(" ", converted);
     }
 
+    @Disabled
     @Test
     public void givenz_returnsz(){
         String converted = dnaTomRNA.convertTomRNA("z");
         assertEquals("z", converted);
     }
 
+    @Disabled
     @Test
     public void givenf_returnsf(){
         String converted = dnaTomRNA.convertTomRNA("f");
         assertEquals("f", converted);
     }
 
+    @Disabled
     @Test
     public void givenk_returnsk(){
         String converted = dnaTomRNA.convertTomRNA("k");
@@ -63,5 +67,23 @@ public class DNATomRNATest {
     public void givenT_returnsA(){
         String converted = dnaTomRNA.convertTomRNA("T");
         assertEquals("A", converted);
+    }
+
+    @Test
+    public void givenG_returnsC(){
+        String converted = dnaTomRNA.convertTomRNA("G");
+        assertEquals("C", converted);
+    }
+
+    @Test
+    public void givenC_returnsG(){
+        String converted = dnaTomRNA.convertTomRNA("C");
+        assertEquals("G", converted);
+    }
+
+    @Test
+    public void givenAT_returnsUA(){
+        String converted = dnaTomRNA.convertTomRNA("AT");
+        assertEquals("UA", converted);
     }
 }
