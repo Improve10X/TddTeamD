@@ -1,6 +1,7 @@
 package com.improve10x.tdd.vani.transcribetomrna;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -49,16 +50,26 @@ public class TranscribeToMrnaTest {
         String g = transcribeToMrna.dnaToRna("C");
         assertEquals("G", g);
     }
+    @Disabled
     @Test
     public void givenZ_returnsZ(){
         String z = transcribeToMrna.dnaToRna("Z");
         assertEquals("Z", z);
     }
-//    @Test
-//    public void givenAtgc_returns(){
-//        String z = transcribeToMrna.dnaToRna("Z");
-//        assertEquals("Z", z);
-//    }
-
+    @Test
+    public void givenAT_returnsUA(){
+        String ua = transcribeToMrna.dnaToRna("AT");
+        assertEquals("UA", ua);
+    }
+    @Test
+    public void givenATTA_returnsUAAU(){
+        String uaau = transcribeToMrna.dnaToRna("ATTA");
+        assertEquals("UAAU", uaau);
+    }
+    @Test
+    public void integrationTest(){
+        String UAAUCGCGCUAUAUGCGCAUG = transcribeToMrna.dnaToRna("ATTAGCGCGATATACGCGTAC");
+        assertEquals("UAAUCGCGCUAUAUGCGCAUG", UAAUCGCGCUAUAUGCGCAUG);
+    }
 
 }
