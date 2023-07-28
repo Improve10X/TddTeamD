@@ -76,9 +76,24 @@ public class CountSpacesTest {
         int two = countSpaces.findSpaces("mummy  ");
         assertEquals(2,two);
     }
-//    @Test
-//    public void givenNames_returns2(){
-//        int two = countSpaces.findSpaces("  mummy");
-//        assertEquals(2,two);
-//    }
+    @Test
+    public void givenNames_returns2(){
+        int two = countSpaces.findSpaces("  mummy");
+        assertEquals(2,two);
+    }
+    @Test
+    public void givenFamily_returns2(){
+        int two = countSpaces.findSpaces("mom daughter dad");
+        assertEquals(2,two);
+    }
+    @Test
+    public void givenSentence_returns3(){
+        int three = countSpaces.findSpaces("my mom is cooking");
+        assertEquals(3,three);
+    }
+    @Test
+    public void givenLine_returns3(){
+        int three = countSpaces.findSpaces("this is my laptop");
+        assertEquals(3,three);
+    }
 }

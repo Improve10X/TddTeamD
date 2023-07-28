@@ -101,4 +101,51 @@ public class PalindromeTest {
         boolean result = palindrome.isPalindrome("abc");
         assertFalse(result);
     }
+
+    @Test
+    public void givencac_returnsTrue(){
+        boolean result = palindrome.isPalindrome("cac");
+        assertTrue(result);
+    }
+
+    @Test
+    public void givendid_returnsTrue(){
+        boolean result = palindrome.isPalindrome("did");
+        assertTrue(result);
+    }
+
+    @Test
+    public void givenACA_returnsTrue(){
+        boolean result = palindrome.isPalindrome("ACA");
+        assertTrue(result);
+    }
+
+    @Test
+    public void givenfour_returnsFalse(){
+        boolean result = palindrome.isPalindrome("four");
+        assertFalse(result);
+    }
+
+    @Test
+    public void givengood_returnsFalse(){
+        boolean result = palindrome.isPalindrome("good");
+        assertFalse(result);
+    }
+
+    @Test
+    public void givenRefer_returnsTrue(){
+        boolean result = palindrome.isPalindrome("Refer");
+        assertTrue(result);
+    }
+    @Test
+    public void given12kk_returnsFalse() {
+        boolean result = palindrome.isPalindrome("12kk");
+        assertFalse(result);
+    }
+
+    @Test
+    public void given1G4k_returnsFalse(){
+        boolean result = palindrome.isPalindrome("1G4k");
+        assertFalse(result);
+    }
 }
