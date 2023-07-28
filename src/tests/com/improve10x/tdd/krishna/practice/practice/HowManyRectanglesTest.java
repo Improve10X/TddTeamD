@@ -17,4 +17,11 @@ public class HowManyRectanglesTest {
         int noOfRectangle = howManyRectangles.findNoOfRectangles(0);
         assertEquals(0, noOfRectangle);
     }
+
+    @Test
+    public void givenOne_returnsOne(){
+        HowManyRectangles howManyRectangles = new HowManyRectangles();
+        int noOfRectangle = howManyRectangles.findNoOfRectangles(1);
+        assertEquals(1, noOfRectangle);
+    }
 }
