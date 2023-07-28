@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.chartoascii;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,12 +13,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        ctoa('\') ➞ 92
 
 public class CharToAsciiTest {
+    CharToAscii charToAscii;
+    @BeforeEach
+    public void setUp(){
+        charToAscii = new CharToAscii();
+    }
     @Test
     public void nothing(){}
     @Test
     public void givenSpace_returns32(){
-        CharToAscii charToAscii = new CharToAscii();
         int number = charToAscii.ctoa(" ");
         assertEquals(32,number);
+    }
+    @Test
+    public void givenA_returns65(){
+        int number = charToAscii.ctoa("A");
+        assertEquals(65,number);
     }
 }
