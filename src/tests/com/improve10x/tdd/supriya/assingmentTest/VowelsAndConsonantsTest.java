@@ -11,10 +11,10 @@ public class VowelsAndConsonantsTest {
     }
 
     @Test
-    public void givenEmpty_returnNull() {
+    public void givenEmpty_returnEmpty() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findValue = vowelsAndConsonants.findVowelsOrConsonants("");
-        Assertions.assertEquals(null, findValue);
+        Assertions.assertEquals("", findValue);
     }
 
     @Test
@@ -48,22 +48,22 @@ public class VowelsAndConsonantsTest {
     @Test
     public void giveni_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String finde = vowelsAndConsonants.findVowelsOrConsonants("i");
-        Assertions.assertEquals("vowel", finde);
+        String findi = vowelsAndConsonants.findVowelsOrConsonants("i");
+        Assertions.assertEquals("vowel", findi);
     }
 
     @Test
     public void given0_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String finde = vowelsAndConsonants.findVowelsOrConsonants("o");
-        Assertions.assertEquals("vowel", finde);
+        String findo = vowelsAndConsonants.findVowelsOrConsonants("o");
+        Assertions.assertEquals("vowel", findo);
     }
 
     @Test
     public void givenu_returnsVowels() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String finde = vowelsAndConsonants.findVowelsOrConsonants("u");
-        Assertions.assertEquals("vowel", finde);
+        String findu = vowelsAndConsonants.findVowelsOrConsonants("u");
+        Assertions.assertEquals("vowel", findu);
     }
 
     @Test
@@ -83,7 +83,7 @@ public class VowelsAndConsonantsTest {
     @Test
     public void givenx_returnsConsonant() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
-        String findz = vowelsAndConsonants.findVowelsOrConsonants("x");
-        Assertions.assertEquals("consonant", findz);
+        String findx = vowelsAndConsonants.findVowelsOrConsonants("x");
+        Assertions.assertEquals("consonant", findx);
     }
 }
