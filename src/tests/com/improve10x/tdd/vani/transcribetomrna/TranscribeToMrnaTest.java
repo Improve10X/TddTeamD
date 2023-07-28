@@ -44,4 +44,21 @@ public class TranscribeToMrnaTest {
         String c = transcribeToMrna.dnaToRna("G");
         assertEquals("C", c);
     }
+    @Test
+    public void givenC_returnsG(){
+        String g = transcribeToMrna.dnaToRna("C");
+        assertEquals("G", g);
+    }
+//    @Test
+//    public void givenZ_returnsZ(){
+//        String z = transcribeToMrna.dnaToRna("Z");
+//        assertEquals("Z", z);
+//    }
+//    @Test
+//    public void givenAtgc_returns(){
+//        String z = transcribeToMrna.dnaToRna("Z");
+//        assertEquals("Z", z);
+//    }
+
+
 }
