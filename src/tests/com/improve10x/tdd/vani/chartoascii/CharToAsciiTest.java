@@ -21,7 +21,7 @@ public class CharToAsciiTest {
     }
     @Test
     public void nothing(){}
-    @Disabled
+
     @Test
     public void givenSpace_returns32(){
         int number = charToAscii.ctoa("SPACE");
@@ -36,5 +36,20 @@ public class CharToAsciiTest {
     public void givenB_returns66(){
         int number = charToAscii.ctoa("B");
         assertEquals(66,number);
+    }
+    @Test
+    public void givenC_returns67(){
+        int number = charToAscii.ctoa("C");
+        assertEquals(67,number);
+    }
+    @Test
+    public void givenBrace_returns91(){
+        int number = charToAscii.ctoa("[");
+        assertEquals(91,number);
+    }
+    @Test
+    public void givenSlash_returns92(){
+        int number = charToAscii.ctoa("/");
+        assertEquals(92,number);
     }
 }
