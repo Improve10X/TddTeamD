@@ -11,6 +11,10 @@ public class TranscribeToMrna {
                     return "U";
                 } else if (c == 'T') {
                     return "A";
+                } else if (c == 'G') {
+                    return "C";
+                } else if (c == 'C') {
+                    return "G";
                 }
             }
         return letter;
