@@ -8,6 +8,8 @@ public class DNATomRNA {
             return " ";
         } else if (letters.equals("A")) {
             return "U";
+        }else if (letters.equals("T")) {
+            return "A";
         }
         return letters;
     }
