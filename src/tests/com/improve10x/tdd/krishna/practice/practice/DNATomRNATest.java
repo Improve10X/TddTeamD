@@ -86,4 +86,16 @@ public class DNATomRNATest {
         String converted = dnaTomRNA.convertTomRNA("AT");
         assertEquals("UA", converted);
     }
+
+    @Test
+    public void givenGC_returnsCG(){
+        String converted = dnaTomRNA.convertTomRNA("GC");
+        assertEquals("CG", converted);
+    }
+
+    @Test
+    public void givenATGC_returnsUACG(){
+        String converted = dnaTomRNA.convertTomRNA("ATGC");
+        assertEquals("UACG", converted);
+    }
 }

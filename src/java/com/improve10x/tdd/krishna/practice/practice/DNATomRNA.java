@@ -14,12 +14,11 @@ public class DNATomRNA {
                 result += "U";
             }else if(c == 'T'){
                 result += "A";
+            }else if(c == 'G'){
+               result += "C";
+            }else if(c == 'C'){
+                result += "G";
             }
-        }
-       if(letters.equals("G")){
-            return "C";
-        }else if(letters.equals("C")){
-            return "G";
         }
         return result;
     }
