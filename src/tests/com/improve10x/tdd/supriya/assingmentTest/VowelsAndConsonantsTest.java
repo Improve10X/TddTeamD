@@ -14,7 +14,7 @@ public class VowelsAndConsonantsTest {
     public void givenEmpty_returnNull() {
         VowelsAndConsonants vowelsAndConsonants = new VowelsAndConsonants();
         String findValue = vowelsAndConsonants.findVowelsOrConsonants("");
-        Assertions.assertEquals(null, findValue);
+        Assertions.assertEquals("", findValue);
     }
 
     @Test
