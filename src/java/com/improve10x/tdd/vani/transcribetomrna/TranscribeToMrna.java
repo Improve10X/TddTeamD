@@ -9,6 +9,8 @@ public class TranscribeToMrna {
                 char c = letter.charAt(i);
                 if (c == 'A') {
                     return "U";
+                } else if (c == 'T') {
+                    return "A";
                 }
             }
         return letter;
