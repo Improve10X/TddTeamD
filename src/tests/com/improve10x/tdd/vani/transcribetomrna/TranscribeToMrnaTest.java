@@ -75,5 +75,4 @@ public class TranscribeToMrnaTest {
         String CAGUAUGCUGCAU = transcribeToMrna.dnaToRna("GTCATACGACGTA");
         assertEquals("CAGUAUGCUGCAU", CAGUAUGCUGCAU);
     }
-
 }
