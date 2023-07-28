@@ -16,4 +16,11 @@ public class HowManyPrimeNumbersTest {
         int[] noOfPrimeNumbers = howManyPrimeNumbers.findPrimeNumbers(0);
         assertArrayEquals(new int[0], noOfPrimeNumbers);
     }
+
+    @Test
+    public void givenOne_returnsZero(){
+        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
+        int[] noOfPrimeNumbers = howManyPrimeNumbers.findPrimeNumbers(1);
+        assertArrayEquals(new int[0], noOfPrimeNumbers);
+    }
 }
