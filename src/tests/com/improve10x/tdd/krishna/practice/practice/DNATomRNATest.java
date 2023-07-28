@@ -40,4 +40,10 @@ public class DNATomRNATest {
         String converted = dnaTomRNA.convertTomRNA("z");
         assertEquals("z", converted);
     }
+
+    @Test
+    public void givenf_returnsf(){
+        String converted = dnaTomRNA.convertTomRNA("f");
+        assertEquals("f", converted);
+    }
 }

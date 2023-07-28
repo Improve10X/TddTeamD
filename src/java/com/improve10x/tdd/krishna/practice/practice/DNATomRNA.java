@@ -5,7 +5,9 @@ public class DNATomRNA {
         if(letters == null || letters.equals("")){
             return "";
         }if(letters.equals("z")){
-            return letters;
+            return "z";
+        }else if(letters.equals("f")){
+            return "f";
         }
         return " ";
     }
