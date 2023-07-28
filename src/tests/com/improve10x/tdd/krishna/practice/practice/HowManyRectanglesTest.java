@@ -29,4 +29,22 @@ public class HowManyRectanglesTest {
         int noOfRectangle = howManyRectangles.findNoOfRectangles(1);
         assertEquals(1, noOfRectangle);
     }
+
+    @Test
+    public void givenTwo_returnsNine(){
+        int noOfRectangle = howManyRectangles.findNoOfRectangles(2);
+        assertEquals(9, noOfRectangle);
+    }
+
+    @Test
+    public void givenThree_returnsThirtySix(){
+        int noOfRectangle = howManyRectangles.findNoOfRectangles(3);
+        assertEquals(36, noOfRectangle);
+    }
+
+    @Test
+    public void givenFour_returns100(){
+        int noOfRectangle = howManyRectangles.findNoOfRectangles(4);
+        assertEquals(100, noOfRectangle);
+    }
 }
