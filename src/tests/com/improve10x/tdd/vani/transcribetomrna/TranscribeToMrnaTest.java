@@ -70,6 +70,10 @@ public class TranscribeToMrnaTest {
     public void integrationTest(){
         String UAAUCGCGCUAUAUGCGCAUG = transcribeToMrna.dnaToRna("ATTAGCGCGATATACGCGTAC");
         assertEquals("UAAUCGCGCUAUAUGCGCAUG", UAAUCGCGCUAUAUGCGCAUG);
+        String GCUAUAU = transcribeToMrna.dnaToRna("CGATATA");
+        assertEquals("GCUAUAU", GCUAUAU);
+        String CAGUAUGCUGCAU = transcribeToMrna.dnaToRna("GTCATACGACGTA");
+        assertEquals("CAGUAUGCUGCAU", CAGUAUGCUGCAU);
     }
 
 }
