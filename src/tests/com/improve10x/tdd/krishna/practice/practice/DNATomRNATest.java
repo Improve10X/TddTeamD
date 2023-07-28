@@ -15,4 +15,11 @@ public class DNATomRNATest {
         String converted = dnaTomRNA.convertTomRNA(null);
         assertEquals("", converted);
     }
+
+    @Test
+    public void givenString_returnsString(){
+        DNATomRNA dnaTomRNA = new DNATomRNA();
+        String converted = dnaTomRNA.convertTomRNA("");
+        assertEquals("", converted);
+    }
 }
