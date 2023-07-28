@@ -5,18 +5,19 @@ public class TranscribeToMrna {
         if ((letter == null) || (letter.equals(""))) {
             return "";
         }
-            for (int i = 0; i < letter.length(); i++) {
-                char c = letter.charAt(i);
-                if (c == 'A') {
-                    return "U";
-                } else if (c == 'T') {
-                    return "A";
-                } else if (c == 'G') {
-                    return "C";
-                } else if (c == 'C') {
-                    return "G";
-                }
+        String result = "";
+        for (int i = 0; i < letter.length(); i++) {
+        char c = letter.charAt(i);
+            if (c == 'A') {
+                result += "U";
+            } else if (c == 'T') {
+                result += "A";
+            } else if (c == 'G') {
+                result += "C";
+            } else if (c == 'C') {
+                result += "G";
             }
-        return letter;
+        }
+        return result;
     }
 }
