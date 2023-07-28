@@ -24,4 +24,9 @@ public class TranscribeToMrnaTest {
         String  empty = transcribeToMrna.dnaToRna(null);
         assertEquals("", empty);
     }
+    @Test
+    public void givenEmpty_returnsEmptyString(){
+        String empty = transcribeToMrna.dnaToRna("");
+        assertEquals("",empty);
+    }
 }
