@@ -4,11 +4,9 @@ public class DNATomRNA {
     public String convertTomRNA(String letters) {
         if(letters == null || letters.equals("")){
             return "";
-        }if(letters.equals("z")){
-            return "z";
-        }else if(letters.equals("f")){
-            return "f";
+        }if(letters.equals(" ")){
+            return " ";
         }
-        return " ";
+        return letters;
     }
 }
