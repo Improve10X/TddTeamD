@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.howmanyds;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,13 +13,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class HowManyDsTest {
-
+    HowManyDs howManyDs;
+    @BeforeEach
+    public void setUp(){
+        howManyDs = new HowManyDs();
+    }
     @Test
     public void nothing(){}
     @Test
     public void givenNull_returns0(){
-        HowManyDs howManyDs = new HowManyDs();
         int zero = howManyDs.countDs(null);
+        assertEquals(0,zero);
+    }
+    @Test
+    public void givenEmpty_returns0(){
+        int zero = howManyDs.countDs("");
         assertEquals(0,zero);
     }
 }
