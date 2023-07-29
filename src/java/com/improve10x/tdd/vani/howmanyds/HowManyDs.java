@@ -6,8 +6,11 @@ public class HowManyDs {
         if ((letter == null) || letter.equals("")) {
             return 0;
         }
-            if (letter.equalsIgnoreCase("D")) {
-                return 1;
+            for (int i = 0; i < letter.length(); i++){
+                char c = letter.charAt(i);
+               if(c == 'D' || c == 'd'){
+                   result += 1;
+               }
             }
         return result;
     }
