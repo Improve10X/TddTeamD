@@ -6,7 +6,7 @@ public class HowManyDs {
         if ((letter == null) || letter.equals("")) {
             return 0;
         }
-            if (letter.equals("D")) {
+            if (letter.equalsIgnoreCase("D")) {
                 return 1;
             }
         return result;

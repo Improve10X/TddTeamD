@@ -35,4 +35,10 @@ public class HowManyDsTest {
         int one = howManyDs.countDs("D");
         assertEquals(1,one);
     }
+    @Test
+    public void givend_returns1(){
+        int one = howManyDs.countDs("d");
+        assertEquals(1,one);
+    }
+
 }
