@@ -55,6 +55,11 @@ public class HowManyDsTest {
         int two = howManyDs.countDs("DaughterDistance");
         assertEquals(2,two);
     }
+    @Test
+    public void givenDaughterDistanceDimpleDrugs_returns4(){
+        int four = howManyDs.countDs("DaughterDistanceDimpleDrugs");
+        assertEquals(4,four);
+    }
 
 
 
