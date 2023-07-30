@@ -60,6 +60,15 @@ public class HowManyDsTest {
         int four = howManyDs.countDs("DaughterDistanceDimpleDrugs");
         assertEquals(4,four);
     }
+    @Test
+    public void integrationTest(){
+        int four = howManyDs.countDs("My friend Dylan got distracted in school.");
+        assertEquals(4,four);
+        int three = howManyDs.countDs("Debris was scattered all over the yard.");
+        assertEquals(3,three);
+        int three1 = howManyDs.countDs("The rodents hibernated in their den.");
+        assertEquals(3,three1);
+    }
 
 
 
