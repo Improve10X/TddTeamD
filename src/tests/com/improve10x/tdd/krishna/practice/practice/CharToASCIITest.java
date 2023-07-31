@@ -22,4 +22,11 @@ public class CharToASCIITest {
         int result = chartToASCII.findASCIIValue(null);
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenSpace_return32(){
+        ChartToASCII chartToASCII = new ChartToASCII();
+        int result = chartToASCII.findASCIIValue(' ');
+        assertEquals(32, result);
+    }
 }
