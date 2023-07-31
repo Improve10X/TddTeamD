@@ -65,4 +65,14 @@ public class CharToASCIITest {
         int result = chartToASCII.findASCIIValue('l');
         assertEquals(108, result);
     }
+
+    @Test
+    public void integrationTest(){
+        int result = chartToASCII.findASCIIValue('m');
+        assertEquals(109, result);
+        int result1 = chartToASCII.findASCIIValue('[');
+        assertEquals(91, result1);
+        int result2 = chartToASCII.findASCIIValue('\\');
+        assertEquals(92, result2);
+    }
 }
