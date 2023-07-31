@@ -55,8 +55,8 @@ public class CharToASCIITest {
 
     @Test
     public void givenBracket_return91(){
-        int charbrcaket = charToASCII.findValue('[');
-        assertEquals(91,charbrcaket);
+        int charbracket = charToASCII.findValue('[');
+        assertEquals(91,charbracket);
     }
 
     @Test
