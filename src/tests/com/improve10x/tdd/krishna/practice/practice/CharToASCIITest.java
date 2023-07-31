@@ -53,4 +53,10 @@ public class CharToASCIITest {
         int result = chartToASCII.findASCIIValue('Z');
         assertEquals(90, result);
     }
+
+    @Test
+    public void given7_return55(){
+        int result = chartToASCII.findASCIIValue('7');
+        assertEquals(55, result);
+    }
 }
