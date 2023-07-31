@@ -21,42 +21,7 @@ public class CharToAsciiTest {
     }
     @Test
     public void nothing(){}
-//    @Disabled
-//    @Test
-//    public void givenSpace_returns32(){
-//        int number = charToAscii.ctoa("SPACE");
-//        assertEquals(32,number);
-//    }
-//    @Disabled
-//    @Test
-//    public void givenA_returns65(){
-//        int number = charToAscii.ctoa("A");
-//        assertEquals(65,number);
-//    }
-//    @Disabled
-//    @Test
-//    public void givenB_returns66(){
-//        int number = charToAscii.ctoa("B");
-//        assertEquals(66,number);
-//    }
-//    @Disabled
-//    @Test
-//    public void givenC_returns67(){
-//        int number = charToAscii.ctoa("C");
-//        assertEquals(67,number);
-//    }
-//    @Disabled
-//    @Test
-//    public void givenBrace_returns91(){
-//        int number = charToAscii.ctoa("[");
-//        assertEquals(91,number);
-//    }
-//    @Disabled
-//    @Test
-//    public void givenSlash_returns92(){
-//        int number = charToAscii.ctoa("\u0000");
-//        assertEquals(92,number);
-//    }
+
     @Test
     public void givenNull_returns0(){
         int number = charToAscii.ctoa(null);
@@ -68,9 +33,9 @@ public class CharToAsciiTest {
         int number = charToAscii.ctoa(' ');
         assertEquals(32, number);
     }
-//    @Test
-//    public void givenA_return65(){
-//        int number = charToAscii.ctoa('A');
-//        assertEquals(65,number);
-//    }
+    @Test
+    public void givenA_return65(){
+        int number = charToAscii.ctoa('A');
+        assertEquals(65,number);
+    }
 }
