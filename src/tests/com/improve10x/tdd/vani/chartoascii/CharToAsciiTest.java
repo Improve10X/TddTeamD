@@ -48,4 +48,15 @@ public class CharToAsciiTest {
         int number = charToAscii.ctoa('Z');
         assertEquals(90,number);
     }
+    @Test
+    public void integrationTest(){
+        int number = charToAscii.ctoa('m');
+        assertEquals(109,number);
+        int number1 = charToAscii.ctoa('[');
+        assertEquals(91, number1);
+        int number2 = charToAscii.ctoa('\\');
+        assertEquals(92,number2);
+        int number3 = charToAscii.ctoa(';');
+        assertEquals(59,number3);
+    }
 }
