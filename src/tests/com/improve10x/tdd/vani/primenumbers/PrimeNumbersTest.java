@@ -37,5 +37,14 @@ public class PrimeNumbersTest {
         int number = primeNumbers.calcPrimeNumbers(2);
         assertEquals(1,number);
     }
-
+    @Test
+    public void givenThree_returns2(){
+        int number = primeNumbers.calcPrimeNumbers(3);
+        assertEquals(2,number);
+    }
+    @Test
+    public void givenFour_returns2(){
+        int number = primeNumbers.calcPrimeNumbers(4);
+        assertEquals(2,number);
+    }
 }

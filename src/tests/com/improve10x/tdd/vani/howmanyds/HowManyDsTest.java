@@ -69,9 +69,4 @@ public class HowManyDsTest {
         int three1 = howManyDs.countDs("The rodents hibernated in their den.");
         assertEquals(3,three1);
     }
-
-
-
-
-
 }
