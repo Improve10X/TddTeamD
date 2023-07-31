@@ -2,13 +2,14 @@ package com.improve10x.tdd.krishna.practice.practice;
 
 public class ChartToASCII {
     public int findASCIIValue(Character character) {
+        int result = 0;
         if(character != null){
-            if(character == ' '){
-                return 32;
-            }else if(character == 'A'){
-                return 65;
+            for(int i = 0; i < character; i++){
+                result++;
+            }if(character == ' '){
+                result = 32;
             }
         }
-        return 0;
+        return result;
     }
 }
