@@ -6,11 +6,6 @@ public class CharToAscii {
        if (letter == null){
            return 0;
        }
-        if (letter.equals(' ')) {
-            return 32;
-        } else if (letter.equals('A')) {
-            return 65;
-        }
         for (int i = 0; i < letter; i++){
             result++;
         }
