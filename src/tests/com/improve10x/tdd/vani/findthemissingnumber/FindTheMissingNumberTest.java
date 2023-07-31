@@ -29,5 +29,11 @@ public class FindTheMissingNumberTest {
         int number = findTheMissingNumber.missingNumber(new int[]{0});
         assertEquals(0,number);
     }
+    @Test
+    public void givenZer0Two_returns1(){
+        int number = findTheMissingNumber.missingNumber(new int[]{0,2});
+        assertEquals(1,number);
+    }
+
 
 }
