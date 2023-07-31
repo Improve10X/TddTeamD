@@ -1,10 +1,18 @@
 package com.improve10x.tdd.krishna.practice.practice;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CharToASCIITest {
+
+    ChartToASCII chartToASCII;
+
+    @BeforeEach
+    public void setup(){
+        chartToASCII = new ChartToASCII();
+    }
 
     @Test
     public void nothing(){
@@ -18,15 +26,19 @@ public class CharToASCIITest {
 ////        ctoa('\') ➞ 92
     @Test
     public void givenNull_returnZero(){
-        ChartToASCII chartToASCII = new ChartToASCII();
         int result = chartToASCII.findASCIIValue(null);
         assertEquals(0, result);
     }
 
     @Test
     public void givenSpace_return32(){
-        ChartToASCII chartToASCII = new ChartToASCII();
         int result = chartToASCII.findASCIIValue(' ');
         assertEquals(32, result);
+    }
+
+    @Test
+    public void givenA_return65(){
+        int result = chartToASCII.findASCIIValue('A');
+        assertEquals(65, result);
     }
 }
