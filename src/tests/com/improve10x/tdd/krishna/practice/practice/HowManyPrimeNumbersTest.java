@@ -34,4 +34,10 @@ public class HowManyPrimeNumbersTest {
         int noOfPrimeNumbers = howManyPrimeNumbers.findPrimeNumbers(2);
         assertEquals(1, noOfPrimeNumbers);
     }
+
+    @Test
+    public void givenThree_returnsTwo(){
+        int noOfPrimeNumbers = howManyPrimeNumbers.findPrimeNumbers(3);
+        assertEquals(2, noOfPrimeNumbers);
+    }
 }
