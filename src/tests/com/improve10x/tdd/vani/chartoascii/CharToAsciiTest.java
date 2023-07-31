@@ -43,4 +43,9 @@ public class CharToAsciiTest {
         int number = charToAscii.ctoa('B');
         assertEquals(66,number);
     }
+    @Test
+    public void givenZ_return90(){
+        int number = charToAscii.ctoa('Z');
+        assertEquals(90,number);
+    }
 }
