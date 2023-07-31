@@ -59,4 +59,10 @@ public class CharToASCIITest {
         int result = chartToASCII.findASCIIValue('7');
         assertEquals(55, result);
     }
+
+    @Test
+    public void givenl_return108(){
+        int result = chartToASCII.findASCIIValue('l');
+        assertEquals(108, result);
+    }
 }
