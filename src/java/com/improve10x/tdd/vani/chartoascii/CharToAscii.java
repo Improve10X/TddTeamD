@@ -11,6 +11,9 @@ public class CharToAscii {
         } else if (letter.equals('A')) {
             return 65;
         }
+        for (int i = 0; i < letter; i++){
+            result++;
+        }
         return result;
     }
 }
