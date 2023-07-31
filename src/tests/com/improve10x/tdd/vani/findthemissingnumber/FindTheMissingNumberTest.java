@@ -18,7 +18,6 @@ public class FindTheMissingNumberTest {
         FindTheMissingNumber findTheMissingNumber = new FindTheMissingNumber();
         int number = findTheMissingNumber.missingNumber(null);
         assertEquals(0,number);
-
     }
 
 }
