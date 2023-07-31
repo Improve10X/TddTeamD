@@ -22,4 +22,11 @@ public class FindTheMissingNumberTest {
         int result = findTheMissingNumber.findMissingNumber(null);
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenZero_returnsZero(){
+        FindTheMissingNumber findTheMissingNumber = new FindTheMissingNumber();
+        int result = findTheMissingNumber.findMissingNumber(new int[0]);
+        assertEquals(0, result);
+    }
 }
