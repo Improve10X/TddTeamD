@@ -5,9 +5,11 @@ public class CountSpaces {
         int count = 0;
         if (word != null) {
             for (int i = 0; i < word.length(); i++) {
-                if (word.contains(" ")) {
-                   return 1;
+                char c = word.charAt(i);
+                if (c == ' ') {
+                    count++;
                 }
+
             }
         }
         return count;

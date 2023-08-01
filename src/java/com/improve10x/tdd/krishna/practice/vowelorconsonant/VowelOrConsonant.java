@@ -2,7 +2,7 @@ package com.improve10x.tdd.krishna.practice.vowelorconsonant;
 
 public class VowelOrConsonant {
     public String isVowelOrConsonant(String character) {
-        if (character == null || character.equals("") || character.equals(" ") || character.equals("0")) {
+        if (character == null || character.equals("") || character.equals(" ")) {
             return character;
         } else if (character.equals("a")) {
             return "vowel";
