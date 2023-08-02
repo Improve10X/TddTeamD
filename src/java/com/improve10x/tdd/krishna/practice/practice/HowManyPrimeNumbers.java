@@ -17,6 +17,8 @@ public class HowManyPrimeNumbers {
     public boolean isPrime(int n) {
         if(n == 2){
             return true;
+        }else if(n == 3){
+            return true;
         }
         return false;
     }

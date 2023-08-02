@@ -70,4 +70,10 @@ public class HowManyPrimeNumbersTest {
         boolean status = howManyPrimeNumbers.isPrime(2);
         assertEquals(true, status);
     }
+
+    @Test
+    public void given3_returnTrue(){
+        boolean status = howManyPrimeNumbers.isPrime(3);
+        assertEquals(true, status);
+    }
 }
