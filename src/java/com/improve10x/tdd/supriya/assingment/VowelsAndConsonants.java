@@ -8,14 +8,6 @@ public class VowelsAndConsonants {
             return null;
         }else if (character == "a" || character == "e" || character == "e" || character == "i" ||character == "u") {
             return "vowel";
-//        } else if (character == "e") {
-//            return "vowel";
-//        } else if (character == "i") {
-//            return "vowel";
-//        } else if (character == "o") {
-//            return "vowel";
-//        } else if (character == "u") {
-//            return "vowel";
         }
         return "consonant";
     }
