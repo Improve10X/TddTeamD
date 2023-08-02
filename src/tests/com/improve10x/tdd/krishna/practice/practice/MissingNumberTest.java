@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FindTheMissingNumberTest {
+public class MissingNumberTest {
 
-    FindTheMissingNumber findTheMissingNumber;
+    MissingNumber missingNumber;
 
     @BeforeEach
     public void setup(){
-        findTheMissingNumber = new FindTheMissingNumber();
+        missingNumber = new MissingNumber();
     }
 
     @Test
@@ -26,19 +26,25 @@ public class FindTheMissingNumberTest {
 //missingNum([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7
     @Test
     public void givenNull_returnsMinusOne(){
-        int result = findTheMissingNumber.findMissingNumber(null);
+        int result = MissingNumber.findMissingNumber(null);
         assertEquals(-1, result);
     }
 
     @Test
     public void givenZero_returnsMinusOne(){
-        int result = findTheMissingNumber.findMissingNumber(new int[0]);
+        int result = MissingNumber.findMissingNumber(new int[0]);
         assertEquals(-1, result);
     }
 
     @Test
     public void givenOneThree_returnsMinusOne(){
-        int result = findTheMissingNumber.findMissingNumber(new int[]{1, 3});
+        int result = MissingNumber.findMissingNumber(new int[]{1, 3});
         assertEquals(-1, result);
+    }
+
+    @Test
+    public void givenNumbers1To10_returns2(){
+        int result = MissingNumber.findMissingNumber(new int[]{1, 3, 4, 5, 6, 7, 8, 9, 10});
+        assertEquals(2, result);
     }
 }
