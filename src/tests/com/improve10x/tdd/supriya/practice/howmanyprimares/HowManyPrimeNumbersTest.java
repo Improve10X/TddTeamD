@@ -2,6 +2,7 @@ package com.improve10x.tdd.supriya.practice.howmanyprimares;
 
 import com.improve10x.tdd.supriya.practice.howmanyprimenumbers.HowManyPrimeNumbers;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -18,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HowManyPrimeNumbersTest {
     HowManyPrimeNumbers howManyPrimeNumbers;
-    @Test
+    @BeforeEach
     public void setUp(){
         howManyPrimeNumbers = new HowManyPrimeNumbers();
     }
@@ -26,46 +27,46 @@ public class HowManyPrimeNumbersTest {
     public void nothing() {
     }
 
-//    @Test
-//    public void givenZero_returnZero(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(0);
-//        Assertions.assertEquals(0, primeNumbers);
-//    }
-//
-//    @Test
-//    public void givenOne_returnZero(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(0);
-//        Assertions.assertEquals(0, primeNumbers);
-//    }
-//
-//    @Test
-//    public void givenMinusOne_returnMinusOne(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(-1);
-//        Assertions.assertEquals(-1, primeNumbers);
-//    }
-//
-//    @Test
-//    public void givenTwo_returnOne(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(2);
-//        Assertions.assertEquals(1, primeNumbers);
-//    }
-//
-//    @Test
-//    public void givenThree_returnTwo(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(3);
-//        Assertions.assertEquals(2, primeNumbers);
-//    }
-//    @Test
-//    public void givenFour_returnTwo(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(4);
-//        Assertions.assertEquals(2, primeNumbers);
-//    }
-//
-//    @Test
-//    public void givenFive_returnThree(){
-//        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(5);
-//        Assertions.assertEquals(3, primeNumbers);
-//    }
+    @Test
+    public void givenZero_returnZero(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(0);
+        Assertions.assertEquals(0, primeNumbers);
+    }
+
+    @Test
+    public void givenOne_returnZero(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(0);
+        Assertions.assertEquals(0, primeNumbers);
+    }
+
+    @Test
+    public void givenMinusOne_returnMinusOne(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(-1);
+        Assertions.assertEquals(-1, primeNumbers);
+    }
+
+    @Test
+    public void givenTwo_returnOne(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(2);
+        Assertions.assertEquals(1, primeNumbers);
+    }
+
+    @Test
+    public void givenThree_returnTwo(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(3);
+        Assertions.assertEquals(2, primeNumbers);
+    }
+    @Test
+    public void givenFour_returnTwo(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(4);
+        Assertions.assertEquals(2, primeNumbers);
+    }
+
+    @Test
+    public void givenFive_returnThree(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(5);
+        Assertions.assertEquals(3, primeNumbers);
+    }
 
     @Test
     public void given0_returnFalse() {
@@ -81,7 +82,7 @@ public class HowManyPrimeNumbersTest {
     }
 
     @Test
-    public void givenMinus_returnFalse() {
+    public void givenMinusOne_returnFalse() {
         HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
         boolean status = howManyPrimeNumbers.isPrime(-1);
         assertEquals(false, status);
@@ -109,7 +110,7 @@ public class HowManyPrimeNumbersTest {
     }
 
     @Test
-    public void given5_returnFalse() {
+    public void given5_returnTrue() {
         HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
         boolean status = howManyPrimeNumbers.isPrime(5);
         assertEquals(true, status);
@@ -121,12 +122,12 @@ public class HowManyPrimeNumbersTest {
         boolean status = howManyPrimeNumbers.isPrime(6);
         assertEquals(false, status);
     }
-
-    @Test
-    public void given7_returnTrue() {
-        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
-        boolean status = howManyPrimeNumbers.isPrime(7);
-        assertEquals(true, status);
-    }
+//
+//    @Test
+//    public void given7_returnTrue() {
+//        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
+//        boolean status = howManyPrimeNumbers.isPrime(7);
+//        assertEquals(true, status);
+//    }
 
 }

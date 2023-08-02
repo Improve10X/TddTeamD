@@ -6,6 +6,7 @@ public class HowManyPrimeNumbers {
         if (numbers == 0 || numbers == 1) {
             count = 0;
         } else if (numbers >= 2) {
+            count = 0;
             for (int i = 2; i <= numbers; i++) {
                 if (isPrime(i)) {
                     count++;
@@ -16,16 +17,15 @@ public class HowManyPrimeNumbers {
     }
 
     public boolean isPrime(int n) {
-        boolean result = false;
         if (n >= 2 ) {
             for (int i = 2; i <= n; i++) {
-                if (n % i != 0) {
+                if (n % i != 0 || n == 2) {
                     return true;
                 } else {
                     return false;
                 }
             }
         }
-        return result;
+        return false;
     }
 }
