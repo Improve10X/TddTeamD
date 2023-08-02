@@ -122,12 +122,12 @@ public class HowManyPrimeNumbersTest {
         boolean status = howManyPrimeNumbers.isPrime(6);
         assertEquals(false, status);
     }
-//
-//    @Test
-//    public void given7_returnTrue() {
-//        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
-//        boolean status = howManyPrimeNumbers.isPrime(7);
-//        assertEquals(true, status);
-//    }
+
+    @Test
+    public void given7_returnTrue() {
+        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
+        boolean status = howManyPrimeNumbers.isPrime(7);
+        assertEquals(true, status);
+    }
 
 }
