@@ -12,4 +12,9 @@ public class HowManyPrimeNumbers {
         }
         return result;
     }
+
+
+    public boolean isPrime(int n) {
+        return false;
+    }
 }
