@@ -52,4 +52,10 @@ public class HowManyPrimeNumbersTest {
         boolean status = howManyPrimeNumbers.isPrime(0);
         assertEquals(false, status);
     }
+
+    @Test
+    public void given1_returnFalse(){
+        boolean status = howManyPrimeNumbers.isPrime(1);
+        assertEquals(false, status);
+    }
 }
