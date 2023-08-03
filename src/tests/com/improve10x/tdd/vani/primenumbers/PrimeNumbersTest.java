@@ -33,6 +33,11 @@ public class PrimeNumbersTest {
         assertEquals(0,number);
     }
     @Test
+    public void givenMinus1_returnsMinus1(){
+        int number = primeNumbers.calcPrimeNumbers(-1);
+        assertEquals(-1,number);
+    }
+    @Test
     public void givenTwo_returns1(){
         int number = primeNumbers.calcPrimeNumbers(2);
         assertEquals(1,number);
@@ -46,5 +51,63 @@ public class PrimeNumbersTest {
     public void givenFour_returns2(){
         int number = primeNumbers.calcPrimeNumbers(4);
         assertEquals(2,number);
+    }
+    @Test
+    public void givenFive_returns3(){
+        int number = primeNumbers.calcPrimeNumbers(5);
+        assertEquals(3,number);
+    }
+//    @Test
+//    public void integrationTest() {
+//        int four = primeNumbers.calcPrimeNumbers(10);
+//        assertEquals(4, four);
+//        int eight = primeNumbers.calcPrimeNumbers(20);
+//        assertEquals(8,eight);
+//        int ten = primeNumbers.calcPrimeNumbers(30);
+//        assertEquals(10,ten);
+//    }
+    @Test
+    public void given0_returnsFalse(){
+        boolean state = primeNumbers.isPrime(0);
+        assertEquals(false, state);
+    }
+    @Test
+    public void givenOne_returnsFalse(){
+        boolean state = primeNumbers.isPrime(1);
+        assertEquals(false, state);
+    }
+    @Test
+    public void givenMinus1_returnsFalse(){
+        boolean state = primeNumbers.isPrime(-1);
+        assertEquals(false, state);
+    }
+    @Test
+    public void givenTwo_returnsTrue(){
+        boolean state = primeNumbers.isPrime(2);
+        assertEquals(true, state);
+    }
+    @Test
+    public void givenThree_returnsTrue(){
+        boolean state = primeNumbers.isPrime(3);
+        assertEquals(true, state);
+    }
+    @Test
+    public void givenFour_returnsFalse(){
+        boolean state = primeNumbers.isPrime(4);
+        assertEquals(false, state);
+    }
+    @Test
+    public void givenFive_returnsTrue(){
+        boolean state = primeNumbers.isPrime(5);
+        assertEquals(true, state);
+    }
+    @Test
+    public void integrationTest1(){
+        boolean state = primeNumbers.isPrime(10);
+        assertEquals(false, state);
+        boolean state1 = primeNumbers.isPrime(20);
+        assertEquals(false, state1);
+        boolean state2 = primeNumbers.isPrime(30);
+        assertEquals(false, state2);
     }
 }
