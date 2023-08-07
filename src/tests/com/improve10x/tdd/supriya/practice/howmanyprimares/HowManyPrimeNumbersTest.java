@@ -52,6 +52,17 @@ public class HowManyPrimeNumbersTest {
     }
 
     @Test
+    public void integrationsTest(){
+        int primeNumbers = howManyPrimeNumbers.findPrimeNumber(20);
+        Assertions.assertEquals(8, primeNumbers);
+        int primeNumbers1 = howManyPrimeNumbers.findPrimeNumber(10);
+        Assertions.assertEquals(4, primeNumbers1);
+        int primeNumbers2 = howManyPrimeNumbers.findPrimeNumber(30);
+        Assertions.assertEquals(10, primeNumbers2);
+    }
+
+
+    @Test
     public void givenThree_returnTwo(){
         int primeNumbers = howManyPrimeNumbers.findPrimeNumber(3);
         Assertions.assertEquals(2, primeNumbers);
@@ -129,5 +140,27 @@ public class HowManyPrimeNumbersTest {
         boolean status = howManyPrimeNumbers.isPrime(7);
         assertEquals(true, status);
     }
+
+    @Test
+    public void given20_returnFalse() {
+        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
+        boolean status = howManyPrimeNumbers.isPrime(20);
+        assertEquals(false, status);
+    }
+
+    @Test
+    public void given10_returnFalse() {
+        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
+        boolean status = howManyPrimeNumbers.isPrime(10);
+        assertEquals(false, status);
+    }
+
+    @Test
+    public void given30_returnFalse() {
+        HowManyPrimeNumbers howManyPrimeNumbers = new HowManyPrimeNumbers();
+        boolean status = howManyPrimeNumbers.isPrime(30);
+        assertEquals(false, status);
+    }
+
 
 }
