@@ -12,12 +12,12 @@ public class Player extends Character{
         System.out.println("Running......");
     }
 
-    public void jump(){
-        System.out.println(getName() +"jumped to avoid obstacles!");
-    }
-
     public int getScore() {
         return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public void collectCoins(Coin coin){
