@@ -44,6 +44,4 @@ public class NameInverter {
     private static boolean hasHonorifics(ArrayList<String> names) {
         return names.get(0).matches("Mrs.|Mr.|Miss.");
     }
-
-
 }
