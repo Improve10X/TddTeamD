@@ -1,4 +1,4 @@
-package com.improve10x.tdd.vani.shipping;
+package com.improve10x.tdd.vani.abstractshipping;
 
 public class ExpressShipping extends Shipping{
     public ExpressShipping(double price) {
