@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.findthelargestnumberinanarray;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,13 +12,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        findLargestNum([1000, 1001, 857, 1]) ➞ 1001
 
 public class FindTheLargestNumberInAnArrayTest {
+    FindTheLargestNumberInAnArray findTheLargestNumberInAnArray;
+
+    @BeforeEach
+    public void setUp(){
+        findTheLargestNumberInAnArray = new FindTheLargestNumberInAnArray();
+    }
+
     @Test
     public void nothing(){}
 
     @Test
     public void given0_return0(){
-        FindTheLargestNumberInAnArray findTheLargestNumberInAnArray = new FindTheLargestNumberInAnArray();
         int zero = findTheLargestNumberInAnArray.findLargestNum(new int[]{0});
         assertEquals(0, zero);
+    }
+
+    @Test
+    public void givenNull_returns0(){
+        int zero = findTheLargestNumberInAnArray.findLargestNum(null);
+        assertEquals(0,zero);
     }
 }
