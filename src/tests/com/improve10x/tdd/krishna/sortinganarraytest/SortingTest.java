@@ -24,4 +24,11 @@ public class SortingTest {
         int[] sorted = sorting.sortAnArray(new int[1]);
         assertArrayEquals(new int[1], sorted);
     }
+
+    @Test
+    public void givenMinusOne_returnsMinusOne(){
+        Sorting sorting = new Sorting();
+        int[] sorted = sorting.sortAnArray(new int[]{-1});
+        assertArrayEquals(new int[]{-1}, sorted);
+    }
 }
