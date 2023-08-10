@@ -51,4 +51,21 @@ public class FindTheLargestNumberInAnArrayTest {
         int one = findTheLargestNumberInAnArray.findLargestNum(new int[]{1,0});
         assertEquals(1,one);
     }
+
+    @Test
+    public void given102_returns2(){
+        int two = findTheLargestNumberInAnArray.findLargestNum(new int[]{1,0,2});
+        assertEquals(2,two);
+    }
+
+    @Test
+    public void integrationTest(){
+        int five = findTheLargestNumberInAnArray.findLargestNum(new int[]{4,5,1,3});
+        assertEquals(5,five);
+        int sixHundred = findTheLargestNumberInAnArray.findLargestNum(new int[]{300,200,600,150});
+        assertEquals(600,sixHundred);
+        int thousandOne = findTheLargestNumberInAnArray.findLargestNum(new int[]{1000,1001,187,1});
+        assertEquals(1001,thousandOne);
+
+    }
 }
