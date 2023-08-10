@@ -1,6 +1,6 @@
-package com.improve10x.tdd.vani.findthelargestnumberinanarray;
+package com.improve10x.tdd.vani.largestnumberinanarray;
 
-public class FindTheLargestNumberInAnArray {
+public class LargestNumberInAnArray {
 
     public int findLargestNum(int[] numbers) {
         if(numbers != null) {
