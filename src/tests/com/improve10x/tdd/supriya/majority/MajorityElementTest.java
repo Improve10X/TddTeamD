@@ -50,9 +50,15 @@ public class MajorityElementTest {
     }
 
     @Test
-    public void given12_return2(){  
+    public void given12_return2(){
         MajorityElement majorityElement = new MajorityElement();
         int element = majorityElement.findMajorityElement(new int[]{1,2});
         Assertions.assertEquals(2, element);
+    }
+@Test
+    public void given111_return1(){
+        MajorityElement majorityElement = new MajorityElement();
+        int element = majorityElement.findMajorityElement(new int[]{1,1,1});
+        Assertions.assertEquals(1, element);
     }
 }
