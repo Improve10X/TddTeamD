@@ -21,24 +21,26 @@ public class TempleRunGame {
     }
 
     private static Player handleObstacle(Player player) {
-        Obstacle obstacle = generateObstacleRandom();
+        Obstacle obstacle = generateRandomObstacle();
         if (obstacle instanceof Fireball){
-            ((Fireball)obstacle).roll();
+            ((Fireball) obstacle).roll();
             obstacle.collide(player);
         } else if (obstacle instanceof SpikePit) {
-            ((SpikePit)obstacle).trap(player);
-        } else if (obstacle instanceof Coin){
-            Coin coin = ((Coin) obstacle);
-            player.collectCoins(coin);
-            if ((coin.getValue() == 1000)){
-                player = new PowerFullPlayer(player, "super speed");
-                ((PowerFullPlayer)player).useSpecialPower();
-            }
+            ((SpikePit) obstacle).trap(player);
+        } else if (obstacle instanceof Coin) {
+           player.collectCoins((Coin) obstacle);
+           if (((Coin) obstacle).getValue() == 1000){
+               player = new PowerFullPlayer(player,"super speed");
+               ((PowerFullPlayer)player).useSpecialPower();
+           }
         }
         return player;
     }
 
-    private static Obstacle generateObstacleRandom() {
+
+
+
+    private static Obstacle generateRandomObstacle() {
         Random random = new Random();
         int obstacleType = random.nextInt(3);
         switch (obstacleType){
