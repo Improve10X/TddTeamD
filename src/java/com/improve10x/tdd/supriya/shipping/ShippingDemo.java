@@ -6,7 +6,5 @@ public class ShippingDemo {
         standardShipping.shippingDetailsInfo();
         Shipping expressShipping = new ExpressShipping(150);
         expressShipping.shippingDetailsInfo();
-
-
     }
 }

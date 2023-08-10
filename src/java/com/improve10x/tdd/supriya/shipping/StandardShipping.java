@@ -7,7 +7,7 @@ public class StandardShipping extends Shipping{
     }
 
     @Override
-    public double calculateCharges() {
+    public double calculateShippingCharges() {
         if (price < 50){
             return 8.5;
         }else if (price < 100){
