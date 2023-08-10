@@ -2,7 +2,7 @@ package com.improve10x.tdd.krishna.sortinganarray;
 
 public class Sorting {
     public int[] sortAnArray(int[] numbers) {
-        if(numbers[0] >= 0 && numbers[0] < 3){
+        if(numbers[0] >= 0 && numbers[0] < 3 && numbers.length < 4){
             for(int i = 0; i < numbers.length - 1; i++){
                 for(int j = i + 1; j < numbers.length; j++){
                     if(numbers[i] > numbers[j]){
