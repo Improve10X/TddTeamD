@@ -21,7 +21,9 @@ public class SortingTest {
     }
 
     @Test
-    public void givennull_returns0(){
+    public void givennull_returns0() {
+        int[] sorted = sorting.sortAnArray(null);
+        assertArrayEquals(new int[]{0}, sorted);
     }
 
     @Test
