@@ -40,15 +40,14 @@ public class SortAnArrayTest {
     }
 
     @Test
-    public void givenSpace_returns0(){
-        int[] zero = sortAnArray.findSortArray(new int[]{});
-        assertArrayEquals(new int[]{0}, zero);
-    }
-
-    @Test
     public void givenMinus1_returns0(){
         int[] zero = sortAnArray.findSortArray(new int[]{-1});
         assertArrayEquals(new int[]{0}, zero);
     }
 
+    @Test
+    public void given01_returns01(){
+        int[] zeroOne = sortAnArray.findSortArray(new int[]{0,1});
+        assertArrayEquals(new int[]{0,1}, zeroOne);
+    }
 }
