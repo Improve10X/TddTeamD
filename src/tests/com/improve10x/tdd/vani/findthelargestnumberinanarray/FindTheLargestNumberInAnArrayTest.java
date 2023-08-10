@@ -33,4 +33,10 @@ public class FindTheLargestNumberInAnArrayTest {
         int zero = findTheLargestNumberInAnArray.findLargestNum(null);
         assertEquals(0,zero);
     }
+
+    @Test
+    public void givenZeros_returns0(){
+        int zero = findTheLargestNumberInAnArray.findLargestNum(new int[]{0,0,0,0,0});
+        assertEquals(0,zero);
+    }
 }
