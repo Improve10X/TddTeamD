@@ -39,4 +39,16 @@ public class FindTheLargestNumberInAnArrayTest {
         int zero = findTheLargestNumberInAnArray.findLargestNum(new int[]{0,0,0,0,0});
         assertEquals(0,zero);
     }
+
+    @Test
+    public void given01_returns1(){
+        int one = findTheLargestNumberInAnArray.findLargestNum(new int[]{0,1});
+        assertEquals(1,one);
+    }
+
+    @Test
+    public void given10_returns1(){
+        int one = findTheLargestNumberInAnArray.findLargestNum(new int[]{1,0});
+        assertEquals(1,one);
+    }
 }
