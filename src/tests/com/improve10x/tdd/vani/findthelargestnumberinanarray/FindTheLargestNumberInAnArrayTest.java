@@ -46,5 +46,9 @@ public class FindTheLargestNumberInAnArrayTest {
         assertEquals(1,one);
     }
 
-
+    @Test
+    public void given10_returns1(){
+        int one = findTheLargestNumberInAnArray.findLargestNum(new int[]{1,0});
+        assertEquals(1,one);
+    }
 }
