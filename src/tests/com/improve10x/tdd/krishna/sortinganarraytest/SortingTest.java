@@ -17,4 +17,11 @@ public class SortingTest {
         int[] sorted = sorting.sortAnArray(new int[0]);
         assertArrayEquals(new int[0], sorted);
     }
+
+    @Test
+    public void given1_returns1(){
+        Sorting sorting = new Sorting();
+        int[] sorted = sorting.sortAnArray(new int[1]);
+        assertArrayEquals(new int[1], sorted);
+    }
 }
