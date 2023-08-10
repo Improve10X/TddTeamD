@@ -56,4 +56,10 @@ public class SortAnArrayTest {
         int[] zeroOne = sortAnArray.findSortArray(new int[]{1,0});
         assertArrayEquals(new int[]{0,1}, zeroOne);
     }
+
+    @Test
+    public void given112200_returns001122(){
+        int[] numbers = sortAnArray.findSortArray(new int[]{1,1,2,2,0,0});
+        assertArrayEquals(new int[]{0,0,1,1,2,2}, numbers);
+    }
 }
