@@ -7,7 +7,7 @@ public class ExpressShipping extends Shipping {
     }
 
     @Override
-    public double calculateCharges() {
+    public double calculateShippingCharges() {
         if (price < 50){
             return 23.50;
         }else if (price < 100){
