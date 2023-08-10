@@ -66,4 +66,10 @@ public class SortingTest {
         int[] sorted = sorting.sortAnArray(new int[]{1, 2, 0, 3});
         assertArrayEquals(new int[]{-1}, sorted);
     }
+
+    @Test
+    public void given12345_returnsMinusOne(){
+        int[] sorted = sorting.sortAnArray(new int[]{1, 2, 3, 4, 5});
+        assertArrayEquals(new int[]{-1}, sorted);
+    }
 }
