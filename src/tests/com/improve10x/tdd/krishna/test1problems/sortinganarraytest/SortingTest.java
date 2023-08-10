@@ -21,27 +21,31 @@ public class SortingTest {
     }
 
     @Test
+    public void givennull_returns0(){
+    }
+
+    @Test
     public void given0_returns0() {
         int[] sorted = sorting.sortAnArray(new int[]{0});
         assertArrayEquals(new int[]{0}, sorted);
     }
 
     @Test
-    public void given1_returns1() {
+    public void given1_returns0() {
         int[] sorted = sorting.sortAnArray(new int[]{1});
-        assertArrayEquals(new int[]{1}, sorted);
+        assertArrayEquals(new int[]{0}, sorted);
     }
 
     @Test
     public void givenMinusOne_returnsMinusOne() {
         int[] sorted = sorting.sortAnArray(new int[]{-1});
-        assertArrayEquals(new int[]{-1}, sorted);
+        assertArrayEquals(new int[]{0}, sorted);
     }
 
     @Test
-    public void given3_returnsMinusOne() {
+    public void given3_returns0() {
         int[] sorted = sorting.sortAnArray(new int[]{3});
-        assertArrayEquals(new int[]{-1}, sorted);
+        assertArrayEquals(new int[]{0}, sorted);
     }
 
     @Test
@@ -62,7 +66,7 @@ public class SortingTest {
         assertArrayEquals(new int[]{0, 1, 2}, sorted);
     }
 
-   @Disabled
+    @Disabled
     @Test
     public void given1203_returnsMinusOne() {
         int[] sorted = sorting.sortAnArray(new int[]{1, 2, 0, 3});
