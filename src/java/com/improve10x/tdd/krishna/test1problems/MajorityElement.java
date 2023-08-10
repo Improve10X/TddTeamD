@@ -7,6 +7,8 @@ public class MajorityElement {
         for(int i = 0; i < numbers.length; i++){
            if(numbers[i] == 1){
                count++;
+           }else if(numbers[i] == 2){
+               count++;
            }
            if(n / 2 < count){
                return numbers[i];
