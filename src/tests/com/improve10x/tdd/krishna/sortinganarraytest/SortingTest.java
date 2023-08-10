@@ -38,4 +38,11 @@ public class SortingTest {
         int[] sorted = sorting.sortAnArray(new int[]{3});
         assertArrayEquals(new int[]{-1}, sorted);
     }
+
+    @Test
+    public void given012_returns012(){
+        Sorting sorting = new Sorting();
+        int[] sorted = sorting.sortAnArray(new int[]{0, 1, 2});
+        assertArrayEquals(new int[]{0, 1, 2}, sorted);
+    }
 }
