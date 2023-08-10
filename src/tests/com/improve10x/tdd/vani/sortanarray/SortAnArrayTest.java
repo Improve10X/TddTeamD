@@ -3,10 +3,9 @@ package com.improve10x.tdd.vani.sortanarray;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 //Sort an array of 0s, 1s and 2s
 //        Problem Statement: Given an array consisting of only 0s, 1s, and 2s. Write a program to in-place sort the array without using inbuilt sort functions. ( Expected: Single pass-O(N) and constant space)
 //        Examples
@@ -61,5 +60,13 @@ public class SortAnArrayTest {
     public void given112200_returns001122(){
         int[] numbers = sortAnArray.findSortArray(new int[]{1,1,2,2,0,0});
         assertArrayEquals(new int[]{0,0,1,1,2,2}, numbers);
+    }
+
+    @Test
+    public void integrationTest(){
+        int[] numbers = sortAnArray.findSortArray(new int[]{2,0,2,1,1,0});
+        assertArrayEquals(new int[]{0,0,1,1,2,2}, numbers);
+        int[] zeroOne = sortAnArray.findSortArray(new int[]{2,0,1});
+        assertArrayEquals(new int[]{0,1,2}, zeroOne);
     }
 }
