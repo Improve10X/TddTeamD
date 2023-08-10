@@ -39,4 +39,10 @@ public class SortAnArrayTest {
         assertArrayEquals(new int[]{0},zero);
     }
 
+    @Test
+    public void givenSpace_returns0(){
+        int[] zero = sortAnArray.findSortArray(new int[]{});
+        assertArrayEquals(new int[]{0}, zero);
+    }
+
 }
