@@ -53,4 +53,10 @@ public class MajorityElementTest {
         int result = majorityElement.findMajorityElement(new int[]{1, 2});
         assertEquals(2, result);
     }
+
+    @Test
+    public void givenZeroOneOne_returnsOne(){
+        int result = majorityElement.findMajorityElement(new int[]{0, 1, 1});
+        assertEquals(1, result);
+    }
 }
