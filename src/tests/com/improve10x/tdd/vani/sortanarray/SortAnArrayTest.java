@@ -45,4 +45,10 @@ public class SortAnArrayTest {
         assertArrayEquals(new int[]{0}, zero);
     }
 
+    @Test
+    public void givenMinus1_returns0(){
+        int[] zero = sortAnArray.findSortArray(new int[]{-1});
+        assertArrayEquals(new int[]{0}, zero);
+    }
+
 }
