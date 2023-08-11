@@ -17,4 +17,11 @@ public class LargestNumberTest {
         int largestNum = largestNumber.findLargestNumber(null);
         assertEquals(0, largestNum);
     }
+
+    @Test
+    public void givenEmpty_returnsZero(){
+        LargestNumber largestNumber = new LargestNumber();
+        int largestNum = largestNumber.findLargestNumber(new int[]{});
+        assertEquals(0, largestNum);
+    }
 }
