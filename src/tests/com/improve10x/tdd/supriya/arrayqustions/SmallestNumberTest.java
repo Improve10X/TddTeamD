@@ -15,4 +15,18 @@ public class SmallestNumberTest {
         int number = smallestNumber.findSmallestNumber(null);
         Assertions.assertEquals(0, number);
     }
+
+    @Test
+    public void givenEmpty_return0(){
+        SmallestNumber smallestNumber = new SmallestNumber();
+        int number = smallestNumber.findSmallestNumber(new int[]{});
+        Assertions.assertEquals(0, number);
+    }
+
+    @Test
+    public void given0_return0(){
+        SmallestNumber smallestNumber = new SmallestNumber();
+        int number = smallestNumber.findSmallestNumber(new int[]{0});
+        Assertions.assertEquals(0, number);
+    }
 }
