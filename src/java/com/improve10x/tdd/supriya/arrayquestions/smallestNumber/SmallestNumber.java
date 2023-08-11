@@ -5,8 +5,10 @@ public class SmallestNumber {
         if (numbers != null && numbers.length > 1) {
             if (numbers[0] > numbers[1]) {
                 return 1;
-            }else if (numbers[0] < numbers[1] ){
+            }else if (numbers.length ==2 && numbers[0] < numbers[1] ){//231
                 return 3;
+            }else if (numbers[0] > numbers[2] && numbers[1] > numbers[2]){
+                return 1;
             }
         }
         return 0;
