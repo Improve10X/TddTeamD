@@ -1,4 +1,4 @@
-package com.improve10x.tdd.vani.findthemissingnumber;
+package com.improve10x.tdd.vani.missingnumber;
 
 public class MissingNumber {
 

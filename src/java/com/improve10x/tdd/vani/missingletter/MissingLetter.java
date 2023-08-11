@@ -1,4 +1,4 @@
-package com.improve10x.tdd.vani.findthemissingletter;
+package com.improve10x.tdd.vani.missingletter;
 
 public class MissingLetter {
     public String findMissingLetter(String[] letters) {
