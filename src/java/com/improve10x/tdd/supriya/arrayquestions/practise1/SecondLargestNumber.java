@@ -1,4 +1,4 @@
-package com.improve10x.tdd.supriya.practise1;
+package com.improve10x.tdd.supriya.arrayquestions.practise1;
 
 public class SecondLargestNumber {
     public int FindSecondLargestNumber(int[] numbers) {
