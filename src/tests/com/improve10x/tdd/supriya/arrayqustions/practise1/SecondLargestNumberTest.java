@@ -1,8 +1,7 @@
-package com.improve10x.tdd.supriya.practise1;
+package com.improve10x.tdd.supriya.arrayqustions.practise1;
 
-import org.junit.jupiter.api.Assertions;
+import com.improve10x.tdd.supriya.arrayquestions.practise1.SecondLargestNumber;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -20,9 +20,21 @@ public class MajorityElementTest {
     }
 
     @Test
+    public void givenNull_returnsMinusOne(){
+        int result = majorityElement.findMajorityElement(null);
+        assertEquals(-1, result);
+    }
+
+    @Test
+    public void givenEmpty_returnsMinusOne(){
+        int result = majorityElement.findMajorityElement(new int[]{});
+        assertEquals(-1, result);
+    }
+
+    @Test
     public void given0_returnsMinusOne(){
         int result = majorityElement.findMajorityElement(new int[]{0});
-        assertEquals(-1, result);
+        assertEquals(0, result);
     }
 
     @Test
@@ -43,38 +55,41 @@ public class MajorityElementTest {
         assertEquals(-1, result);
     }
 
-    @Disabled
     @Test
     public void givenOneOne_returnsOne(){
         int result = majorityElement.findMajorityElement(new int[]{1, 1});
         assertEquals(1, result);
     }
 
-    @Disabled
     @Test
     public void givenOneTwo_returnsTwo(){
         int result = majorityElement.findMajorityElement(new int[]{1, 2});
-        assertEquals(2, result);
+        assertEquals(-1, result);
     }
 
-    @Disabled
     @Test
     public void givenZeroOneOne_returnsOne(){
         int result = majorityElement.findMajorityElement(new int[]{0, 1, 1});
         assertEquals(1, result);
     }
 
-    @Disabled
     @Test
     public void givenOneOneOne_returnsOne(){
         int result = majorityElement.findMajorityElement(new int[]{1, 1, 1});
         assertEquals(1, result);
     }
 
-    @Disabled
     @Test
     public void givenThreeTwoThree_returnsThree(){
         int result = majorityElement.findMajorityElement(new int[]{3, 2, 3});
         assertEquals(3, result);
+    }
+
+    @Test
+    public void integrationTest(){
+        int result = majorityElement.findMajorityElement(new int[]{2, 2, 1, 1, 1, 2, 2});
+        assertEquals(2, result);
+        int result1 = majorityElement.findMajorityElement(new int[]{4, 4, 2, 4, 3, 4, 4, 3, 2, 4});
+        assertEquals(4, result1);
     }
 }

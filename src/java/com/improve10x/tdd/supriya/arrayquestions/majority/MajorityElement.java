@@ -1,12 +1,12 @@
-package com.improve10x.tdd.krishna.test1problems;
+package com.improve10x.tdd.supriya.arrayquestions.majority;
 
 public class MajorityElement {
     public int findMajorityElement(int[] numbers) {
         if (numbers != null && numbers.length != 0) {
             int n = numbers.length;
-            for (int i = 0; i < n; i++) {
+            for (int i = 0; i < numbers.length; i++) {
                 int count = 0;
-                for (int j = i; j < n; j++) {
+                for (int j = i; j < numbers.length; j++) {
                     if (numbers[i] == numbers[j]) {
                         count++;
                     }
