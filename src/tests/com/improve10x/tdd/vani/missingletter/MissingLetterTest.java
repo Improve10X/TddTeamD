@@ -1,4 +1,4 @@
-package com.improve10x.tdd.vani.findthemissingletter;
+package com.improve10x.tdd.vani.missingletter;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
