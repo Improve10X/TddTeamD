@@ -16,6 +16,20 @@ public class MajorityElementTest {
     }
 
     @Test
+    public void givenNull_returnMinusOne() {
+        MajorityElement majorityElement = new MajorityElement();
+        int element = majorityElement.findMajorityElement(null);
+        Assertions.assertEquals(-1, element);
+    }
+
+    @Test
+    public void givenEmpty_returnMinusOne() {
+        MajorityElement majorityElement = new MajorityElement();
+        int element = majorityElement.findMajorityElement(new int[]{});
+        Assertions.assertEquals(-1, element);
+    }
+
+    @Test
     public void given0_returnMinusOne() {
         MajorityElement majorityElement = new MajorityElement();
         int element = majorityElement.findMajorityElement(new int[0]);
@@ -51,10 +65,10 @@ public class MajorityElementTest {
     }
 
     @Test
-    public void given12_return2() {
+    public void given12_return2() {//1,2 = 2/2 = 1
         MajorityElement majorityElement = new MajorityElement();
         int element = majorityElement.findMajorityElement(new int[]{1, 2});
-        Assertions.assertEquals(2, element);
+        Assertions.assertEquals(-1, element);
     }
 
     @Test
@@ -67,9 +81,21 @@ public class MajorityElementTest {
     @Test
     public void given323_return1() {
         MajorityElement majorityElement = new MajorityElement();
-        int element = majorityElement.findMajorityElement(new int[]{323});
+        int element = majorityElement.findMajorityElement(new int[]{3, 2, 3});
         Assertions.assertEquals(3, element);
     }
 
+    @Test
+    public void given2211122_return2() {
+        MajorityElement majorityElement = new MajorityElement();
+        int element = majorityElement.findMajorityElement(new int[]{2,2,1,1,1,2,2});
+        Assertions.assertEquals(2, element);
+    }
 
+    @Test
+    public void given3332233322_return3() {
+        MajorityElement majorityElement = new MajorityElement();
+        int element = majorityElement.findMajorityElement(new int[]{3,3,3,2,2,3,3,3,2,2});
+        Assertions.assertEquals(3, element);
+    }
 }
