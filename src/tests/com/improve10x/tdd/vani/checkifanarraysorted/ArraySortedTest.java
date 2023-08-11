@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.checkifanarraysorted;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -18,13 +19,22 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        Here element 5 is not smaller than or equal to its future elements.
 
 public class ArraySortedTest {
+    ArraySorted arraySorted;
+    @BeforeEach
+    public void setUp(){
+        arraySorted = new ArraySorted();
+    }
     @Test
     public void nothing(){}
 
     @Test
     public void givenNull_returnsTrue(){
-        ArraySorted arraySorted = new ArraySorted();
         boolean statement = arraySorted.checkIfAnArraySorted(null);
+        assertEquals(true,statement);
+    }
+    @Test
+    public void givenEmpty_returnsTrue(){
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{});
         assertEquals(true,statement);
     }
 
