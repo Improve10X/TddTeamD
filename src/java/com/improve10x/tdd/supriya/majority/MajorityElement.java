@@ -5,10 +5,7 @@ public class MajorityElement {
         int count = 0;
         int n = numbers.length;
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] == 1) {
-                count++;
-            }
-            if (numbers[i] == 2) {
+            if (numbers[i] == 1 || numbers[i] == 2) {
                 count++;
             }
             if (n / 2 < count) {
