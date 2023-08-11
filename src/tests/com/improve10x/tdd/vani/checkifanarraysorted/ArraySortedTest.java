@@ -21,5 +21,12 @@ public class ArraySortedTest {
     @Test
     public void nothing(){}
 
+    @Test
+    public void givenNull_returnsTrue(){
+        ArraySorted arraySorted = new ArraySorted();
+        boolean statement = arraySorted.checkIfAnArraySorted(null);
+        assertEquals(true,statement);
+    }
+
 
 }
