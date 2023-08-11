@@ -5,6 +5,8 @@ public class SmallestNumber {
         if (numbers != null && numbers.length > 1) {
             if (numbers[0] > numbers[1]) {
                 return 1;
+            }else if (numbers[0] < numbers[1] ){
+                return 3;
             }
         }
         return 0;
