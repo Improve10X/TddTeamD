@@ -38,8 +38,18 @@ public class RepeatingAndMissingNumberTest {
     }
     @Test
     public void given1_returns0(){
-        int[] zero = repeatingAndMissingNumber.findRepeatingAndMissingNumber(new int[]{0});
+        int[] zero = repeatingAndMissingNumber.findRepeatingAndMissingNumber(new int[]{1});
         assertArrayEquals(new int[]{0},zero);
+    }
+    @Test
+    public void given00_returns0(){
+        int[] zero = repeatingAndMissingNumber.findRepeatingAndMissingNumber(new int[]{0,0});
+        assertArrayEquals(new int[]{0},zero);
+    }
+    @Test
+    public void given11_returns01(){
+        int[] zeroOne = repeatingAndMissingNumber.findRepeatingAndMissingNumber(new int[]{0});
+        assertArrayEquals(new int[]{0,1},zeroOne);
     }
 
 
