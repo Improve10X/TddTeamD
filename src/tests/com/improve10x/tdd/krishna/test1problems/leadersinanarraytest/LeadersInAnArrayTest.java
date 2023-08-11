@@ -31,4 +31,11 @@ public class LeadersInAnArrayTest {
         int[] leaders = leadersInAnArray.findLeadersInAnArray(new int[] {-1});
         assertArrayEquals(new int[]{-1}, leaders);
     }
+
+    @Test
+    public void givenZeroZero_returnsZero(){
+        LeadersInAnArray leadersInAnArray = new LeadersInAnArray();
+        int[] leaders = leadersInAnArray.findLeadersInAnArray(new int[] {0 , 0});
+        assertArrayEquals(new int[]{0}, leaders);
+    }
 }
