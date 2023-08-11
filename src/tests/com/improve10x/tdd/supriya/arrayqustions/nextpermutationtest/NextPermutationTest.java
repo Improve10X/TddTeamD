@@ -1,6 +1,6 @@
-package com.improve10x.tdd.supriya.nextpermutationtest;
+package com.improve10x.tdd.supriya.arrayqustions.nextpermutationtest;
 
-import com.improve10x.tdd.supriya.NextPermutation.NextPermutation;
+import com.improve10x.tdd.supriya.arrayquestions.NextPermutation.NextPermutation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

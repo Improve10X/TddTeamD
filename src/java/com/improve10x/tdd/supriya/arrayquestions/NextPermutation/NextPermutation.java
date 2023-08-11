@@ -1,4 +1,4 @@
-package com.improve10x.tdd.supriya.NextPermutation;
+package com.improve10x.tdd.supriya.arrayquestions.NextPermutation;
 
 public class NextPermutation {
     public int[] FindNextPermutation(int[] numbers) {

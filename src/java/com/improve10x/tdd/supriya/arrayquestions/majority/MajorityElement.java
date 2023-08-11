@@ -1,4 +1,4 @@
-package com.improve10x.tdd.supriya.majority;
+package com.improve10x.tdd.supriya.arrayquestions.majority;
 
 public class MajorityElement {
     public int findMajorityElement(int[] numbers) {

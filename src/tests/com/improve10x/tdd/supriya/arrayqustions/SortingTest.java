@@ -1,5 +1,6 @@
-package com.improve10x.tdd.supriya;
+package com.improve10x.tdd.supriya.arrayqustions;
 
+import com.improve10x.tdd.supriya.arrayquestions.Sorting;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

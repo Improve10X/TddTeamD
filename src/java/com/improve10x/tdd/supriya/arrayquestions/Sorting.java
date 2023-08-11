@@ -1,4 +1,4 @@
-package com.improve10x.tdd.supriya;
+package com.improve10x.tdd.supriya.arrayquestions;
 
 public class Sorting {
     public int[] findNumber(int[] numbers) {
