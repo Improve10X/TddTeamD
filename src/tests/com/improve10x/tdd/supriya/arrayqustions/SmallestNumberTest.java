@@ -10,10 +10,9 @@ public class SmallestNumberTest {
     public void nothing(){}
 
     @Test
-    public void givenNull_returnMinus0ne(){
+    public void givenNull_return0(){
         SmallestNumber smallestNumber = new SmallestNumber();
         int number = smallestNumber.findSmallestNumber(null);
         Assertions.assertEquals(0, number);
     }
-
 }
