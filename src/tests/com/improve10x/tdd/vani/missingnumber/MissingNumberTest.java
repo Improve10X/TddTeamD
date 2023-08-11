@@ -1,7 +1,6 @@
-package com.improve10x.tdd.vani.findthemissingnumber;
+package com.improve10x.tdd.vani.missingnumber;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        missingNum([7, 2, 3, 6, 5, 9, 1, 4, 8]) ➞ 10
 //        missingNum([10, 5, 1, 2, 4, 6, 8, 3, 9]) ➞ 7
 
-public class FindTheMissingNumberTest {
+public class MissingNumberTest {
     MissingNumber missingNumber;
     @BeforeEach
     public void setUp(){
