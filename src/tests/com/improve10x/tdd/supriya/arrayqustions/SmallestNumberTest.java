@@ -29,4 +29,13 @@ public class SmallestNumberTest {
         int number = smallestNumber.findSmallestNumber(new int[]{0});
         Assertions.assertEquals(0, number);
     }
+
+    @Test
+    public void given10_return0(){
+        SmallestNumber smallestNumber = new SmallestNumber();
+        int number = smallestNumber.findSmallestNumber(new int[]{0});
+        Assertions.assertEquals(0, number);
+    }
+
+
 }
