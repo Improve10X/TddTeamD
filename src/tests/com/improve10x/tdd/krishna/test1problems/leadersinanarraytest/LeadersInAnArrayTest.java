@@ -45,4 +45,11 @@ public class LeadersInAnArrayTest {
         int[] leaders = leadersInAnArray.findLeadersInAnArray(new int[] {0, 1});
         assertArrayEquals(new int[]{1}, leaders);
     }
+
+    @Test
+    public void givenOneTwo_returnsTwo(){
+        LeadersInAnArray leadersInAnArray = new LeadersInAnArray();
+        int[] leaders = leadersInAnArray.findLeadersInAnArray(new int[] {1, 2});
+        assertArrayEquals(new int[]{2}, leaders);
+    }
 }
