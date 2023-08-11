@@ -57,4 +57,11 @@ public class SmallestNumberTest {
         int number = smallestNumber.findSmallestNumber(new int[]{2,3,1});
         Assertions.assertEquals(1, number);
     }
+
+    @Test
+    public void given4532_return1(){
+        SmallestNumber smallestNumber = new SmallestNumber();
+        int number = smallestNumber.findSmallestNumber(new int[]{4,5,3,2});
+        Assertions.assertEquals(2, number);
+    }
 }
