@@ -36,6 +36,11 @@ public class RepeatingAndMissingNumberTest {
         int[] zero = repeatingAndMissingNumber.findRepeatingAndMissingNumber(new int[]{0});
         assertArrayEquals(new int[]{0},zero);
     }
+    @Test
+    public void given1_returns0(){
+        int[] zero = repeatingAndMissingNumber.findRepeatingAndMissingNumber(new int[]{0});
+        assertArrayEquals(new int[]{0},zero);
+    }
 
 
 
