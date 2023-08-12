@@ -67,4 +67,11 @@ public class ArraySortedTest {
         boolean statement = arraySorted.checkIfAnArraySorted(new int[]{1,2,0});
         assertEquals(false, statement);
     }
+
+    @Test
+    public void given012_returnsTrue() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{0,1,2});
+        assertEquals(true, statement);
+    }
+
 }
