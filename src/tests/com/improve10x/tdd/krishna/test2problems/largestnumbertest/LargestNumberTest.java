@@ -66,4 +66,16 @@ public class LargestNumberTest {
         int largestNum = largestNumber.findLargestNumber(new int[]{1, 2});
         assertEquals(2, largestNum);
     }
+
+    @Test
+    public void givenTwoOne_returnsTwo() {
+        int largestNum = largestNumber.findLargestNumber(new int[]{2, 1});
+        assertEquals(2, largestNum);
+    }
+
+    @Test
+    public void givenThreeTwo_returnsThree() {
+        int largestNum = largestNumber.findLargestNumber(new int[]{3, 2});
+        assertEquals(3, largestNum);
+    }
 }
