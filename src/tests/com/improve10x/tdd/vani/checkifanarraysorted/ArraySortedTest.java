@@ -62,5 +62,50 @@ public class ArraySortedTest {
         boolean statement = arraySorted.checkIfAnArraySorted(new int[]{2, 1});
         assertEquals(false, statement);
     }
+    @Test
+    public void given120_returnsFalse() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{1,2,0});
+        assertEquals(false, statement);
+    }
+
+    @Test
+    public void given012_returnsTrue() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{0,1,2});
+        assertEquals(true, statement);
+    }
+
+    @Test
+    public void given102_returnsFalse() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{1,0,2});
+        assertEquals(false, statement);
+    }
+    @Test
+    public void given210_returnsFalse() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{2,1,0});
+        assertEquals(false, statement);
+    }
+    @Test
+    public void given021_returnsFalse() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{0,2,1});
+        assertEquals(false, statement);
+    }
+    @Test
+    public void given201_returnsFalse() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{2,0,1});
+        assertEquals(false, statement);
+    }
+    @Test
+    public void given0123_returnsTrue() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{0,1,2,3});
+        assertEquals(true, statement);
+    }
+    @Test
+    public void given1023_returnsFalse() {
+        boolean statement = arraySorted.checkIfAnArraySorted(new int[]{1,0,2,3});
+        assertEquals(false, statement);
+    }
+    
+
+
 
 }
