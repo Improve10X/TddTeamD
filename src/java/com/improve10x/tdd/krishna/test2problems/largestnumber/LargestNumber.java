@@ -5,10 +5,12 @@ public class LargestNumber {
         if (numbers != null && numbers.length >= 1) {
             if (numbers.length == 1) {
                 return numbers[0];
-            } else if (numbers[0] < numbers[1] || numbers[0] == numbers[1]) {
+            } else if (numbers.length == 2 && numbers[0] < numbers[1] || numbers[0] == numbers[1]) {
                 return numbers[1];
-            }else {
+            }else if(numbers.length == 2 && numbers[1] < numbers[0]){
                 return numbers[0];
+            }else if(numbers[0] < numbers[1] && numbers[1] < numbers[2]){
+                return numbers[2];
             }
         }
         return 0;
