@@ -12,9 +12,9 @@ public class ArraySorted {
                     return false;
                 }
                 } else if (numbers.length == 3) {
-                 if (numbers[0] > numbers[1] && numbers[1] < numbers[2]){
-                     return false;
-                 }
+                if (numbers[0] > numbers[1] && numbers[1] < numbers[2]) {
+                    return false;
+                }
                 if (numbers[0] < numbers[1] && numbers[1] > numbers[2]) {
                     return false;
                 }
