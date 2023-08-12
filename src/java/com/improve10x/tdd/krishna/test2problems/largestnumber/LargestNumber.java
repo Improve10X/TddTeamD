@@ -9,7 +9,9 @@ public class LargestNumber {
                 return numbers[1];
             }else if(numbers.length == 2 && numbers[1] < numbers[0]){
                 return numbers[0];
-            }else if(numbers[0] < numbers[1] && numbers[1] < numbers[2]){
+            }else if(numbers.length == 3 && numbers[0] < numbers[1] && numbers[1] < numbers[2]){
+                return numbers[2];
+            }else if(numbers[0] < numbers[2] && numbers[1] < numbers[2]){
                 return numbers[2];
             }
         }
