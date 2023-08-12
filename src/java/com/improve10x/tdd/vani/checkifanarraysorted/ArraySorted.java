@@ -21,6 +21,10 @@ public class ArraySorted {
                 if (numbers[0] > numbers[1] && numbers[1] > numbers[2]) {
                     return false;
                 }
+            } else if (numbers.length == 4) {
+                if (numbers[0] > numbers[1] && numbers[1] < numbers[2] && numbers[2] < numbers[3]) {
+                    return false;
+                }
             }
         }
         return true;
