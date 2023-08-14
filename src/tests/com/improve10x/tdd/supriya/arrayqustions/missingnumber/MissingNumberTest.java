@@ -41,10 +41,17 @@ public void setUp(){
     }
 
     @Test
-    public void given1_returnInvalid(){
+    public void given1_return0(){
         MissingNumber missingNumber = new MissingNumber();
         int missingValue = missingNumber.find(new int[]{1});
         Assertions.assertEquals(0, missingValue);
+    }
+
+    @Test
+    public void given2_return1(){
+        MissingNumber missingNumber = new MissingNumber();
+        int missingValue = missingNumber.find(new int[]{2});
+        Assertions.assertEquals(1, missingValue);
     }
 
 

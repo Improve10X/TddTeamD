@@ -6,6 +6,9 @@ public class MissingNumber {
             if (numbers[0] == 1) {
                 return 0;
             }
+            if (numbers[0] == 2){
+                return 1;
+            }
         }
         return -1;
     }
