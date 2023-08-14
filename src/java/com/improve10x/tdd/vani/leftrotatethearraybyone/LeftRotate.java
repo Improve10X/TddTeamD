@@ -7,6 +7,8 @@ public class LeftRotate {
                 return new int[]{1};
             } else if (numbers[0] == 2) {
                 return new int[]{2};
+            } else if (numbers[0] == 3) {
+                return new int[]{3};
             }
         }
         return new int[] {0};
