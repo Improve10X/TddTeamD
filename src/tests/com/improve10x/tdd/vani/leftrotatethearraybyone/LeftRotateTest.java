@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.leftrotatethearraybyone;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -14,14 +15,25 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 //        Output: 3
 
 public class LeftRotateTest {
+    LeftRotate leftRotate;
+
+    @BeforeEach
+    public void setUp(){
+        leftRotate = new LeftRotate();
+    }
 
     @Test
     public void nothing(){}
 
     @Test
     public void givenNull_returns0(){
-        LeftRotate leftRotate = new LeftRotate();
         int[] zero = leftRotate.findLeftRotateByArray(null);
+        assertArrayEquals(new int[]{0}, zero);
+    }
+
+    @Test
+    public void givenEmpty_returns0(){
+        int[] zero = leftRotate.findLeftRotateByArray(new int[]{});
         assertArrayEquals(new int[]{0}, zero);
     }
 }
