@@ -28,13 +28,13 @@ public class LeftRotateTest {
     @Test
     public void givenNull_returns0(){
         int[] zero = leftRotate.findLeftRotateByArray(null);
-        assertArrayEquals(new int[]{0}, zero);
+        assertArrayEquals(new int[]{}, zero);
     }
 
     @Test
     public void givenEmpty_returns0(){
         int[] zero = leftRotate.findLeftRotateByArray(new int[]{});
-        assertArrayEquals(new int[]{0}, zero);
+        assertArrayEquals(new int[]{}, zero);
     }
     @Test
     public void given0_returns0(){
@@ -48,22 +48,27 @@ public class LeftRotateTest {
     }
     @Test
     public void given2_returns2(){
-        int[] one = leftRotate.findLeftRotateByArray(new int[]{2});
-        assertArrayEquals(new int[]{2}, one);
+        int[] two = leftRotate.findLeftRotateByArray(new int[]{2});
+        assertArrayEquals(new int[]{2}, two);
     }
     @Test
     public void given3_returns3(){
-        int[] one = leftRotate.findLeftRotateByArray(new int[]{3});
-        assertArrayEquals(new int[]{3}, one);
+        int[] three = leftRotate.findLeftRotateByArray(new int[]{3});
+        assertArrayEquals(new int[]{3}, three);
     }
     @Test
     public void given5_returns5(){
-        int[] one = leftRotate.findLeftRotateByArray(new int[]{5});
-        assertArrayEquals(new int[]{5}, one);
+        int[] five = leftRotate.findLeftRotateByArray(new int[]{5});
+        assertArrayEquals(new int[]{5}, five);
     }
     @Test
     public void given100_returns100(){
-        int[] one = leftRotate.findLeftRotateByArray(new int[]{100});
-        assertArrayEquals(new int[]{100}, one);
+        int[] hundred = leftRotate.findLeftRotateByArray(new int[]{100});
+        assertArrayEquals(new int[]{100}, hundred);
+    }
+    @Test
+    public void given01_returns10(){
+        int[] value = leftRotate.findLeftRotateByArray(new int[]{0,1});
+        assertArrayEquals(new int[]{1,0}, value);
     }
 }
