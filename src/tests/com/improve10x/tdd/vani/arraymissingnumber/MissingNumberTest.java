@@ -38,6 +38,11 @@ public class MissingNumberTest {
         int missingValue = missingNumber.find(new int[]{0});
         assertEquals(invalid,missingValue);
     }
+    @Test
+    public void given1_returns0(){
+        int missingValue = missingNumber.find(new int[]{1});
+        assertEquals(0,missingValue);
+    }
 
 
 
