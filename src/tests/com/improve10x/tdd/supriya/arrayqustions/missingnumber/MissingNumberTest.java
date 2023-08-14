@@ -33,6 +33,13 @@ public void setUp(){
         Assertions.assertEquals(invalid, missingValue);
     }
 
+    @Test
+    public void given0_returnInvalid(){
+        MissingNumber missingNumber = new MissingNumber();
+        int missingValue = missingNumber.find(new int[]{0});
+        Assertions.assertEquals(invalid, missingValue);
+    }
+
 
 
 
