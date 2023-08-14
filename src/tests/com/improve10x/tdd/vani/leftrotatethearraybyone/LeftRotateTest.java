@@ -46,4 +46,10 @@ public class LeftRotateTest {
         int[] one = leftRotate.findLeftRotateByArray(new int[]{1});
         assertArrayEquals(new int[]{1}, one);
     }
+    @Test
+    public void given2_returns2(){
+        int[] one = leftRotate.findLeftRotateByArray(new int[]{2});
+        assertArrayEquals(new int[]{2}, one);
+    }
+
 }
