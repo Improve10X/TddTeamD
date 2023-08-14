@@ -15,41 +15,53 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        Result: 2
 
 public class MissingNumberTest {
-     private final int invalid = -1;
-    MissingNumber missingNumber;
+    private final int invalid = -1;
+    private MissingNumber missingNumber;
+
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         missingNumber = new MissingNumber();
     }
+
     @Test
-    public void nothing(){}
+    public void nothing() {
+    }
+
     @Test
-    public void givenNull_returnsInvalid(){
+    public void givenNull_returnsInvalid() {
         int missingValue = missingNumber.find(null);
-        assertEquals(invalid,missingValue);
+        assertEquals(invalid, missingValue);
     }
+
     @Test
-    public void givenEmpty_returnsInvalid(){
+    public void givenEmpty_returnsInvalid() {
         int missingValue = missingNumber.find(new int[]{});
-        assertEquals(invalid,missingValue);
+        assertEquals(invalid, missingValue);
     }
+
     @Test
-    public void given0_returnsInvalid(){
+    public void given0_returnsInvalid() {
         int missingValue = missingNumber.find(new int[]{0});
-        assertEquals(invalid,missingValue);
+        assertEquals(invalid, missingValue);
     }
+
     @Test
-    public void given1_returns0(){
+    public void given1_returns2() {
         int missingValue = missingNumber.find(new int[]{1});
-        assertEquals(0,missingValue);
+        assertEquals(2, missingValue);
     }
+
     @Test
-    public void given2_returns1(){
+    public void given2_returns1() {
         int missingValue = missingNumber.find(new int[]{2});
-        assertEquals(1,missingValue);
+        assertEquals(1, missingValue);
     }
 
-
+    @Test
+    public void given13_returns2() {
+        int missingValue = missingNumber.find(new int[]{1, 3});
+        assertEquals(2, missingValue);
+    }
 
 
 }
