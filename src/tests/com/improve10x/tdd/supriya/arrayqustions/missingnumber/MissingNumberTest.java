@@ -16,4 +16,11 @@ public class MissingNumberTest {
         int number = missingNumber1.findMissingNumber(null);
         Assertions.assertEquals(-1, number);
     }
+
+    @Test
+    public void givenMinusOne_returnMinusOne(){
+        MissingNumber1 missingNumber1 = new MissingNumber1();
+        int number = missingNumber1.findMissingNumber(new int[]{-1});
+        Assertions.assertEquals(-1, number);
+    }
 }
