@@ -93,4 +93,10 @@ public void setUp(){
         int missingValue = missingNumber.find(new int[]{1,2,3});
         assertEquals(4, missingValue);
     }
+
+    @Test
+    public void given1345_return2(){
+        int missingValue = missingNumber.find(new int[]{1,3,4,5});
+        assertEquals(2, missingValue);
+    }
 }
