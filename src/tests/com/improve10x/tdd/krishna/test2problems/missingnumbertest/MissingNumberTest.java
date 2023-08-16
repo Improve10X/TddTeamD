@@ -48,4 +48,10 @@ public class MissingNumberTest {
         int missingNum = missingNumber.findMissingNumber(new int[]{2});
         assertEquals(1, missingNum);
     }
+
+    @Test
+    public void given12_returnsThree(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2});
+        assertEquals(3, missingNum);
+    }
 }
