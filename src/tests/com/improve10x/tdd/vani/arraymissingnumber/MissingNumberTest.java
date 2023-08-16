@@ -124,4 +124,9 @@ public class MissingNumberTest {
         int missingValue = missingNumber.find(new int[]{1,2,3,4,5,6,7,8});
         assertEquals(9, missingValue);
     }
+    @Test
+    public void given97613452_returns8() {
+        int missingValue = missingNumber.find(new int[]{9,7,6,1,3,4,5,2});
+        assertEquals(8, missingValue);
+    }
 }

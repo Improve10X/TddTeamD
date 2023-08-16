@@ -80,8 +80,20 @@ public class MissingNumberTest {
     }
 
     @Test
-    public void given1234568_returnsThree(){
-        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2, 4, 5});
+    public void given1234568_returnsSeven(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2, 3, 4, 5, 6, 8});
+        assertEquals(7, missingNum);
+    }
+
+    @Test
+    public void given21_returnsThree(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{2, 1});
+        assertEquals(3, missingNum);
+    }
+
+    @Test
+    public void given214_returnsFour(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{2, 1, 4});
         assertEquals(3, missingNum);
     }
 }

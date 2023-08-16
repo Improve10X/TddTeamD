@@ -1,8 +1,8 @@
 package com.improve10x.tdd.vani.arraymissingnumber;
 
 public class MissingNumber {
-    public int find(int[] numbers) {
-//        if (numbers != null && numbers.length >= 1) {
+
+    //        if (numbers != null && numbers.length >= 1) {
 //            if (numbers.length == 1) {
 //                if (numbers[0] == 1) {
 //                    return 2;
@@ -39,18 +39,26 @@ public class MissingNumber {
 //            if (numbers[0] == 1 && numbers[1] == 2 && numbers[2] == 3 && numbers[3] == 4) {
 //                return 5;
 //            }
-            //13//12//0
-            //01//01
-            int result = -1 ;
-            if (numbers != null && numbers.length >= 1 && numbers[0] != 0){
-            for (int i = 0; i < numbers.length; i++){
-                if (i + 1 != numbers[i]){
-                    result = i + 1;
-                    break;
-                }else {
-                   result = numbers[i] + 1;
+    //13//12//
+    //01//01
+    public int find(int[] numbers) {
+        int result = -1;
+        if (numbers != null && numbers.length >= 1 && numbers[0] != 0) {
+            for (int i = 0; i <= numbers.length - 1; i++) {
+                for (int j = i + 1; j < numbers.length; j++) {
+                    if (numbers[i] > numbers[j]) {
+                        int temp = numbers[i];
+                        numbers[i] = numbers[j];
+                        numbers[j] = temp;
+                    }
                 }
-            }
+                    if (i + 1 != numbers[i]) {
+                        result = i + 1;
+                        break;
+                    } else {
+                        result = numbers[i] + 1;
+                    }
+                }
             return result;
         }
         return -1;
