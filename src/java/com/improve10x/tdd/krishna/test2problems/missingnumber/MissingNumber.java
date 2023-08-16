@@ -23,6 +23,8 @@ public class MissingNumber {
                 } else if (numbers[0] == 1 && numbers[1] == 2 && numbers[2] == 3){
                     return 4;
                 }
+            } else if (numbers[0] == 1 && numbers[1] == 2 && numbers[2] == 4 && numbers[3] == 5){
+                return 3;
             }
         }
         return -1;
