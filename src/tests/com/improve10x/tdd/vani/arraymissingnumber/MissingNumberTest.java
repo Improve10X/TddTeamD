@@ -70,6 +70,11 @@ public class MissingNumberTest {
         assertEquals(3, missingValue);
     }
     @Test
+    public void given23_returns1() {
+        int missingValue = missingNumber.find(new int[]{2, 3});
+        assertEquals(1, missingValue);
+    }
+    @Test
     public void given124_returns3() {
         int missingValue = missingNumber.find(new int[]{1, 2, 4});
         assertEquals(3, missingValue);
@@ -79,4 +84,31 @@ public class MissingNumberTest {
         int missingValue = missingNumber.find(new int[]{1, 2, 3});
         assertEquals(4, missingValue);
     }
+    @Test
+    public void given234_returns1() {
+        int missingValue = missingNumber.find(new int[]{2,3,4});
+        assertEquals(1, missingValue);
+    }
+    @Test
+    public void given134_returns2() {
+        int missingValue = missingNumber.find(new int[]{1,3,4});
+        assertEquals(2, missingValue);
+    }
+    @Test
+    public void given1345_returns2() {
+        int missingValue = missingNumber.find(new int[]{1,3,4,5});
+        assertEquals(2, missingValue);
+    }
+    @Test
+    public void given2345_returns1() {
+        int missingValue = missingNumber.find(new int[]{2,3,4,5});
+        assertEquals(1, missingValue);
+    }
+    @Test
+    public void given1245_returns3() {
+        int missingValue = missingNumber.find(new int[]{1,2,4,5});
+        assertEquals(3, missingValue);
+    }
+
+
 }

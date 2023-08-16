@@ -18,12 +18,21 @@ public class MissingNumber {
                 if (numbers[0] == 1 && numbers[1] == 2) {
                     return 3;
                 }
+                if (numbers[0] == 2 && numbers[1] == 3) {
+                    return 1;
+                }
             }
             if (numbers[0] == 1 && numbers[1] == 2 && numbers[2] == 3) {
                 return 4;
             }
             if (numbers[0] == 1 && numbers[1] == 2 && numbers[2] == 4) {
                 return 3;
+            }
+            if (numbers[0] == 2 && numbers[1] == 3 && numbers[2] == 4) {
+                return 1;
+            }
+            if (numbers[0] == 1 && numbers[1] == 3 && numbers[2] == 4) {
+                return 2;
             }
         }
         return -1;
