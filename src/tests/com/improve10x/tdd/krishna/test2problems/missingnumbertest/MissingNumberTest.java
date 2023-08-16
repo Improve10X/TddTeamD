@@ -60,4 +60,10 @@ public class MissingNumberTest {
         int missingNum = missingNumber.findMissingNumber(new int[]{1, 3});
         assertEquals(2, missingNum);
     }
+
+    @Test
+    public void given124_returnsTwo(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2, 4});
+        assertEquals(3, missingNum);
+    }
 }
