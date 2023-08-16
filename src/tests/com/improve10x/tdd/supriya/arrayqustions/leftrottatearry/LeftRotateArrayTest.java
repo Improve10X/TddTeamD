@@ -17,4 +17,11 @@ public class LeftRotateArrayTest {
         int[] array = leftRotateArray.find(null);
         assertArrayEquals(new int[]{}, array);
     }
+
+    @Test
+    public void givenEmpty_returnEmpty(){
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] array = leftRotateArray.find(new int[]{});
+        assertArrayEquals(new int[]{}, array);
+    }
 }
