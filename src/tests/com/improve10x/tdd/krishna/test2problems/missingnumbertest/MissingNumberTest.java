@@ -90,4 +90,10 @@ public class MissingNumberTest {
         int missingNum = missingNumber.findMissingNumber(new int[]{2, 1});
         assertEquals(3, missingNum);
     }
+
+    @Test
+    public void given214_returnsFour(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{2, 1, 4});
+        assertEquals(3, missingNum);
+    }
 }
