@@ -24,4 +24,11 @@ public class LeftRotateArrayTest {
         int[] array = leftRotateArray.find(new int[]{});
         assertArrayEquals(new int[]{}, array);
     }
+
+    @Test
+    public void givenO_return0(){
+        LeftRotateArray leftRotateArray = new LeftRotateArray();
+        int[] array = leftRotateArray.find(new int[]{0});
+        assertArrayEquals(new int[]{0}, array);
+    }
 }
