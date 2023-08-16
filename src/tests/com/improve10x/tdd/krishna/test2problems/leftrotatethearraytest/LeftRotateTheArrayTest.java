@@ -42,4 +42,10 @@ public class LeftRotateTheArrayTest {
         int[] result = leftRotateTheArray.findLeftRotateArray(new int[]{1});
         assertArrayEquals(new int[]{1}, result);
     }
+
+    @Test
+    public void givenZeroOne_returnsOneZero(){
+        int[] result = leftRotateTheArray.findLeftRotateArray(new int[]{0, 1});
+        assertArrayEquals(new int[]{1, 0}, result);
+    }
 }
