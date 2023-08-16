@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 //Find the missing number in an array
-//        Problem Statement: Given an integer N and an array of size N-1 containing N-1 numbers between 1 to N. Find the number(between 1 to N), that is not present in the given array.
+//        Problem Statement: Given an integer N and an array of size N-1
+//        containing N-1 numbers between 1 to N. Find the
+//        number(between 1 to N), that is not present in the given array.
 //        Examples
 //        Example 1:
 //        Input Format: N = 5, array[] = {1,2,4,5}
@@ -62,6 +64,9 @@ public class MissingNumberTest {
         int missingValue = missingNumber.find(new int[]{1, 3});
         assertEquals(2, missingValue);
     }
-
-
+    @Test
+    public void given12_returns3() {
+        int missingValue = missingNumber.find(new int[]{1, 2});
+        assertEquals(3, missingValue);
+    }
 }
