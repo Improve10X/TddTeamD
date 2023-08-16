@@ -70,6 +70,11 @@ public class MissingNumberTest {
         assertEquals(3, missingValue);
     }
     @Test
+    public void given23_returns1() {
+        int missingValue = missingNumber.find(new int[]{2, 3});
+        assertEquals(1, missingValue);
+    }
+    @Test
     public void given124_returns3() {
         int missingValue = missingNumber.find(new int[]{1, 2, 4});
         assertEquals(3, missingValue);
