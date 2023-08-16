@@ -19,6 +19,14 @@ public class LeftRotateTheArray {
                 numbers[2] = temp;
                 return new int[]{numbers[0], numbers[1], numbers[2]};
             }
+            if (numbers.length == 4) {
+                int temp = numbers[0];
+                numbers[0] = numbers[1];
+                numbers[1] = numbers[2];
+                numbers[2] = numbers[3];
+                numbers[3] = temp;
+                return new int[]{numbers[0], numbers[1], numbers[2], numbers[3]};
+            }
         }
         return new int[]{};
     }
