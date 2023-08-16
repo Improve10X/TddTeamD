@@ -63,4 +63,34 @@ public void setUp(){
         int missingValue = missingNumber.find(new int[]{1,2});
         assertEquals(3, missingValue);
     }
+
+    @Test
+    public void given23_return1(){
+        int missingValue = missingNumber.find(new int[]{2,3});
+        assertEquals(1, missingValue);
+    }
+
+    @Test
+    public void given234_return1(){
+        int missingValue = missingNumber.find(new int[]{2,3,4});
+        assertEquals(1, missingValue);
+    }
+
+    @Test
+    public void given124_return3(){
+        int missingValue = missingNumber.find(new int[]{1,2,4});
+        assertEquals(3, missingValue);
+    }
+
+    @Test
+    public void given134_return2(){
+        int missingValue = missingNumber.find(new int[]{1,3,4});
+        assertEquals(2, missingValue);
+    }
+
+    @Test
+    public void given123_return4(){
+        int missingValue = missingNumber.find(new int[]{1,2,3});
+        assertEquals(4, missingValue);
+    }
 }
