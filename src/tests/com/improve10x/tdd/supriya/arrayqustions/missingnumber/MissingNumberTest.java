@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MissingNumberTest {
 //    Find the missing number in an array
 //    Problem Statement: Given an integer N and an array of size N-1 containing N-1 numbers between 1 to N.
@@ -23,38 +25,42 @@ public void setUp(){
     @Test
     public void givenNull_returnInvalid(){
         int missingValue = missingNumber.find(null);
-        Assertions.assertEquals(invalid, missingValue);
+        assertEquals(invalid, missingValue);
     }
 
     @Test
     public void givenEmpty_returnInvalid(){
-        MissingNumber missingNumber = new MissingNumber();
         int missingValue = missingNumber.find(new int[]{});
-        Assertions.assertEquals(invalid, missingValue);
+        assertEquals(invalid, missingValue);
     }
 
     @Test
     public void given0_returnInvalid(){
-        MissingNumber missingNumber = new MissingNumber();
         int missingValue = missingNumber.find(new int[]{0});
-        Assertions.assertEquals(invalid, missingValue);
+        assertEquals(invalid, missingValue);
     }
 
     @Test
     public void given1_return0(){
-        MissingNumber missingNumber = new MissingNumber();
         int missingValue = missingNumber.find(new int[]{1});
-        Assertions.assertEquals(0, missingValue);
+        assertEquals(2, missingValue);
     }
 
     @Test
     public void given2_return1(){
-        MissingNumber missingNumber = new MissingNumber();
         int missingValue = missingNumber.find(new int[]{2});
-        Assertions.assertEquals(1, missingValue);
+        assertEquals(1, missingValue);
     }
 
+    @Test
+    public void given13_return2(){
+        int missingValue = missingNumber.find(new int[]{1,3});
+        assertEquals(2, missingValue);
+    }
 
-
-
+    @Test
+    public void given12_return3(){
+        int missingValue = missingNumber.find(new int[]{1,2});
+        assertEquals(3, missingValue);
+    }
 }
