@@ -42,4 +42,40 @@ public class MissingNumberTest {
         int missingNum = missingNumber.findMissingNumber(new int[]{1});
         assertEquals(2, missingNum);
     }
+
+    @Test
+    public void given2_returnsOne(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{2});
+        assertEquals(1, missingNum);
+    }
+
+    @Test
+    public void given12_returnsThree(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2});
+        assertEquals(3, missingNum);
+    }
+
+    @Test
+    public void given13_returnsTwo(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 3});
+        assertEquals(2, missingNum);
+    }
+
+    @Test
+    public void given124_returnsTwo(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2, 4});
+        assertEquals(3, missingNum);
+    }
+
+    @Test
+    public void given123_returnsFour(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2, 3});
+        assertEquals(4, missingNum);
+    }
+
+    @Test
+    public void given1245_returnsThree(){
+        int missingNum = missingNumber.findMissingNumber(new int[]{1, 2, 4, 5});
+        assertEquals(3, missingNum);
+    }
 }
