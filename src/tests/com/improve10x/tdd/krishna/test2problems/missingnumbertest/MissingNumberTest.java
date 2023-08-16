@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MissingNumberTest {
 
+    private final int invalid = -1;
+
     @Test
     public void nothing(){
     }
@@ -15,13 +17,20 @@ public class MissingNumberTest {
     public void givenNull_returnsMinusOne(){
         MissingNumber missingNumber = new MissingNumber();
         int missingNum = missingNumber.findMissingNumber(null);
-        assertEquals(-1, missingNum);
+        assertEquals(invalid, missingNum);
     }
 
     @Test
     public void givenEmpty_returnsMinusOne(){
         MissingNumber missingNumber = new MissingNumber();
         int missingNum = missingNumber.findMissingNumber(new int[]{});
-        assertEquals(-1, missingNum);
+        assertEquals(invalid, missingNum);
+    }
+
+    @Test
+    public void given0_returnsMinusOne(){
+        MissingNumber missingNumber = new MissingNumber();
+        int missingNum = missingNumber.findMissingNumber(new int[]{0});
+        assertEquals(invalid, missingNum);
     }
 }
