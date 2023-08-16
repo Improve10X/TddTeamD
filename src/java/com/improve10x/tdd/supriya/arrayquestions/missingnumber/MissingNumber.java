@@ -42,13 +42,13 @@ public class MissingNumber {
 //            if (numbers[0] == 1 && numbers[1] == 2 && numbers[2] == 3 && numbers[3] == 4) {
 //                return 5;
 //
-            for (int i = 0; i < numbers.length -1; i++ ) {
-                for (int j = i+1; j < numbers.length; j++){
-                        if (numbers[i] > numbers[j]){
-                            int temp = numbers[i];
-                            numbers[i] = numbers[j];
-                            numbers[j]=temp;
-                        }
+            for (int i = 0; i < numbers.length ; i++ ) {//31
+                for (int j = i+1; j < numbers.length; j++){//
+                    if (numbers[i] > numbers[j]){//3>1
+                        int temp = numbers[i];
+                        numbers[i] = numbers[j];
+                        numbers[j] = temp;//13
+                    }
                 }
                 if (i + 1 != numbers[i]) {
                     result = i + 1;
