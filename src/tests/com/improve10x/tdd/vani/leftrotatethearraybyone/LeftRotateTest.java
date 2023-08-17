@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 //        Output: 3
 
 public class LeftRotateTest {
-    LeftRotate leftRotate;
+    private LeftRotate leftRotate;
 
     @BeforeEach
     public void setUp(){
@@ -75,5 +75,10 @@ public class LeftRotateTest {
     public void given21_returns12(){
         int[] value = leftRotate.findLeftRotateByArray(new int[]{2,1});
         assertArrayEquals(new int[]{1,2}, value);
+    }
+    @Test
+    public void given312_returns123(){
+        int[] value = leftRotate.findLeftRotateByArray(new int[]{3,1,2});
+        assertArrayEquals(new int[]{1,2,3}, value);
     }
 }
