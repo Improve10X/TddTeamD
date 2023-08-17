@@ -2,7 +2,11 @@ package com.improve10x.tdd.supriya.arrayqustions.duplicateelement;
 
 import com.improve10x.tdd.supriya.arrayquestions.duplicateelement.DuplicateElement;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 //Remove Duplicates in-place from Sorted Array
 //Problem Statement: Given an integer array sorted in non-decreasing order, remove the duplicates
 // in place such that each unique element appears only once. The relative order of the elements
@@ -38,5 +42,26 @@ public class DuplicateElementTest {
         DuplicateElement duplicateElement = new DuplicateElement();
         int[] element = duplicateElement.find(new int[]{1});
         Assertions.assertArrayEquals(new int[] {1}, element);
+    }
+
+    @Test
+    public void given11_return1(){
+        DuplicateElement duplicateElement = new DuplicateElement();
+        int[] element = duplicateElement.find(new int[]{1,1});
+        Assertions.assertArrayEquals(new int[] {1}, element);
+    }
+
+    @Test
+    public void given12_return12(){
+        DuplicateElement duplicateElement = new DuplicateElement();
+        int[] element = duplicateElement.find(new int[]{1,2});
+        Assertions.assertArrayEquals(new int[] {1,2}, element);
+    }
+@Disabled
+    @Test
+    public void given112_return12(){
+        DuplicateElement duplicateElement = new DuplicateElement();
+        int[] element = duplicateElement.find(new int[]{1,1,2});
+        Assertions.assertArrayEquals(new int[] {1,2}, element);
     }
 }
