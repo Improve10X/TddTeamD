@@ -61,4 +61,10 @@ public class ArraySortedTest {
         boolean result = arraySorted.isSortedArray(new int[]{1, 1});
         assertTrue(result);
     }
+
+    @Test
+    public void given12_returnsTrue(){
+        boolean result = arraySorted.isSortedArray(new int[]{1, 2});
+        assertTrue(result);
+    }
 }
