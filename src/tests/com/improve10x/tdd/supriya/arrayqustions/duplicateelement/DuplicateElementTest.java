@@ -57,7 +57,7 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{1,2});
         Assertions.assertArrayEquals(new int[] {1,2}, element);
     }
-@Disabled
+
     @Test
     public void given112_return12(){
         DuplicateElement duplicateElement = new DuplicateElement();
