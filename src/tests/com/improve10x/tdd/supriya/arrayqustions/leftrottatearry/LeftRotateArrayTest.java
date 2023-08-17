@@ -2,6 +2,7 @@ package com.improve10x.tdd.supriya.arrayqustions.leftrottatearry;
 
 import com.improve10x.tdd.supriya.arrayquestions.leftrotatearray.LeftRotateArray;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -66,7 +67,7 @@ public class LeftRotateArrayTest {
         int[] array = leftRotateArray.find(new int[]{5,4,2});
         assertArrayEquals(new int[]{4,2,5}, array);
     }
-
+    
     @Test
     public void given1234_return2341(){
         LeftRotateArray leftRotateArray = new LeftRotateArray();
