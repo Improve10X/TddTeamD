@@ -25,4 +25,11 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{});
         Assertions.assertArrayEquals(new int[] {}, element);
     }
+
+    @Test
+    public void given0_return0(){
+        DuplicateElement duplicateElement = new DuplicateElement();
+        int[] element = duplicateElement.find(new int[]{0});
+        Assertions.assertArrayEquals(new int[] {0}, element);
+    }
 }
