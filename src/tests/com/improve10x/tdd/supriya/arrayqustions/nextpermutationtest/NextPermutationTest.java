@@ -16,6 +16,13 @@ public class NextPermutationTest {
     }
 
     @Test
+    public void givenNull_returns0(){
+        NextPermutation nextPermutation = new NextPermutation();
+        int[] permutation = nextPermutation.FindNextPermutation(null);
+        Assertions.assertArrayEquals(new int[]{0}, permutation);
+    }
+
+    @Test
     public void given1_returns0(){
         NextPermutation nextPermutation = new NextPermutation();
         int[] permutation = nextPermutation.FindNextPermutation(new int[]{0});
