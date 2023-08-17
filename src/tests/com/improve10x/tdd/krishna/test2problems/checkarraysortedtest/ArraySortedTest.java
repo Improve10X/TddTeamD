@@ -18,4 +18,11 @@ public class ArraySortedTest {
         boolean result = arraySorted.isSortedArray(null);
         assertTrue(result);
     }
+
+    @Test
+    public void givenEmpty_returnsTrue(){
+        ArraySorted arraySorted = new ArraySorted();
+        boolean result = arraySorted.isSortedArray(new int[] {});
+        assertTrue(result);
+    }
 }
