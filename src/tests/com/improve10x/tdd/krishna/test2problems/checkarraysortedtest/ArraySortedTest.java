@@ -73,4 +73,22 @@ public class ArraySortedTest {
         boolean result = arraySorted.isSortedArray(new int[]{2, 1});
         assertFalse(result);
     }
+
+    @Test
+    public void given123_returnsTrue(){
+        boolean result = arraySorted.isSortedArray(new int[]{1, 2, 3});
+        assertTrue(result);
+    }
+
+    @Test
+    public void given213_returnsTrue(){
+        boolean result = arraySorted.isSortedArray(new int[]{2, 1, 3});
+        assertFalse(result);
+    }
+
+    @Test
+    public void given0123_returnsTrue(){
+        boolean result = arraySorted.isSortedArray(new int[]{0, 1, 2, 3});
+        assertTrue(result);
+    }
 }
