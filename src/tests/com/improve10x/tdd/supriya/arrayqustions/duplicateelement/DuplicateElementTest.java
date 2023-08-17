@@ -78,4 +78,11 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{1,2,3});
         Assertions.assertArrayEquals(new int[] {1,2,3}, element);
     }
+@Disabled
+    @Test
+    public void given1112_return12(){
+        DuplicateElement duplicateElement = new DuplicateElement();
+        int[] element = duplicateElement.find(new int[]{1,1,1,2});
+        Assertions.assertArrayEquals(new int[] {1,2}, element);
+    }
 }
