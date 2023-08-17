@@ -16,6 +16,7 @@ public class DuplicateElement {
                 if (numbers[0] == numbers[1]){
                     return new int[]{numbers[0],numbers[2]};
                 }
+                return new int[]{numbers[0],numbers[2]};
             }
         }
         return new int[]{};
