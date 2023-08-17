@@ -31,4 +31,11 @@ public class ArraySortedTest {
         boolean result = arraySorted.isSortedArray(new int[]{0});
         assertTrue(result);
     }
+
+    @Test
+    public void given1_returnsTrue(){
+        ArraySorted arraySorted = new ArraySorted();
+        boolean result = arraySorted.isSortedArray(new int[]{1});
+        assertTrue(result);
+    }
 }
