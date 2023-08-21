@@ -42,6 +42,12 @@ public class DuplicateElementTest {
     }
 
     @Test
+    public void given00_return0(){
+        int[] element = duplicateElement.find(new int[]{0,0});
+        assertArrayEquals(new int[] {0}, element);
+    }
+
+    @Test
     public void given1_return1(){
         int[] element = duplicateElement.find(new int[]{1});
         assertArrayEquals(new int[] {1}, element);
@@ -57,6 +63,12 @@ public class DuplicateElementTest {
     public void given12_return12(){
         int[] element = duplicateElement.find(new int[]{1,2});
         assertArrayEquals(new int[] {1,2}, element);
+    }
+
+    @Test
+    public void given111_return1(){
+        int[] element = duplicateElement.find(new int[]{1,1,1});
+        assertArrayEquals(new int[] {1}, element);
     }
 
     @Test
@@ -76,10 +88,26 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{1,2,3});
         assertArrayEquals(new int[] {1,2,3}, element);
     }
-    @Disabled
     @Test
-    public void given1123_return12(){
+    public void given1123_return123(){
         int[] element = duplicateElement.find(new int[]{1,1,2,3});
         assertArrayEquals(new int[] {1,2,3}, element);
     }
+
+    @Test
+    public void given11223_return123(){
+        int[] element = duplicateElement.find(new int[]{1,1,2,2,3});
+        assertArrayEquals(new int[] {1,2,3}, element);
+    }
+    @Test
+    public void given112233_return123(){
+        int[] element = duplicateElement.find(new int[]{1,1,2,2,3,3});
+        assertArrayEquals(new int[] {1,2,3}, element);
+    }
+//    @Test
+//    public void given111223_return123(){
+//        int[] element = duplicateElement.find(new int[]{1,1,1,2,2,3,3});
+//        assertArrayEquals(new int[] {1,2,3}, element);
+//    }
+
 }
