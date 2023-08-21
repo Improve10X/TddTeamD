@@ -68,14 +68,20 @@ public class DuplicateElementsTest {
     }
 
     @Test
-    public void given112_returns1() {
+    public void given112_returns12() {
         int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 1, 2});
         assertArrayEquals(new int[]{1, 2}, result);
     }
 
     @Test
-    public void given211_returns1() {
+    public void given211_returns12() {
         int[] result = duplicateElements.removeDuplicateElements(new int[]{2, 1, 1});
-        assertArrayEquals(new int[]{2, 1}, result);
+        assertArrayEquals(new int[]{1, 2}, result);
+    }
+
+    @Test
+    public void given121_returns12() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 2, 1});
+        assertArrayEquals(new int[]{1, 2}, result);
     }
 }

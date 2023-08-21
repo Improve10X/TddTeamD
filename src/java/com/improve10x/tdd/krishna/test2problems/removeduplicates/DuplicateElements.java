@@ -23,7 +23,13 @@ public class DuplicateElements {
             if(numbers[0] == numbers[1]){
                 return new int[]{numbers[0], numbers[2]};
             }
-            if(numbers[1] == numbers[2]){
+            if(numbers[0] > numbers[1] && numbers[1] == numbers[2]){
+                int temp = numbers[0];
+                numbers[0] = numbers[1];
+                numbers[1] = temp;
+                return new int[]{numbers[0], numbers[1]};
+            }
+            if(numbers[0] == numbers[2] && numbers[0] < numbers[1]){
                 return new int[]{numbers[0], numbers[1]};
             }
         }
