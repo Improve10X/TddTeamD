@@ -41,6 +41,9 @@ public class DuplicateElements {
             if(numbers[0] == numbers[1] && numbers[2] != numbers[3]){
                 return new int[]{numbers[0], numbers[2], numbers[3]};
             }
+            if(numbers[0] == numbers[3] && numbers[1] < numbers[2]){
+                return new int[]{numbers[0], numbers[1] , numbers[2]};
+            }
         }
         return new int[]{};
     }
