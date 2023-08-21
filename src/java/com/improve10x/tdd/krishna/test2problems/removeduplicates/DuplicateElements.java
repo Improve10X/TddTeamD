@@ -5,6 +5,9 @@ public class DuplicateElements {
         if(numbers != null && numbers.length == 1){
             return new int[]{numbers[0]};
         }
+        if(numbers != null && numbers.length == 2 && numbers[0] == numbers[1]){
+            return new int[]{numbers[0]};
+        }
         return new int[]{};
     }
 }
