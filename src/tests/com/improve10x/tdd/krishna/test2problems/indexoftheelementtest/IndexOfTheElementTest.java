@@ -74,4 +74,10 @@ public class IndexOfTheElementTest {
         int index = indexOfTheElement.findIndex(new int[]{1, 3, 2}, 3);
         assertEquals(1, index);
     }
+
+    @Test
+    public void given312_returns0(){
+        int index = indexOfTheElement.findIndex(new int[]{3, 1, 2}, 3);
+        assertEquals(0, index);
+    }
 }
