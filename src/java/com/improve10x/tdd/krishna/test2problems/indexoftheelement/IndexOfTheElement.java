@@ -26,6 +26,9 @@ public class IndexOfTheElement {
                 }
             }
             if(numbers.length == 4){
+                if(numbers[0] == number){
+                    return 0;
+                }
                 if(numbers[1] == number){
                     return 1;
                 }
