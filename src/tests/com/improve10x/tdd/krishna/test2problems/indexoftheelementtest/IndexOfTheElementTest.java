@@ -110,4 +110,14 @@ public class IndexOfTheElementTest {
         int index = indexOfTheElement.findIndex(new int[]{2, 3, 1, 4, 5}, 5);
         assertEquals(4, index);
     }
+
+    @Test
+    public void integrationTest(){
+        int index = indexOfTheElement.findIndex(new int[]{9, 3, 1, 4, 5, 7, 8, 2, 10}, 2);
+        assertEquals(7, index);
+        int indexNumber = indexOfTheElement.findIndex(new int[]{9, 3, 1, 4, 5, 7, 8, 2, 6}, 6);
+        assertEquals(8, indexNumber);
+        int index1 = indexOfTheElement.findIndex(new int[]{10, 3, 1, 4, 5, 7, 8, 2, 11}, 10);
+        assertEquals(0, index1);
+    }
 }
