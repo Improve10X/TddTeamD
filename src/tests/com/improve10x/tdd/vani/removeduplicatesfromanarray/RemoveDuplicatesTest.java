@@ -114,4 +114,9 @@ public class RemoveDuplicatesTest {
         int[] value = removeDuplicates.find(new int[]{1,2,2,3});
         assertArrayEquals(new int[]{1,2,3}, value);
     }
+    @Test
+    public void given1233_returns123(){
+        int[] value = removeDuplicates.find(new int[]{1,2,3,3});
+        assertArrayEquals(new int[]{1,2,3}, value);
+    }
 }
