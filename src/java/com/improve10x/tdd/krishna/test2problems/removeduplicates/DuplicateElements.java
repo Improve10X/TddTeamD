@@ -2,7 +2,7 @@ package com.improve10x.tdd.krishna.test2problems.removeduplicates;
 
 public class DuplicateElements {
     public int[] removeDuplicateElements(int[] numbers) {
-        if (numbers != null) {
+        if (numbers != null && numbers.length >= 1) {
             if (numbers.length == 1) {
                 return numbers;
             }
@@ -16,6 +16,9 @@ public class DuplicateElements {
                     numbers[1] = temp;
                 }
                 return numbers;
+            }
+            if(numbers[0] == numbers[1] && numbers[1] == numbers[2]){
+                return new int[]{numbers[0]};
             }
         }
         return new int[]{};
