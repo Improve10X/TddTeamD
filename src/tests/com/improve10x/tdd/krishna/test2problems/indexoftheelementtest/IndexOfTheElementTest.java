@@ -32,4 +32,10 @@ public class IndexOfTheElementTest {
         int index = indexOfTheElement.findIndex(new int[]{}, 1);
         assertEquals(invalid, index);
     }
+
+    @Test
+    public void given0_returns0(){
+        int index = indexOfTheElement.findIndex(new int[]{0}, 0);
+        assertEquals(0, index);
+    }
 }
