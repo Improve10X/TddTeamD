@@ -15,4 +15,10 @@ public class ArraySortedTest {
         boolean sorted = arraySorted.find(null);
         Assertions.assertEquals(true, sorted);
     }
+    @Test
+    public void givenEmpty_returnTrue(){
+        ArraySorted arraySorted = new ArraySorted();
+        boolean sorted = arraySorted.find(new int[]{});
+        Assertions.assertEquals(true, sorted);
+    }
 }
