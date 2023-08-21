@@ -50,4 +50,10 @@ public class IndexOfTheElementTest {
         int index = indexOfTheElement.findIndex(new int[]{0, 1}, 1);
         assertEquals(1, index);
     }
+
+    @Test
+    public void given10_returns0(){
+        int index = indexOfTheElement.findIndex(new int[]{1, 0}, 1);
+        assertEquals(0, index);
+    }
 }
