@@ -18,4 +18,11 @@ public class DuplicateElementsTest {
         int[] result = duplicateElements.removeDuplicateElements(null);
         assertArrayEquals(new int[]{}, result);
     }
+
+    @Test
+    public void givenEmpty_returnsEmpty() {
+        DuplicateElements duplicateElements = new DuplicateElements();
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{});
+        assertArrayEquals(new int[]{}, result);
+    }
 }
