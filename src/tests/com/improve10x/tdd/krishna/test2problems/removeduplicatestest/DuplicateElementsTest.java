@@ -54,4 +54,10 @@ public class DuplicateElementsTest {
         int[] result = duplicateElements.removeDuplicateElements(new int[]{0, 1});
         assertArrayEquals(new int[]{0, 1}, result);
     }
+
+    @Test
+    public void given21_returns12() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{2, 1});
+        assertArrayEquals(new int[]{1, 2}, result);
+    }
 }
