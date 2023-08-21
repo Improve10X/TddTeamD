@@ -25,15 +25,10 @@ public class ArraySorted {
 //                    return false;
 //                }
     public boolean checkIfAnArraySorted(int[] numbers) {
-        if (numbers != null && numbers.length > 1) {
-            for (int i = 0; i <= numbers.length - 1; i++) {
+        if (numbers != null && numbers.length > 1) {//120
+            for (int i = 0; i < numbers.length; i++) {
                 for (int j = i + 1; j < numbers.length; j++) {
-                    if (numbers[i] < numbers[j]) {
-                        int temp = numbers[i];
-                        numbers[i] = numbers[j];
-                        numbers[j] = temp;
-                        return true;
-                    } else {
+                    if (numbers[i] > numbers[j]) {
                         return false;
                     }
                 }
