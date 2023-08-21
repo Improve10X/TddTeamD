@@ -41,7 +41,7 @@ public class IndexOfTheElementTest {
 
     @Test
     public void given1_returns0(){
-        int index = indexOfTheElement.findIndex(new int[]{1}, 0);
+        int index = indexOfTheElement.findIndex(new int[]{1}, 1);
         assertEquals(0, index);
     }
 
@@ -97,5 +97,17 @@ public class IndexOfTheElementTest {
     public void given4231_return0(){
         int index = indexOfTheElement.findIndex(new int[]{4, 2, 3, 1}, 4);
         assertEquals(0, index);
+    }
+
+    @Test
+    public void given2314_return3(){
+        int index = indexOfTheElement.findIndex(new int[]{2, 3, 1, 4}, 4);
+        assertEquals(3, index);
+    }
+
+    @Test
+    public void given23145_return4(){
+        int index = indexOfTheElement.findIndex(new int[]{2, 3, 1, 4, 5}, 5);
+        assertEquals(4, index);
     }
 }
