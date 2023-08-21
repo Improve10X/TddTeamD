@@ -41,6 +41,9 @@ public class RemoveDuplicates {
                 if (numbers[0] == numbers[1] && numbers[1] < numbers[2] && numbers[2] < numbers[3]){
                     return new int[]{numbers[0],numbers[2],numbers[3]};
                 }
+                if (numbers[0] < numbers[1] && numbers[1] == numbers[2] && numbers[2] < numbers[3]){
+                    return new int[]{numbers[0],numbers[1],numbers[3]};
+                }
             }
         }
         return new int[]{};
