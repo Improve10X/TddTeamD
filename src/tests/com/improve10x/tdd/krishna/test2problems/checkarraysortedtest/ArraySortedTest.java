@@ -103,4 +103,16 @@ public class ArraySortedTest {
         boolean result = arraySorted.isSortedArray(new int[]{3, 2, 0, 1});
         assertFalse(result);
     }
+
+    @Test
+    public void integrationTest(){
+        boolean result = arraySorted.isSortedArray(new int[]{1, 2, 5, 0});
+        assertFalse(result);
+        boolean result1 = arraySorted.isSortedArray(new int[]{0, 1, 4, 2});
+        assertFalse(result1);
+        boolean result2 = arraySorted.isSortedArray(new int[]{3, 4, 5, 6, 7});
+        assertTrue(result2);
+        boolean result3 = arraySorted.isSortedArray(new int[]{7, 8, 9, 10, 11, 12});
+        assertTrue(result3);
+    }
 }
