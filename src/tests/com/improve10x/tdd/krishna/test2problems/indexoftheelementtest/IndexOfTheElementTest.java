@@ -26,4 +26,10 @@ public class IndexOfTheElementTest {
         int index = indexOfTheElement.findIndex(null, 0);
         assertEquals(invalid, index);
     }
+
+    @Test
+    public void givenEmpty_returnsMinusOne(){
+        int index = indexOfTheElement.findIndex(new int[]{}, 1);
+        assertEquals(invalid, index);
+    }
 }
