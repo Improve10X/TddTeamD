@@ -48,4 +48,10 @@ public class DuplicateElementsTest {
         int[] result = duplicateElements.removeDuplicateElements(new int[]{0, 0});
         assertArrayEquals(new int[]{0}, result);
     }
+
+    @Test
+    public void given01_returns01() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{0, 1});
+        assertArrayEquals(new int[]{0, 1}, result);
+    }
 }
