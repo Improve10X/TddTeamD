@@ -51,7 +51,7 @@ public class ArraySortedTest {
     }
 
     @Test
-    public void given10_returnsTrue(){
+    public void given10_returnsFalse(){
         boolean result = arraySorted.isSortedArray(new int[]{1, 0});
         assertFalse(result);
     }
@@ -93,8 +93,14 @@ public class ArraySortedTest {
     }
 
     @Test
-    public void given0132_returnsTrue(){
+    public void given0132_returnsFalse(){
         boolean result = arraySorted.isSortedArray(new int[]{0, 1, 3, 2});
+        assertFalse(result);
+    }
+
+    @Test
+    public void given3201_returnsFalse(){
+        boolean result = arraySorted.isSortedArray(new int[]{3, 2, 0, 1});
         assertFalse(result);
     }
 }
