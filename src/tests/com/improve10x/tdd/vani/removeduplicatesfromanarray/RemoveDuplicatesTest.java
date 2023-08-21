@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.removeduplicatesfromanarray;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -25,12 +26,22 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 //        Explanation: Total number of unique elements are 4, i.e[1,2,3,4] and Therefore return 4 after assigning [1,2,3,4] in the beginning of the array.
 
 public class RemoveDuplicatesTest {
+    private RemoveDuplicates removeDuplicates;
+
+    @BeforeEach
+    public void setUp(){
+        removeDuplicates = new RemoveDuplicates();
+    }
     @Test
     public void nothing(){}
     @Test
     public void givenNull_returnsEmpty(){
-        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
         int[] value = removeDuplicates.find(null);
+        assertArrayEquals(new int[]{}, value);
+    }
+    @Test
+    public void givenEmpty_returnsEmpty(){
+        int[] value = removeDuplicates.find(new int[]{});
         assertArrayEquals(new int[]{}, value);
     }
 }
