@@ -90,4 +90,10 @@ public class AllZerosToTheEndTest {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 0, 1});
         assertArrayEquals(new int[]{1, 0, 0}, result);
     }
+
+    @Test
+    public void given010_returns100(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 1, 0});
+        assertArrayEquals(new int[]{1, 0, 0}, result);
+    }
 }
