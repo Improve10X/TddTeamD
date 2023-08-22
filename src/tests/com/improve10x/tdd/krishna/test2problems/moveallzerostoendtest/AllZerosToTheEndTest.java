@@ -17,4 +17,11 @@ public class AllZerosToTheEndTest {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(null);
         assertArrayEquals(new int[]{-1}, result);
     }
+
+    @Test
+    public void givenEmpty_returnsMinusOne(){
+        AllZerosToTheEnd allZerosToTheEnd = new AllZerosToTheEnd();
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{});
+        assertArrayEquals(new int[]{-1}, result);
+    }
 }
