@@ -23,6 +23,12 @@ public class AllZerosToTheEnd {
                     numbers[2] = temp;
                     return numbers;
                 }
+                if(numbers[0] != 0 && numbers[1] == 0 && numbers[2] != 0){
+                    int temp = numbers[1];
+                    numbers[1] = numbers[2];
+                    numbers[2] = temp;
+                    return numbers;
+                }
             }
         }
         return new int[]{-1};
