@@ -12,6 +12,7 @@ public class AllZerosToTheEnd {
                 numbers[1] = temp;
                 return numbers;
             }
+            return numbers;
         }
         return new int[]{-1};
     }
