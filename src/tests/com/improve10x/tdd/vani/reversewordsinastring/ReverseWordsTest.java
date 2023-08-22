@@ -43,4 +43,9 @@ public class ReverseWordsTest {
         String sentence = reverseWords.find("AB");
         assertEquals("BA",sentence);
     }
+    @Test
+    public void givenAND_returnsDNA(){
+        String sentence = reverseWords.find("AND");
+        assertEquals("DNA",sentence);
+    }
 }
