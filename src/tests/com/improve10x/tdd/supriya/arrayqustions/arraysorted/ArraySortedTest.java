@@ -80,4 +80,10 @@ public class ArraySortedTest {
         boolean sorted = arraySorted.find(new int[]{3,2,1});
         Assertions.assertEquals(false, sorted);
     }
+
+    @Test
+    public void given1324_returnTrue(){
+        boolean sorted = arraySorted.find(new int[]{1,3,2,4});
+        Assertions.assertEquals(false, sorted);
+    }
 }
