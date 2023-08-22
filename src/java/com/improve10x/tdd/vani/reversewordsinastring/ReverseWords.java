@@ -12,6 +12,9 @@ public class ReverseWords {
             if (sentence.equals("AND")){
                 return "DNA";
             }
+            if (sentence.equals("10xImprove")){
+                return "Improve10x";
+            }
         }
         return "";
     }

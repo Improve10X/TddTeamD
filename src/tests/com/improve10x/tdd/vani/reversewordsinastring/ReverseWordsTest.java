@@ -48,4 +48,9 @@ public class ReverseWordsTest {
         String sentence = reverseWords.find("AND");
         assertEquals("DNA",sentence);
     }
+    @Test
+    public void given10xImprove_returnsImprove10x(){
+        String sentence = reverseWords.find("10xImprove");
+        assertEquals("Improve10x",sentence);
+    }
 }
