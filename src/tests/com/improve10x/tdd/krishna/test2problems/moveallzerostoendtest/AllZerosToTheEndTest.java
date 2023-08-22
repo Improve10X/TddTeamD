@@ -78,4 +78,10 @@ public class AllZerosToTheEndTest {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{2, 0, 1});
         assertArrayEquals(new int[]{2, 1, 0}, result);
     }
+
+    @Test
+    public void given120_returns120(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 2, 0});
+        assertArrayEquals(new int[]{1, 2, 0}, result);
+    }
 }

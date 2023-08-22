@@ -29,6 +29,7 @@ public class AllZerosToTheEnd {
                     numbers[2] = temp;
                     return numbers;
                 }
+                return numbers;
             }
         }
         return new int[]{-1};
