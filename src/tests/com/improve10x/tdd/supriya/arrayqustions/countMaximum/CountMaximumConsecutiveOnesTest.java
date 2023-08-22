@@ -23,4 +23,11 @@ public class CountMaximumConsecutiveOnesTest {
         Assertions.assertEquals(0, count);
     }
 
+    @Test
+    public void givenZero_returnsZero(){
+        CountMaximumConsecutiveOnes countMaximumConsecutiveOnes = new CountMaximumConsecutiveOnes();
+        int count = countMaximumConsecutiveOnes.find(new int[]{0});
+        Assertions.assertEquals(0, count);
+    }
+
 }
