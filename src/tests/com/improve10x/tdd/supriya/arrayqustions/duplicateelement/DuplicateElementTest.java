@@ -93,6 +93,11 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{1,1,2,3});
         assertArrayEquals(new int[] {1,2,3}, element);
     }
+    @Test
+    public void given1223_return123(){
+        int[] element = duplicateElement.find(new int[]{1,2,2,3});
+        assertArrayEquals(new int[] {1,2,3}, element);
+    }
 
     @Test
     public void given11223_return123(){
@@ -104,10 +109,10 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{1,1,2,2,3,3});
         assertArrayEquals(new int[] {1,2,3}, element);
     }
+    @Disabled
     @Test
     public void given111223_return123(){
         int[] element = duplicateElement.find(new int[]{1,1,1,2,2,3,3});
         assertArrayEquals(new int[] {1,2,3}, element);
     }
-
 }

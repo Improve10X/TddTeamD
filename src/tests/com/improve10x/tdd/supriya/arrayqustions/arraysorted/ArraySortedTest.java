@@ -4,7 +4,11 @@ import com.improve10x.tdd.supriya.arrayquestions.arraysorted.ArraySorted;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
+//Check if an Array is Sorted
+//        Problem Statement: Given an array of size n, write a program to check if the given
+//        array is sorted in (ascending / Increasing / Non-decreasing) order or not. If the array
+//        is sorted then return True, Else return False.
+//        Note: Two consecutive equal values are considered to be sorted.
 public class ArraySortedTest {
     ArraySorted arraySorted;
     @BeforeEach
@@ -47,5 +51,21 @@ public class ArraySortedTest {
         boolean sorted = arraySorted.find(new int[]{0,1});
         Assertions.assertEquals(true, sorted);
     }
+    @Test
+    public void given012_returnTrue(){
+        boolean sorted = arraySorted.find(new int[]{0,1,2});
+        Assertions.assertEquals(true, sorted);
+    }
 
+    @Test
+    public void given021_returnTrue(){
+        boolean sorted = arraySorted.find(new int[]{0,2,1});
+        Assertions.assertEquals(false, sorted);
+    }
+
+    @Test
+    public void given123_returnTrue(){
+        boolean sorted = arraySorted.find(new int[]{1,2,3});
+        Assertions.assertEquals(true, sorted);
+    }
 }
