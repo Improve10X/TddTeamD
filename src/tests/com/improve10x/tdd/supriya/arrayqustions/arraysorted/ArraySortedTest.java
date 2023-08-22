@@ -76,14 +76,20 @@ public class ArraySortedTest {
     }
 
     @Test
-    public void given321_returnTrue(){
+    public void given321_returnFalse(){
         boolean sorted = arraySorted.find(new int[]{3,2,1});
         Assertions.assertEquals(false, sorted);
     }
 
     @Test
-    public void given1324_returnTrue(){
+    public void given1324_returnFalse(){
         boolean sorted = arraySorted.find(new int[]{1,3,2,4});
+        Assertions.assertEquals(false, sorted);
+    }
+
+    @Test
+    public void given1432_returnFalse(){
+        boolean sorted = arraySorted.find(new int[]{1,4,3,2});
         Assertions.assertEquals(false, sorted);
     }
 }
