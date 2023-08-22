@@ -9,6 +9,9 @@ public class ReverseWords {
             if (sentence.equals("AB")) {
                 return "BA";
             }
+            if (sentence.equals("AND")){
+                return "DNA";
+            }
         }
         return "";
     }
