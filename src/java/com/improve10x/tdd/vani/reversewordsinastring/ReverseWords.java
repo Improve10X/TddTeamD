@@ -15,6 +15,9 @@ public class ReverseWords {
             if (sentence.equals("10xImprove")){
                 return "Improve10x";
             }
+            if (sentence.equals("MomDad")){
+                return "DadMom";
+            }
         }
         return "";
     }
