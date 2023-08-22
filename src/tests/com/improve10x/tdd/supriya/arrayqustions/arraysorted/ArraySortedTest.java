@@ -70,8 +70,14 @@ public class ArraySortedTest {
     }
 
     @Test
-    public void given132_returnTrue(){
+    public void given132_returnFalse(){
         boolean sorted = arraySorted.find(new int[]{1,3,2});
+        Assertions.assertEquals(false, sorted);
+    }
+
+    @Test
+    public void given321_returnTrue(){
+        boolean sorted = arraySorted.find(new int[]{3,2,1});
         Assertions.assertEquals(false, sorted);
     }
 }

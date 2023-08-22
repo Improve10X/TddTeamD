@@ -18,6 +18,9 @@ public class ArraySorted {
                 if (numbers[0] < numbers[1] && numbers[2] < numbers[1]) {
                     return false;
                 }
+                if (numbers[1] < numbers[0] && numbers[2] < numbers[1]){
+                    return false;
+                }
             }
         }
         return true;
