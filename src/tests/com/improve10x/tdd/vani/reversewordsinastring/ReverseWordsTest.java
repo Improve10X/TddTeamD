@@ -53,4 +53,9 @@ public class ReverseWordsTest {
         String sentence = reverseWords.find("10xImprove");
         assertEquals("Improve10x",sentence);
     }
+    @Test
+    public void givenMomDad_returnsDadMom(){
+        String sentence = reverseWords.find("MomDad");
+        assertEquals("DadMom",sentence);
+    }
 }
