@@ -25,6 +25,9 @@ public class DuplicateElement {
                     if (numbers[0] == numbers[1]) {
                         return new int[]{numbers[0], numbers[2], numbers[3]};
                     }
+                    if (numbers[1] == numbers[2]){
+                        return new int[]{numbers[0], numbers[2], numbers[3]};
+                    }
             }
             if (numbers.length == 5) {
                 if (numbers[0] == numbers[1] && numbers[2] == numbers[3]) {
