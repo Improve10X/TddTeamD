@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.reversewordsinastring;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -13,13 +14,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        Output: “decent is This”
 
 public class ReverseWordsTest {
+    ReverseWords reverseWords;
+
+    @BeforeEach
+    public void setUp(){
+        reverseWords = new ReverseWords();
+    }
     @Test
     public void nothing(){}
 
     @Test
     public void givenNull_returnsEmpty(){
-        ReverseWords reverseWords = new ReverseWords();
         String sentence = reverseWords.find(null);
+        assertEquals("",sentence);
+    }
+    @Test
+    public void givenEmpty_returnsEmpty(){
+        String sentence = reverseWords.find("");
         assertEquals("",sentence);
     }
 }
