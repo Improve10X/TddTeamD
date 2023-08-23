@@ -58,4 +58,9 @@ public class ReverseWordsTest {
         String sentence = reverseWords.find("MomDad");
         assertEquals("DadMom",sentence);
     }
+    @Test
+    public void givenAllTheBest_returnsBestTheAll(){
+        String sentence = reverseWords.find("AllTheBest");
+        assertEquals("BestTheAll",sentence);
+    }
 }

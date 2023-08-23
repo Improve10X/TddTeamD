@@ -1,53 +1,22 @@
 package com.improve10x.tdd.vani.removeduplicatesfromanarray;
 
+import java.util.ArrayList;
+
 public class RemoveDuplicates {
     public int[] find(int[] numbers) {
         if (numbers != null && numbers.length >= 1) {
-            if (numbers.length == 1 && numbers[0] == numbers[0]) {
-                return new int[]{numbers[0]};
-            }
-            if (numbers.length == 2) {
-                if (numbers[0] == numbers[1]) {
-                    return new int[]{numbers[0]};
-                }
-                if (numbers[0] < numbers[1]) {
-                    return new int[]{numbers[0], numbers[1]};
+            ArrayList<Integer> result = new ArrayList<>();
+            result.add(numbers[0]);
+            for (int i = 1; i < numbers.length; i++) {
+                if (numbers[i] != result.get(result.size() - 1)) {
+                    result.add(numbers[i]);
                 }
             }
-            if (numbers.length == 3) {
-                if (numbers[0] == numbers[1] && numbers[1] == numbers[2]) {
-                    return new int[]{numbers[0]};
-                }
-                if (numbers[0] == numbers[1] && numbers[1] < numbers[2]) {
-                    return new int[]{numbers[0], numbers[2]};
-                }
-                if (numbers[0] < numbers[1] && numbers[1] == numbers[2]) {
-                    return new int[]{numbers[0], numbers[2]};
-                }
-                if (numbers[0] < numbers[1] && numbers[1] < numbers[2]) {
-                    return new int[]{numbers[0], numbers[1], numbers[2]};
-                }
+            int[] resultArray = new int[result.size()];
+            for (int i = 0; i < resultArray.length; i++) {
+                resultArray[i] = result.get(i);
             }
-            if (numbers.length == 4) {
-                if (numbers[0] == numbers[1] && numbers[1] == numbers[2] && numbers[2] == numbers[3]) {
-                    return new int[]{numbers[0]};
-                }
-                if (numbers[0] < numbers[1] && numbers[1] < numbers[2] && numbers[2] < numbers[3]){
-                    return new int[]{numbers[0],numbers[1],numbers[2],numbers[3]};
-                }
-                if (numbers[0] == numbers[1] && numbers[1] < numbers[2] && numbers[2] == numbers[3]){
-                    return new int[]{numbers[0],numbers[2]};
-                }
-                if (numbers[0] == numbers[1] && numbers[1] < numbers[2] && numbers[2] < numbers[3]){
-                    return new int[]{numbers[0],numbers[2],numbers[3]};
-                }
-                if (numbers[0] < numbers[1] && numbers[1] == numbers[2] && numbers[2] < numbers[3]){
-                    return new int[]{numbers[0],numbers[1],numbers[3]};
-                }
-                if (numbers[0] < numbers[1] && numbers[1] < numbers[2] && numbers[2] == numbers[3]){
-                    return new int[]{numbers[0],numbers[1],numbers[2]};
-                }
-            }
+            return resultArray;
         }
         return new int[]{};
     }
