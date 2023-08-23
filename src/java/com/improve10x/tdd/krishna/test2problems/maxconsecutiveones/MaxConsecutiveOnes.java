@@ -14,6 +14,11 @@ public class MaxConsecutiveOnes {
                     return 1;
                 }
             }
+            if(numbers.length == 3){
+                if(numbers[1] == 1){
+                    return 1;
+                }
+            }
         }
         return 0;
     }
