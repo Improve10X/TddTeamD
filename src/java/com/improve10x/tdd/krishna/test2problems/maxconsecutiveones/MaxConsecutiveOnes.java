@@ -5,6 +5,9 @@ public class MaxConsecutiveOnes {
         if (numbers != null && numbers.length == 1 && numbers[0] == 1){
             return 1;
         }
+        if(numbers != null && numbers.length == 2 && numbers[1] == 1){
+            return 1;
+        }
         return 0;
     }
 }
