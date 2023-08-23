@@ -2,7 +2,6 @@ package com.improve10x.tdd.krishna.test2problems.moveallzerostoendtest;
 
 import com.improve10x.tdd.krishna.test2problems.moveallzerostoend.AllZerosToTheEnd;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -115,4 +114,11 @@ public class AllZerosToTheEndTest {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 3, 2, 0});
         assertArrayEquals(new int[]{1, 3, 2, 0}, result);
     }
+
+    @Test
+    public void given1302_returns1320() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 3, 0, 2});
+        assertArrayEquals(new int[]{1, 3, 2, 0}, result);
+    }
+
 }
