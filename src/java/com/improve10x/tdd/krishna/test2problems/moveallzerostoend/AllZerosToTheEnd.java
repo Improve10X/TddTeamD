@@ -39,8 +39,14 @@ public class AllZerosToTheEnd {
                 return numbers;
             }
             if(numbers.length == 4){
-                if(numbers[2] == 0){
+                if(numbers[2] == 0){//1302
                     int temp = numbers[2];
+                    numbers[2] = numbers[3];
+                    numbers[3] = temp;
+                }
+                if (numbers[1] == 0){//0123
+                    int temp = numbers[1];
+                    numbers[1] = numbers[2];
                     numbers[2] = numbers[3];
                     numbers[3] = temp;
                 }
