@@ -11,7 +11,6 @@ public class AllZerosToTheEnd {
                     int temp = numbers[0];
                     numbers[0] = numbers[1];
                     numbers[1] = temp;
-                    return numbers;
                 }
                 return numbers;
             }
@@ -21,25 +20,29 @@ public class AllZerosToTheEnd {
                     numbers[0] = numbers[1];
                     numbers[1] = numbers[2];
                     numbers[2] = temp;
-                    return numbers;
                 }
                 if (numbers[0] != 0 && numbers[1] == 0 && numbers[2] != 0) {
                     int temp = numbers[1];
                     numbers[1] = numbers[2];
                     numbers[2] = temp;
-                    return numbers;
                 }
                 if (numbers[0] == 0 && numbers[1] == 0 && numbers[2] != 0) {
                     int temp = numbers[0];
                     numbers[0] = numbers[2];
                     numbers[2] = temp;
-                    return numbers;
                 }
-                if (numbers[0] == 0 && numbers[1] != 0 && numbers[2] == 0) {
+                if (numbers[0] == 0 && numbers[1] != 0) {
                     int temp = numbers[0];
                     numbers[0] = numbers[1];
                     numbers[1] = temp;
-                    return numbers;
+                }
+                return numbers;
+            }
+            if(numbers.length == 4){
+                if(numbers[2] == 0){
+                    int temp = numbers[2];
+                    numbers[2] = numbers[3];
+                    numbers[3] = temp;
                 }
                 return numbers;
             }
