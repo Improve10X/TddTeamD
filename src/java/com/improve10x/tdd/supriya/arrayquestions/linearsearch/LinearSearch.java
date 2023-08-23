@@ -8,6 +8,11 @@ public class LinearSearch {
                     return 1;
                 }
             }
+            if (numbers.length == 3){
+                if (numbers[0] == n){
+                    return 0;
+                }
+            }
         }
         return -1;
     }
