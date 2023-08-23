@@ -53,6 +53,14 @@ public class LinearSearchTest {
         assertEquals(0, search);
     }
 
+    @Test
+    public void given102_return2(){
+        int search = linearSearch.find(new int[]{1,0,2},2);
+        assertEquals(2, search);
+    }
+
+
+
 
 
 }
