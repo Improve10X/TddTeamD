@@ -40,27 +40,22 @@ public class ReverseWordsTest {
     }
     @Test
     public void givenAB_returnsBA(){
-        String sentence = reverseWords.find("AB");
-        assertEquals("BA",sentence);
-    }
-    @Test
-    public void givenAND_returnsDNA(){
-        String sentence = reverseWords.find("AND");
-        assertEquals("DNA",sentence);
+        String sentence = reverseWords.find("A B");
+        assertEquals("B A",sentence);
     }
     @Test
     public void given10xImprove_returnsImprove10x(){
-        String sentence = reverseWords.find("10xImprove");
-        assertEquals("Improve10x",sentence);
+        String sentence = reverseWords.find("10x Improve");
+        assertEquals("Improve 10x",sentence);
     }
     @Test
     public void givenMomDad_returnsDadMom(){
-        String sentence = reverseWords.find("MomDad");
-        assertEquals("DadMom",sentence);
+        String sentence = reverseWords.find("Mom Dad");
+        assertEquals("Dad Mom",sentence);
     }
     @Test
     public void givenAllTheBest_returnsBestTheAll(){
-        String sentence = reverseWords.find("AllTheBest");
-        assertEquals("BestTheAll",sentence);
+        String sentence = reverseWords.find("All The Best");
+        assertEquals("Best The All",sentence);
     }
 }

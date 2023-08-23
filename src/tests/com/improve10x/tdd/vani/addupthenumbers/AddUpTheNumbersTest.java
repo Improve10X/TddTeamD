@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.addupthenumbers;
 
+import com.improve10x.tdd.vani.edabitproblems.addupthenumbers.AddUpTheNumbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
