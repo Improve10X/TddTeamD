@@ -121,4 +121,15 @@ public class AllZerosToTheEndTest {
         assertArrayEquals(new int[]{1, 3, 2, 0}, result);
     }
 
+    @Test
+    public void given1023_returns1230() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 0, 2, 3});
+        assertArrayEquals(new int[]{1, 2, 3, 0}, result);
+    }
+
+    @Test
+    public void given0123_returns1230() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 1, 2, 3});
+        assertArrayEquals(new int[]{1, 2, 3, 0}, result);
+    }
 }
