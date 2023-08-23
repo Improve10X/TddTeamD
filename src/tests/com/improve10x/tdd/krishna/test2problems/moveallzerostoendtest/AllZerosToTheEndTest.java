@@ -72,4 +72,40 @@ public class AllZerosToTheEndTest {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 1, 2});
         assertArrayEquals(new int[]{1, 2, 0}, result);
     }
+
+    @Test
+    public void given201_returns210(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{2, 0, 1});
+        assertArrayEquals(new int[]{2, 1, 0}, result);
+    }
+
+    @Test
+    public void given120_returns120(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 2, 0});
+        assertArrayEquals(new int[]{1, 2, 0}, result);
+    }
+
+    @Test
+    public void given001_returns100(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 0, 1});
+        assertArrayEquals(new int[]{1, 0, 0}, result);
+    }
+
+    @Test
+    public void given010_returns100(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 1, 0});
+        assertArrayEquals(new int[]{1, 0, 0}, result);
+    }
+
+    @Test
+    public void given000_returns000(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 0, 0});
+        assertArrayEquals(new int[]{0, 0, 0}, result);
+    }
+
+    @Test
+    public void given132_returns132(){
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 3, 2});
+        assertArrayEquals(new int[]{1, 3, 2}, result);
+    }
 }
