@@ -23,5 +23,12 @@ public class LinearSearchTest {
         Assertions.assertEquals(-1, search);
     }
 
+    @Test
+    public void given0_returnMinusOne(){
+        LinearSearch linearSearch = new LinearSearch();
+        int search = linearSearch.find(new int[]{0});
+        Assertions.assertEquals(-1, search);
+    }
+
 
 }
