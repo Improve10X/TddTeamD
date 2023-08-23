@@ -38,7 +38,7 @@ public class LinearSearchTest {
     }
 
     @Test
-    public void given10_return1(){
+    public void given10_returnMinusOne(){
         LinearSearch linearSearch = new LinearSearch();
         int search = linearSearch.find(new int[]{0,1},2);
         Assertions.assertEquals(-1, search);
