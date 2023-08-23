@@ -8,12 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class DuplicateElementsTest {
 
-   private DuplicateElements duplicateElements;
+    private DuplicateElements duplicateElements;
 
-   @BeforeEach
-   public void setup(){
-       duplicateElements = new DuplicateElements();
-   }
+    @BeforeEach
+    public void setup() {
+        duplicateElements = new DuplicateElements();
+    }
 
     @Test
     public void nothing() {
@@ -56,8 +56,8 @@ public class DuplicateElementsTest {
     }
 
     @Test
-    public void given21_returns12() {
-        int[] result = duplicateElements.removeDuplicateElements(new int[]{2, 1});
+    public void given12_returns12() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 2});
         assertArrayEquals(new int[]{1, 2}, result);
     }
 
@@ -74,14 +74,14 @@ public class DuplicateElementsTest {
     }
 
     @Test
-    public void given211_returns12() {
-        int[] result = duplicateElements.removeDuplicateElements(new int[]{2, 1, 1});
-        assertArrayEquals(new int[]{1, 2}, result);
+    public void given113_returns13() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 1, 3});
+        assertArrayEquals(new int[]{1, 3}, result);
     }
 
     @Test
-    public void given121_returns12() {
-        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 2, 1});
+    public void given122_returns12() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 1, 2});
         assertArrayEquals(new int[]{1, 2}, result);
     }
 
@@ -104,14 +104,14 @@ public class DuplicateElementsTest {
     }
 
     @Test
-    public void given1231_returns123() {
-        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 2, 3, 1});
+    public void given1223_returns123() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 2, 2, 3});
         assertArrayEquals(new int[]{1, 2, 3}, result);
     }
 
     @Test
-    public void given2311_returns123() {
-        int[] result = duplicateElements.removeDuplicateElements(new int[]{2, 3, 1, 1});
+    public void given1233_returns123() {
+        int[] result = duplicateElements.removeDuplicateElements(new int[]{1, 2, 3, 3});
         assertArrayEquals(new int[]{1, 2, 3}, result);
     }
 

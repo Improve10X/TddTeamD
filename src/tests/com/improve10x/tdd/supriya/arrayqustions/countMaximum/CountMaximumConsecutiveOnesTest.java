@@ -6,6 +6,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class CountMaximumConsecutiveOnesTest {
+//    Count Maximum Consecutive One’s in the array
+//    Problem Statement: Given an array that contains only 1 and 0 return the count of maximum
+//    consecutive ones in the array.
     CountMaximumConsecutiveOnes countMaximumConsecutiveOnes;
     @BeforeEach
     public void setUp(){
@@ -38,4 +41,38 @@ public class CountMaximumConsecutiveOnesTest {
         Assertions.assertEquals(1, count);
     }
 
+    @Test
+    public void given11_returns2(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,1});
+        Assertions.assertEquals(2, count);
+    }
+
+    @Test
+    public void given101_returns1(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1});
+        Assertions.assertEquals(1, count);
+    }
+    @Test
+    public void given1011_returns2(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1,1});
+        Assertions.assertEquals(2, count);
+    }
+
+    @Test
+    public void given10111_returns3(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1,1,1});
+        Assertions.assertEquals(3, count);
+    }
+
+    @Test
+    public void given110111_returns3(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,1,0,1,1,1});
+        Assertions.assertEquals(3, count);
+    }
+
+    @Test
+    public void given11101_returns3(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,1,1,0,1});
+        Assertions.assertEquals(3, count);
+    }
 }
