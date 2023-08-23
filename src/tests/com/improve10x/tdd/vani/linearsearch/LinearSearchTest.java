@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.linearsearch;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,15 +18,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        Explanation: 5 is present in the 0th index
 
 public class LinearSearchTest {
+    private LinearSearch linearSearch;
+    @BeforeEach
+    public void setUp(){
+        linearSearch = new LinearSearch();
+    }
     @Test
     public void nothing(){}
     @Test
     public void givenNullAnd1_returnsMinus1(){
-        LinearSearch linearSearch = new LinearSearch();
         int value = linearSearch.find(null,1);
         assertEquals(-1,value);
     }
-
-
-
+    @Test
+    public void givenEmptyAnd1_returnsMinus1(){
+        int value = linearSearch.find(new int[]{},1);
+        assertEquals(-1,value);
+    }
 }
