@@ -81,4 +81,10 @@ public class CountMaximumConsecutiveOnesTest {
         int count = countMaximumConsecutiveOnes.find(new int[]{1,1,0,1,0,1,1,1});
         Assertions.assertEquals(3, count);
     }
+
+    @Test
+    public void given10101101_returns2(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1,0,1,1,0,1});
+        Assertions.assertEquals(2, count);
+    }
 }
