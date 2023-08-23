@@ -90,4 +90,11 @@ public class MaxConsecutiveOnesTest {
         int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0, 1});
         assertEquals(2, max);
     }
+
+    @Test
+    public void given110_return2(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 1, 0});
+        assertEquals(2, max);
+    }
+
 }
