@@ -12,7 +12,7 @@ public class MaxConsecutive {
                 if (numbers[1] == 1 && numbers[2] == 1) {
                     return 2;
                 }
-                if (numbers[0] == 1 && numbers[2] == 1 || numbers[2] == 1){
+                if (numbers[0] == 1 && numbers[2] == 1 || numbers[2] == 1 || numbers[0] == 1){
                     return 1;
                 }
             }

@@ -68,4 +68,9 @@ public class MaxConsecutiveTest {
         int value = maxConsecutive.find(new int[]{0,0,1});
         assertEquals(1,value);
     }
+    @Test
+    public void given100_returns1(){
+        int value = maxConsecutive.find(new int[]{1,0,0});
+        assertEquals(1,value);
+    }
 }
