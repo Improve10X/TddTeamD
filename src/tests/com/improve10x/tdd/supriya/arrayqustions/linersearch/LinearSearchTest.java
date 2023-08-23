@@ -37,12 +37,12 @@ public class LinearSearchTest {
         Assertions.assertEquals(1, search);
     }
 
-//    @Test
-//    public void given_return1(){
-//        LinearSearch linearSearch = new LinearSearch();
-//        int search = linearSearch.find(new int[]{0,1});
-//        Assertions.assertEquals(1, search);
-//    }
+    @Test
+    public void given10_return1(){
+        LinearSearch linearSearch = new LinearSearch();
+        int search = linearSearch.find(new int[]{0,1},2);
+        Assertions.assertEquals(-1, search);
+    }
 
 
 
