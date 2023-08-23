@@ -38,4 +38,38 @@ public class CountMaximumConsecutiveOnesTest {
         Assertions.assertEquals(1, count);
     }
 
+    @Test
+    public void given11_returns2(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,1});
+        Assertions.assertEquals(2, count);
+    }
+
+    @Test
+    public void given101_returns1(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1});
+        Assertions.assertEquals(1, count);
+    }
+    @Test
+    public void given1011_returns2(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1,1});
+        Assertions.assertEquals(2, count);
+    }
+
+    @Test
+    public void given10111_returns3(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,0,1,1,1});
+        Assertions.assertEquals(3, count);
+    }
+
+    @Test
+    public void given110111_returns3(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,1,0,1,1,1});
+        Assertions.assertEquals(3, count);
+    }
+
+    @Test
+    public void given11101_returns3(){
+        int count = countMaximumConsecutiveOnes.find(new int[]{1,1,1,0,1});
+        Assertions.assertEquals(3, count);
+    }
 }
