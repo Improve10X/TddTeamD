@@ -12,30 +12,37 @@ public class LinearSearchTest {
     @Test
     public void givenNull_returnMinusOne(){
         LinearSearch linearSearch = new LinearSearch();
-        int search = linearSearch.find(null);
+        int search = linearSearch.find(null,1);
         Assertions.assertEquals(-1, search);
     }
 
     @Test
     public void givenEmpty_returnMinusOne(){
         LinearSearch linearSearch = new LinearSearch();
-        int search = linearSearch.find(new int[]{});
+        int search = linearSearch.find(new int[]{},1);
         Assertions.assertEquals(-1, search);
     }
 
     @Test
     public void given0_returnMinusOne(){
         LinearSearch linearSearch = new LinearSearch();
-        int search = linearSearch.find(new int[]{0});
+        int search = linearSearch.find(new int[]{0},1);
         Assertions.assertEquals(-1, search);
     }
 
     @Test
-    public void given01_return0(){
+    public void given01and1_return1(){
         LinearSearch linearSearch = new LinearSearch();
-        int search = linearSearch.find(new int[]{0,1});
-        Assertions.assertEquals(0, search);
+        int search = linearSearch.find(new int[]{0,1},1);
+        Assertions.assertEquals(1, search);
     }
+
+//    @Test
+//    public void given_return1(){
+//        LinearSearch linearSearch = new LinearSearch();
+//        int search = linearSearch.find(new int[]{0,1});
+//        Assertions.assertEquals(1, search);
+//    }
 
 
 
