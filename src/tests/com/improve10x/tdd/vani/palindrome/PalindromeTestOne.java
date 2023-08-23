@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.palindrome;
 
+import com.improve10x.tdd.vani.edabitproblems.palindrome.PalindromeOne;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
