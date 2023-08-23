@@ -35,4 +35,9 @@ public class LinearSearchTest {
         int value = linearSearch.find(new int[]{},1);
         assertEquals(-1,value);
     }
+    @Test
+    public void given0And1_returnsMinus1(){
+        int value = linearSearch.find(new int[]{0},1);
+        assertEquals(-1,value);
+    }
 }
