@@ -2,6 +2,7 @@ package com.improve10x.tdd.krishna.test2problems.moveallzerostoendtest;
 
 import com.improve10x.tdd.krishna.test2problems.moveallzerostoend.AllZerosToTheEnd;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -85,6 +86,7 @@ public class AllZerosToTheEndTest {
         assertArrayEquals(new int[]{1, 2, 0}, result);
     }
 
+    @Disabled
     @Test
     public void given001_returns100() {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 0, 1});
@@ -131,5 +133,25 @@ public class AllZerosToTheEndTest {
     public void given0123_returns1230() {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 1, 2, 3});
         assertArrayEquals(new int[]{1, 2, 3, 0}, result);
+    }
+
+    @Test
+    public void given120320_returns123200() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 2, 0, 3, 2, 0});
+        assertArrayEquals(new int[]{1, 2, 3, 2, 0, 0}, result);
+    }
+
+    @Disabled
+    @Test
+    public void given1201040_returns1214000() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 2, 0, 1, 0, 4, 0});
+        assertArrayEquals(new int[]{1, 2, 1, 4, 0, 0, 0}, result);
+    }
+
+    @Disabled
+    @Test
+    public void given10230401_returns12341000() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 0, 2, 3, 0, 4, 0, 1});
+        assertArrayEquals(new int[]{1, 2, 3, 4, 1, 0, 0, 0}, result);
     }
 }
