@@ -76,8 +76,9 @@ public class LinearSearchTest {
         assertEquals(2, search);
     }
 
-
-
-
-
+    @Test
+    public void given1234567_return5(){
+        int search = linearSearch.find(new int[]{1,2,3,4,5,6,7},6);
+        assertEquals(5, search);
+    }
 }
