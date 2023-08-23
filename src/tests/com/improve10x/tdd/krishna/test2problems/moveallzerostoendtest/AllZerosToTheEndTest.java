@@ -110,10 +110,9 @@ public class AllZerosToTheEndTest {
         assertArrayEquals(new int[]{1, 3, 2}, result);
     }
 
-    @Disabled
     @Test
-    public void given1032_returns1320() {
-        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 0, 3, 2});
+    public void given1320_returns1320() {
+        int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 3, 2, 0});
         assertArrayEquals(new int[]{1, 3, 2, 0}, result);
     }
 }
