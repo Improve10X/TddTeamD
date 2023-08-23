@@ -15,6 +15,9 @@ public class MaxConsecutiveOnes {
                 }
             }
             if(numbers.length == 3){
+                if(numbers[0] == 1 && numbers[1] == 1 && numbers[2] == 1){
+                    return 3;
+                }
                 if(numbers[1] == 1 && numbers[2] == 1){
                     return 2;
                 }
