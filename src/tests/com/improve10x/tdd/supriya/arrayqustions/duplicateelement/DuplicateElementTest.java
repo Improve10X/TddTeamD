@@ -126,4 +126,10 @@ public class DuplicateElementTest {
         int[] element = duplicateElement.find(new int[]{1,1,1,2,2,2,2,3,3,3,3,4});
         assertArrayEquals(new int[] {1,2,3,4}, element);
     }
+
+    @Test
+    public void given112334556_return1234(){
+        int[] element = duplicateElement.find(new int[]{1,1,2,3,3,4,5,5,6});
+        assertArrayEquals(new int[] {1,2,3,4,5,6}, element);
+    }
 }
