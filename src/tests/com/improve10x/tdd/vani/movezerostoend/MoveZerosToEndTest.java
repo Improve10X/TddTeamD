@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.movezerostoend;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -21,12 +22,22 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 //        are moved to front by maintaining order
 
 public class MoveZerosToEndTest {
+    private MoveZerosToEnd moveZerosToEnd;
+    @BeforeEach
+    public void setUp(){
+        moveZerosToEnd = new MoveZerosToEnd();
+    }
     @Test
     public void nothing(){}
     @Test
     public void givenNull_returnsEmpty(){
-        MoveZerosToEnd moveZerosToEnd = new MoveZerosToEnd();
         int[] array = moveZerosToEnd.find(null);
         assertArrayEquals(new int[]{},array);
     }
+    @Test
+    public void givenEmpty_returnsEmpty(){
+        int[] array = moveZerosToEnd.find(new int[]{});
+        assertArrayEquals(new int[]{},array);
+    }
+
 }
