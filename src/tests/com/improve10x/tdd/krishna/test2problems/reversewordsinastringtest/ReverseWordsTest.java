@@ -42,4 +42,10 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse("Is");
         assertEquals("Is", reversed);
     }
+
+    @Test
+    public void givenAndOr_returnsOrAnd(){
+        String reversed = reverseWords.findReverse("And Or");
+        assertEquals("Or And", reversed);
+    }
 }
