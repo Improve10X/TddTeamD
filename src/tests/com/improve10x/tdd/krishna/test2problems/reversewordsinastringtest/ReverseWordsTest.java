@@ -54,4 +54,10 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse("And Or Not");
         assertEquals("Not Or And", reversed);
     }
+
+    @Test
+    public void givenComedianVillainHeroineHero_returnsHeroHeroineVillainComedian(){
+        String reversed = reverseWords.findReverse("Comedian Villain Heroine Hero");
+        assertEquals("Hero Heroine Villain Comedian", reversed);
+    }
 }

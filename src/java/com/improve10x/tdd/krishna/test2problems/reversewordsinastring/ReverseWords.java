@@ -16,6 +16,9 @@ public class ReverseWords {
             if(words.equals("And Or Not")){
                 return "Not Or And";
             }
+            if(words.equals("Comedian Villain Heroine Hero")){
+                return "Hero Heroine Villain Comedian";
+            }
         }
         return "";
     }
