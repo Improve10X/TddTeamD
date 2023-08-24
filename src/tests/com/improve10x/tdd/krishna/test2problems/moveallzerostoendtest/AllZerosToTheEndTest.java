@@ -86,7 +86,6 @@ public class AllZerosToTheEndTest {
         assertArrayEquals(new int[]{1, 2, 0}, result);
     }
 
-    @Disabled
     @Test
     public void given001_returns100() {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{0, 0, 1});
@@ -141,14 +140,12 @@ public class AllZerosToTheEndTest {
         assertArrayEquals(new int[]{1, 2, 3, 2, 0, 0}, result);
     }
 
-    @Disabled
     @Test
     public void given1201040_returns1214000() {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 2, 0, 1, 0, 4, 0});
         assertArrayEquals(new int[]{1, 2, 1, 4, 0, 0, 0}, result);
     }
 
-    @Disabled
     @Test
     public void given10230401_returns12341000() {
         int[] result = allZerosToTheEnd.moveAllZerosToTheEnd(new int[]{1, 0, 2, 3, 0, 4, 0, 1});

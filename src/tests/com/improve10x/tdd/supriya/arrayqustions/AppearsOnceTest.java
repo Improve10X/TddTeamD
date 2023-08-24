@@ -15,4 +15,45 @@ public class AppearsOnceTest {
         int singleElement = appearsOnce.find(null);
         Assertions.assertEquals(-1, singleElement);
     }
+
+    @Test
+    public void givenEmpty_returnMinusOne(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{});
+        Assertions.assertEquals(-1, singleElement);
+    }
+
+    @Test
+    public void given0_return0(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{0});
+        Assertions.assertEquals(0, singleElement);
+    }
+
+    @Test
+    public void given1_return1(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{1});
+        Assertions.assertEquals(1, singleElement);
+    }
+
+    @Test
+    public void given001_return1(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{0,0,1});
+        Assertions.assertEquals(1, singleElement);
+    }
+    @Test
+    public void given110_return0(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{1,1,0});
+        Assertions.assertEquals(0, singleElement);
+    }
+
+    @Test
+    public void given11002_return2(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{1,1,0,0,2});
+        Assertions.assertEquals(2, singleElement);
+    }
 }
