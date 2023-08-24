@@ -36,4 +36,10 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse("A");
         assertEquals("A", reversed);
     }
+
+    @Test
+    public void givenIs_returnsIs(){
+        String reversed = reverseWords.findReverse("Is");
+        assertEquals("Is", reversed);
+    }
 }
