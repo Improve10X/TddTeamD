@@ -44,19 +44,19 @@ public class ReverseWordsTest {
         String sentence = reverseWords.find("A B");
         assertEquals("B A",sentence);
     }
-    @Disabled
+
     @Test
     public void given10xImprove_returnsImprove10x(){
         String sentence = reverseWords.find("10x Improve");
         assertEquals("Improve 10x",sentence);
     }
-    @Disabled
+
     @Test
     public void givenMomDad_returnsDadMom(){
         String sentence = reverseWords.find("Mom Dad");
         assertEquals("Dad Mom",sentence);
     }
-    @Disabled
+
     @Test
     public void givenAllTheBest_returnsBestTheAll(){
         String sentence = reverseWords.find("All The Best");
