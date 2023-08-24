@@ -33,6 +33,9 @@ public class MoveZerosToEnd {
                 return numbers;
             }
             if (numbers.length == 4) {
+                if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[2] > numbers[3]){
+                    return numbers;
+                }
                 if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
                     return numbers;
                 }
