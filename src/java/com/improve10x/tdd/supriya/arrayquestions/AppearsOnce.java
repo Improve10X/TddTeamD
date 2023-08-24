@@ -25,7 +25,7 @@ public class AppearsOnce {
 //                }
                 int result = 0;
                 for (int i =0; i < numbers.length; i++){
-                    result = result^numbers[i];
+                    result = result ^ numbers[i];
                 }
             return result;
     }
