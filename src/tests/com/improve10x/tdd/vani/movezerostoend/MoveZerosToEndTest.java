@@ -69,5 +69,41 @@ public class MoveZerosToEndTest {
         int[] array = moveZerosToEnd.find(new int[]{1,1,1});
         assertArrayEquals(new int[]{1,1,1},array);
     }
-
+    @Test
+    public void given011_returns110(){
+        int[] array = moveZerosToEnd.find(new int[]{0,1,1});
+        assertArrayEquals(new int[]{1,1,0},array);
+    }
+    @Test
+    public void given1111_returns1111(){
+        int[] array = moveZerosToEnd.find(new int[]{1,1,1,1});
+        assertArrayEquals(new int[]{1,1,1,1},array);
+    }
+    @Test
+    public void given0111_returns1110(){
+        int[] array = moveZerosToEnd.find(new int[]{0,1,1,1});
+        assertArrayEquals(new int[]{1,1,1,0},array);
+    }
+    @Test
+    public void given1011_returns1110(){
+        int[] array = moveZerosToEnd.find(new int[]{1,0,1,1});
+        assertArrayEquals(new int[]{1,1,1,0},array);
+    }
+    @Test
+    public void given1101_returns1110(){
+        int[] array = moveZerosToEnd.find(new int[]{1,1,0,1});
+        assertArrayEquals(new int[]{1,1,1,0},array);
+    }
+    @Test
+    public void given1110_returns1110(){
+        int[] array = moveZerosToEnd.find(new int[]{1,1,1,0});
+        assertArrayEquals(new int[]{1,1,1,0},array);
+    }
+    @Test
+    public void integrationTest(){
+        int[] array = moveZerosToEnd.find(new int[]{1,0,2,3,0,4,0,1});
+        assertArrayEquals(new int[]{1,2,3,4,1,0,0,0},array);
+        int[] arrays = moveZerosToEnd.find(new int[]{1,2,0,1,0,4,0});
+        assertArrayEquals(new int[]{1,2,1,4,0,0,0},arrays);
+    }
 }
