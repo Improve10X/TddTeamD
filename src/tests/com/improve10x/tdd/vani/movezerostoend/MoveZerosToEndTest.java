@@ -79,5 +79,9 @@ public class MoveZerosToEndTest {
         int[] array = moveZerosToEnd.find(new int[]{1,1,1,1});
         assertArrayEquals(new int[]{1,1,1,1},array);
     }
-
+    @Test
+    public void given0111_returns1110(){
+        int[] array = moveZerosToEnd.find(new int[]{0,1,1,1});
+        assertArrayEquals(new int[]{1,1,1,0},array);
+    }
 }
