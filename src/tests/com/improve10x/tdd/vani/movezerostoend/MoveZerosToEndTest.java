@@ -99,5 +99,11 @@ public class MoveZerosToEndTest {
         int[] array = moveZerosToEnd.find(new int[]{1,1,1,0});
         assertArrayEquals(new int[]{1,1,1,0},array);
     }
-
+    @Test
+    public void integrationTest(){
+        int[] array = moveZerosToEnd.find(new int[]{1,0,2,3,0,4,0,1});
+        assertArrayEquals(new int[]{1,2,3,4,1,0,0,0},array);
+        int[] arrays = moveZerosToEnd.find(new int[]{1,2,0,1,0,4,0});
+        assertArrayEquals(new int[]{1,2,1,4,0,0,0},arrays);
+    }
 }
