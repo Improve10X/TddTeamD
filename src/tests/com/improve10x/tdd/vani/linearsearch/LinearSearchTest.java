@@ -90,4 +90,15 @@ public class LinearSearchTest {
         int value = linearSearch.find(new int[]{1,2,3,4},4);
         assertEquals(3,value);
     }
+    @Test
+    public void integrationTest(){
+        int value = linearSearch.find(new int[]{1,2,3,4,5},6);
+        assertEquals(-1, value);
+        int value1 = linearSearch.find(new int[]{1,2,3,4,5},0);
+        assertEquals(-1, value1);
+        int value2 = linearSearch.find(new int[]{1,2,3,4,5},3);
+        assertEquals(2, value2);
+        int value3 = linearSearch.find(new int[]{5,4,3,2,1},5);
+        assertEquals(0, value3);
+    }
 }
