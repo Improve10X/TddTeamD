@@ -13,6 +13,9 @@ public class LinearSearch {
             if (numbers[1] == n){
                 return 1;
             }
+            if (numbers[2] == n){
+                return 2;
+            }
         }
         return -1;
     }

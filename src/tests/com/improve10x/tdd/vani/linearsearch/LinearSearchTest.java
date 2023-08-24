@@ -55,4 +55,24 @@ public class LinearSearchTest {
         int value = linearSearch.find(new int[]{1,2},2);
         assertEquals(1,value);
     }
+    @Test
+    public void given123And2_returns1(){
+        int value = linearSearch.find(new int[]{1,2,3},2);
+        assertEquals(1,value);
+    }
+    @Test
+    public void given123And1_returns0(){
+        int value = linearSearch.find(new int[]{1,2,3},1);
+        assertEquals(0,value);
+    }
+    @Test
+    public void given123And3_returns2(){
+        int value = linearSearch.find(new int[]{1,2,3},3);
+        assertEquals(2,value);
+    }
+    @Test
+    public void given1234And2_returns1(){
+        int value = linearSearch.find(new int[]{1,2,3,4},2);
+        assertEquals(1,value);
+    }
 }
