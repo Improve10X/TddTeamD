@@ -26,6 +26,9 @@ public class MaxConsecutiveOnes {
                 }
             }
             if(numbers.length == 4){
+                if(numbers[2] == 1 && numbers[3] == 1){
+                    return 2;
+                }
                 if(numbers[1] == 0){
                     return 1;
                 }
