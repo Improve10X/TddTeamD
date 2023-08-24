@@ -1,5 +1,6 @@
 package com.improve10x.tdd.vani.majorityelement;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,12 +25,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 //        Result: 4
 
 public class MajorityElementsTest {
+    private MajorityElements majorityElements;
+    @BeforeEach
+    public void setUp(){
+        majorityElements = new MajorityElements();
+    }
     @Test
     public void nothing(){}
     @Test
     public void givenNull_returnsMinus1(){
-      MajorityElements majorityElements = new MajorityElements();
       int value = majorityElements.find(null);
       assertEquals(-1,value);
+    }
+    @Test
+    public void givenEmpty_returnsMinus1(){
+        int value = majorityElements.find(new int[]{});
+        assertEquals(-1,value);
     }
 }
