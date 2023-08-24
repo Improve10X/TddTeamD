@@ -60,4 +60,10 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse("Comedian Villain Heroine Hero");
         assertEquals("Hero Heroine Villain Comedian", reversed);
     }
+
+    @Test
+    public void givenHeIsInHome_returnsHomeInIsHe(){
+        String reversed = reverseWords.findReverse("He Is In Home");
+        assertEquals("Home In Is He", reversed);
+    }
 }

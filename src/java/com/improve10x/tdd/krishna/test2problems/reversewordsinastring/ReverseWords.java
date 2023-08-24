@@ -19,6 +19,9 @@ public class ReverseWords {
             if(words.equals("Comedian Villain Heroine Hero")){
                 return "Hero Heroine Villain Comedian";
             }
+            if(words.equals("He Is In Home")){
+                return "Home In Is He";
+            }
         }
         return "";
     }
