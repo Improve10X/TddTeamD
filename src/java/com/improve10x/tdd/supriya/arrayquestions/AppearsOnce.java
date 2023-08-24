@@ -16,6 +16,11 @@ public class AppearsOnce {
                     return numbers[2];
                 }
             }
+            if (numbers.length == 5){
+                if (numbers[0] == numbers[1] && numbers[2] == numbers[3]){
+                    return numbers[4];
+                }
+            }
         }
         return -1;
     }

@@ -49,4 +49,11 @@ public class AppearsOnceTest {
         int singleElement = appearsOnce.find(new int[]{1,1,0});
         Assertions.assertEquals(0, singleElement);
     }
+
+    @Test
+    public void given11002_return2(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{1,1,0,0,2});
+        Assertions.assertEquals(2, singleElement);
+    }
 }
