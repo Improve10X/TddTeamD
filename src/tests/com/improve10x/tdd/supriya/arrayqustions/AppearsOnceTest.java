@@ -36,4 +36,11 @@ public class AppearsOnceTest {
         int singleElement = appearsOnce.find(new int[]{1});
         Assertions.assertEquals(1, singleElement);
     }
+
+    @Test
+    public void given001_return1(){
+        AppearsOnce appearsOnce = new AppearsOnce();
+        int singleElement = appearsOnce.find(new int[]{0,0,1});
+        Assertions.assertEquals(1, singleElement);
+    }
 }
