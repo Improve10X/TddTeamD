@@ -103,4 +103,9 @@ public class MaxConsecutiveOnesTest {
         assertEquals(3, max);
     }
 
+//    @Test
+//    public void given1000_return1(){
+//        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0, 0, 0});
+//        assertEquals(1, max);
+//    }
 }
