@@ -48,4 +48,10 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse("And Or");
         assertEquals("Or And", reversed);
     }
+
+    @Test
+    public void givenAndOrNot_returnsNotOrAnd(){
+        String reversed = reverseWords.findReverse("And Or Not");
+        assertEquals("Not Or And", reversed);
+    }
 }

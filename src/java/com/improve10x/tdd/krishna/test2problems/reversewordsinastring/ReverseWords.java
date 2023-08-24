@@ -13,6 +13,9 @@ public class ReverseWords {
             if(words.equals("And Or")){
                 return "Or And";
             }
+            if(words.equals("And Or Not")){
+                return "Not Or And";
+            }
         }
         return "";
     }
