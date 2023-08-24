@@ -88,7 +88,7 @@ public class MaxConsecutiveOnesTest {
     @Test
     public void given101_return2(){
         int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0, 1});
-        assertEquals(2, max);
+        assertEquals(1, max);
     }
 
     @Test
@@ -107,5 +107,29 @@ public class MaxConsecutiveOnesTest {
     public void given1000_return1(){
         int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0, 0, 0});
         assertEquals(1, max);
+    }
+
+    @Test
+    public void given1011_return2(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0, 1, 1});
+        assertEquals(2, max);
+    }
+
+    @Test
+    public void given0111_return3(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{0, 1, 1, 1});
+        assertEquals(3, max);
+    }
+
+    @Test
+    public void given1111_return4(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 1, 1, 1});
+        assertEquals(4, max);
+    }
+
+    @Test
+    public void given110111_return3(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 1, 0, 1, 1, 1});
+        assertEquals(3, max);
     }
 }
