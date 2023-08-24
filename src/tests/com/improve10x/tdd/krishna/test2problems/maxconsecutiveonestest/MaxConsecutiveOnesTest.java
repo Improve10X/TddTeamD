@@ -48,4 +48,59 @@ public class MaxConsecutiveOnesTest {
         int max = maxConsecutiveOnes.findMaxOnes(new int[]{0, 1});
         assertEquals(1, max);
     }
+
+    @Test
+    public void given10_return1(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0});
+        assertEquals(1, max);
+    }
+
+    @Test
+    public void given00_return0(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{0, 0});
+        assertEquals(0, max);
+    }
+
+    @Test
+    public void given11_return2(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 1});
+        assertEquals(2, max);
+    }
+
+    @Test
+    public void given000_return0(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{0, 0, 0});
+        assertEquals(0, max);
+    }
+
+    @Test
+    public void given010_return1(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{0, 1, 0});
+        assertEquals(1, max);
+    }
+
+    @Test
+    public void given011_return2(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{0, 1, 1});
+        assertEquals(2, max);
+    }
+
+    @Test
+    public void given101_return2(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 0, 1});
+        assertEquals(2, max);
+    }
+
+    @Test
+    public void given110_return2(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 1, 0});
+        assertEquals(2, max);
+    }
+
+    @Test
+    public void given111_return3(){
+        int max = maxConsecutiveOnes.findMaxOnes(new int[]{1, 1, 1});
+        assertEquals(3, max);
+    }
+
 }
