@@ -8,12 +8,18 @@ public class MoveZerosToEnd {
                 return new int[]{0};
             }
             if (numbers.length == 2) {
-                if ( numbers[0] > numbers[1]){
+                if (numbers[0] > numbers[1]) {
                     return numbers;
                 }
                 int temp = numbers[0];
                 numbers[0] = numbers[1];
                 numbers[1] = temp;
+                return numbers;
+            }
+            if (numbers.length == 3) {
+                int temp = numbers[1];
+                numbers[1] = numbers[2];
+                numbers[2] = temp;
                 return numbers;
             }
         }
