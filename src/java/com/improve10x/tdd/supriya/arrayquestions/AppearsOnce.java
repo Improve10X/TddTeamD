@@ -13,7 +13,7 @@ public class AppearsOnce {
             }
             if (numbers.length == 3) {
                 if (numbers[0] == numbers[1]) {
-                    return 1;
+                    return numbers[2];
                 }
             }
         }
