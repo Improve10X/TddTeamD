@@ -17,4 +17,11 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse(null);
         assertEquals("", reversed);
     }
+
+    @Test
+    public void givenEmpty_returnsEmpty(){
+        ReverseWords reverseWords = new ReverseWords();
+        String reversed = reverseWords.findReverse("");
+        assertEquals("", reversed);
+    }
 }
