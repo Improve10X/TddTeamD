@@ -32,14 +32,20 @@ public class MoveZerosToEnd {
                 numbers[2] = temp;
                 return numbers;
             }
-                if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
-                    return numbers;
-                }
-                int temp = numbers[0];
-                numbers[0] = numbers[3];
+            if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
+                return numbers;
+            }
+            if (numbers[1] == 0) {
+                int temp = numbers[1];
+                numbers[1] = numbers[3];
                 numbers[3] = temp;
                 return numbers;
             }
+            int temp = numbers[0];
+            numbers[0] = numbers[3];
+            numbers[3] = temp;
+            return numbers;
+        }
         return new int[]{};
     }
 }
