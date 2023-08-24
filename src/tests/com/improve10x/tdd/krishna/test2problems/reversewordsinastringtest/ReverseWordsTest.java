@@ -66,4 +66,10 @@ public class ReverseWordsTest {
         String reversed = reverseWords.findReverse("He Is In Home");
         assertEquals("Home In Is He", reversed);
     }
+
+    @Test
+    public void givenThisIsAnAmazingProgram_returnsProgramAmazingAnIsThis(){
+        String reversed = reverseWords.findReverse("This Is An Amazing Program");
+        assertEquals("Program Amazing An Is This", reversed);
+    }
 }

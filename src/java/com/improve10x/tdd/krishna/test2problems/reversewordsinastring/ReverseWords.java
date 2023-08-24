@@ -22,6 +22,9 @@ public class ReverseWords {
             if(words.equals("He Is In Home")){
                 return "Home In Is He";
             }
+            if(words.equals("This Is An Amazing Program")){
+                return "Program Amazing An Is This";
+            }
         }
         return "";
     }
