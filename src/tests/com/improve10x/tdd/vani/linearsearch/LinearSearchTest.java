@@ -80,4 +80,9 @@ public class LinearSearchTest {
         int value = linearSearch.find(new int[]{1,2,3,4},3);
         assertEquals(2,value);
     }
+    @Test
+    public void given1234And1_returns0(){
+        int value = linearSearch.find(new int[]{1,2,3,4},1);
+        assertEquals(0,value);
+    }
 }
