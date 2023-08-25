@@ -60,4 +60,10 @@ public class ReverseWordTest {
         String word = reverseWord.find("this is an amazing program");
         assertEquals("program amazing an is this", word);
     }
+
+    @Test
+    public void givenThisisdecent_program_returnReverse(){
+        String word = reverseWord.find("This is decent");
+        assertEquals("decent is This", word);
+    }
 }
