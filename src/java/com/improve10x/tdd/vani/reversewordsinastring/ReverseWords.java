@@ -5,7 +5,7 @@ public class ReverseWords {
         if (sentence == null || sentence.length() == 0) {
             return "";
         } else {
-           String[] words = sentence.trim().split(" ");
+           String[] words = sentence.trim().split("\\s+");
            StringBuilder reverseWord = new StringBuilder();
             for (int i = words.length - 1; i >= 0; i--) {
                 reverseWord.append(words[i]);
