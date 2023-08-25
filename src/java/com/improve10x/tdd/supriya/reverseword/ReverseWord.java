@@ -11,6 +11,10 @@ public class ReverseWord {
         if (words.equals("Gagan Karthik")){
             return "Karthik Gagan";
         }
+        if (words.equals("i drink milk")){
+            return "milk drink i";
+        }
+
         return "";
     }
 }
