@@ -62,4 +62,10 @@ public class ReverseWordsTest {
         String sentence = reverseWords.find("All The Best");
         assertEquals("Best The All",sentence);
     }
+    @Test
+    public void givenThisIsDecent_returnDecentIsThis(){
+        String reverse = reverseWords.find("This   is    decent");
+        assertEquals("decent is This", reverse);
+    }
+
 }
