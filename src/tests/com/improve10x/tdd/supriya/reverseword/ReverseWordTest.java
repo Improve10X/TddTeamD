@@ -21,4 +21,11 @@ public class ReverseWordTest {
         String word = reverseWord.find("");
         Assertions.assertEquals("", word);
     }
+
+    @Test
+    public void givenPriyaAbhi_returnAbhiPriya(){
+        ReverseWord reverseWord = new ReverseWord();
+        String word = reverseWord.find("priya abhi");
+        Assertions.assertEquals("abhi priya", word);
+    }
 }
