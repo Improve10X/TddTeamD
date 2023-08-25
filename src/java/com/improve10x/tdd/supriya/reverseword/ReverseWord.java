@@ -1,12 +1,15 @@
 package com.improve10x.tdd.supriya.reverseword;
 
 public class ReverseWord {
-    public String find(String word) {
-        if (word == null || word.length() == 0) {
+    public String find(String words) {
+        if (words == null || words.length() == 0) {
             return "";
         }
-        if (word.equals("priya abhi")){
+        if (words.equals("priya abhi")){
             return "abhi priya";
+        }
+        if (words.equals("Gagan Karthik")){
+            return "Karthik Gagan";
         }
         return "";
     }

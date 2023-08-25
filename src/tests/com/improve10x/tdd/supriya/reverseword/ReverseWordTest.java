@@ -28,4 +28,11 @@ public class ReverseWordTest {
         String word = reverseWord.find("priya abhi");
         Assertions.assertEquals("abhi priya", word);
     }
+
+    @Test
+    public void givenGaganKarthik_returnKarthikGagan(){
+        ReverseWord reverseWord = new ReverseWord();
+        String word = reverseWord.find("Gagan Karthik");
+        Assertions.assertEquals("Karthik Gagan", word);
+    }
 }
