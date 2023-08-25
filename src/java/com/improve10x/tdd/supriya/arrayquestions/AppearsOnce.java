@@ -23,10 +23,23 @@ public class AppearsOnce {
 //                if (numbers[0] == numbers[1] && numbers[2] == numbers[3]){
 //                    return numbers[4];
 //                }
-                int result = 0;
-                for (int i =0; i < numbers.length; i++){
-                    result = result ^ numbers[i];
+//                int result = 0;
+//                for (int i =0; i < numbers.length; i++){
+//                    result = result ^ numbers[i];
+//                }
+        int n = numbers.length;
+        for (int i = 0; i < n; i ++){
+            int num = numbers[i];
+            int count = 0;
+            for (int j = 0; j < n; j++){
+                if (numbers[j] == num ){
+                    count++;
                 }
-            return result;
+            }
+            if (count == 1){
+                return num;
+            }
+        }
+            return -1;
     }
 }
