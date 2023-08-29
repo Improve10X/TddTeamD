@@ -17,4 +17,11 @@ public class SingleOneTest {
         int result = singleOne.findSingle(null);
         assertEquals(-1, result);
     }
+
+    @Test
+    public void givenEmpty_returnsMinusOne(){
+        SingleOne singleOne = new SingleOne();
+        int result = singleOne.findSingle(new int[]{});
+        assertEquals(-1, result);
+    }
 }
