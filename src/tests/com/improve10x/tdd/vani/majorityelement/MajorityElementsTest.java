@@ -57,4 +57,9 @@ public class MajorityElementsTest {
         int value = majorityElements.find(new int[]{0,1});
         assertEquals(-1,value);
     }
+    @Test
+    public void given12_returnsMinus1(){
+        int value = majorityElements.find(new int[]{1,2});
+        assertEquals(-1,value);
+    }
 }
