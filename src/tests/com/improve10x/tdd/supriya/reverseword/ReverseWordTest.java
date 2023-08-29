@@ -1,38 +1,69 @@
 package com.improve10x.tdd.supriya.reverseword;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+//Example 1:
+//        Input: s=”this is an amazing program”
+//        Output: “program amazing an is this”
+//
+//        Example 2:
+//        Input: s=”This is decent”
+//        Output: “decent is This”
+
 public class ReverseWordTest {
+    ReverseWord reverseWord;
+
+    @BeforeEach
+    public void setUp(){
+        reverseWord = new ReverseWord();
+    }
 
     @Test
     public void nothing(){}
 
     @Test
     public void givenNull_returnEmpty(){
-        ReverseWord reverseWord = new ReverseWord();
         String word = reverseWord.find(null);
-        Assertions.assertEquals("", word);
+        assertEquals("", word);
     }
 
     @Test
     public void givenEmpty_returnEmpty(){
-        ReverseWord reverseWord = new ReverseWord();
         String word = reverseWord.find("");
-        Assertions.assertEquals("", word);
+        assertEquals("", word);
     }
 
     @Test
     public void givenPriyaAbhi_returnAbhiPriya(){
-        ReverseWord reverseWord = new ReverseWord();
         String word = reverseWord.find("priya abhi");
-        Assertions.assertEquals("abhi priya", word);
+        assertEquals("abhi priya", word);
     }
 
     @Test
     public void givenGaganKarthik_returnKarthikGagan(){
-        ReverseWord reverseWord = new ReverseWord();
         String word = reverseWord.find("Gagan Karthik");
-        Assertions.assertEquals("Karthik Gagan", word);
+        assertEquals("Karthik Gagan", word);
+    }
+
+    @Test
+    public void givenIDrinkMilk_returnReverse(){
+        String word = reverseWord.find("i drink milk");
+        assertEquals("milk drink i", word);
+    }
+
+    @Test
+    public void givenThisisanamazing_program_returnReverse(){
+        String word = reverseWord.find("this is an amazing program");
+        assertEquals("program amazing an is this", word);
+    }
+
+    @Test
+    public void givenThisisdecent_program_returnReverse(){
+        String word = reverseWord.find("This is decent");
+        assertEquals("decent is This", word);
     }
 }
