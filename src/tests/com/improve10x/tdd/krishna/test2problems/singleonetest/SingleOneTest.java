@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SingleOneTest {
 
+
     final int invalid = -1;
     private SingleOne singleOne;
 
@@ -23,18 +24,24 @@ public class SingleOneTest {
     @Test
     public void givenNull_returnsMinusOne(){
         int result = singleOne.findSingle(null);
-        assertEquals(-1, result);
+        assertEquals(invalid, result);
     }
 
     @Test
     public void givenEmpty_returnsMinusOne(){
         int result = singleOne.findSingle(new int[]{});
-        assertEquals(-1, result);
+        assertEquals(invalid, result);
     }
 
     @Test
     public void given0_returns0(){
         int result = singleOne.findSingle(new int[]{0});
         assertEquals(0, result);
+    }
+
+    @Test
+    public void given1_returns1(){
+        int result = singleOne.findSingle(new int[]{1});
+        assertEquals(1, result);
     }
 }
