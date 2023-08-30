@@ -20,6 +20,9 @@ public class SingleOne {
             if (numbers[0] != numbers[1] && numbers[0] != numbers[2] && numbers[0] != numbers[3]) {
                 return numbers[0];
             }
+            if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[0] != numbers[3]) {
+                return numbers[3];
+            }
         }
         return -1;
     }
