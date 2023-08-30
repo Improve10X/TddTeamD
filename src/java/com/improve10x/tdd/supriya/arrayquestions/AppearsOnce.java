@@ -27,17 +27,16 @@ public class AppearsOnce {
 //                for (int i =0; i < numbers.length; i++){
 //                    result = result ^ numbers[i];
 //                }
-        int n = numbers.length;
-        for (int i = 0; i < n; i ++){
-            int num = numbers[i];
+
+        for (int i = 0; i < numbers.length; i ++){
             int count = 0;
-            for (int j = 0; j < n; j++){
-                if (numbers[j] == num ){
+            for (int j = 0; j < numbers.length; j++){
+                if (numbers[j] == numbers[i] ){
                     count++;
                 }
             }
             if (count == 1){
-                return num;
+                return numbers[i];
             }
         }
             return -1;
