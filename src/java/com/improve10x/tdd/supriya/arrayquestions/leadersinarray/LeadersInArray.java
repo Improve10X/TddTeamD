@@ -12,7 +12,7 @@ public class LeadersInArray {
             if (numbers[1] > numbers[0]){
                 return new int[]{numbers[1]};
             }
-            return new int[]{numbers[0],numbers[1]};
+            return numbers;
         }
         return new int[]{0};
     }
