@@ -60,4 +60,10 @@ public class LeadersInArrayTest {
         assertArrayEquals(new int[]{1,0},leader);
     }
 
+    @Test
+    public void given110_return(){
+        int[] leader = leadersInArray.find(new int[]{1,1,0});
+        assertArrayEquals(new int[]{1,1,0},leader);
+    }
+
 }

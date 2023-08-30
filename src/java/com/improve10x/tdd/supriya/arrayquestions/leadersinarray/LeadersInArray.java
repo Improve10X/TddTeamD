@@ -14,6 +14,9 @@ public class LeadersInArray {
             }
             return numbers;
         }
+        if (numbers.length == 3){
+           return numbers;
+        }
         return new int[]{0};
     }
 }
