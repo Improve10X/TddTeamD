@@ -28,8 +28,13 @@ public class AppearOnceTest {
     @Test
     public void nothing(){}
     @Test
-    public void givenNull_returnsEmpty(){
+    public void givenNull_returnsMinus1(){
         int value = appearOnce.find(null);
+        assertEquals(invalid,value);
+    }
+    @Test
+    public void givenEmpty_returnsInvalid(){
+        int value = appearOnce.find(new int[]{});
         assertEquals(invalid,value);
     }
 }
