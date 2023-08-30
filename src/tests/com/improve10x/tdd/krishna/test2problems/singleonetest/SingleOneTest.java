@@ -74,4 +74,10 @@ public class SingleOneTest {
         int result = singleOne.findSingle(new int[]{1, 1, 0});
         assertEquals(0, result);
     }
+
+    @Test
+    public void given1222_returns1(){
+        int result = singleOne.findSingle(new int[]{1, 2, 2, 2});
+        assertEquals(1, result);
+    }
 }
