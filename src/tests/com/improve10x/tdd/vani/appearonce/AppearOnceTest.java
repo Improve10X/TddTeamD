@@ -83,8 +83,13 @@ public class AppearOnceTest {
         assertEquals(1,value);
     }
     @Test
-    public void given1234_returnsMinus1(){
-        int value = appearOnce.find(new int[]{1,2,3,4});
-        assertEquals(-1,value);
+    public void given1333_returns1(){
+        int value = appearOnce.find(new int[]{1,3,3,3});
+        assertEquals(1,value);
+    }
+    @Test
+    public void given12132_returns3(){
+        int value = appearOnce.find(new int[]{1,2,1,3,2});
+        assertEquals(3,value);
     }
 }
