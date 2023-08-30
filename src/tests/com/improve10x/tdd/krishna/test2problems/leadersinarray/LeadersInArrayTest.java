@@ -16,4 +16,11 @@ public class LeadersInArrayTest {
         int[] leaders = leadersInArray.findLeaders(null);
         assertArrayEquals(new int[]{}, leaders);
     }
+
+    @Test
+    public void givenEmpty_returnsEmpty(){
+        LeadersInArray leadersInArray = new LeadersInArray();
+        int[] leaders = leadersInArray.findLeaders(new int[]{});
+        assertArrayEquals(new int[]{}, leaders);
+    }
 }
