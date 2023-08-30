@@ -8,6 +8,12 @@ public class LeadersInArray {
         if (numbers.length == 1){
             return new int[]{numbers[0]};
         }
+        if (numbers.length == 2){
+            if (numbers[1] > numbers[0]){
+                return new int[]{numbers[1]};
+            }
+            return numbers;
+        }
         return new int[]{0};
     }
 }
