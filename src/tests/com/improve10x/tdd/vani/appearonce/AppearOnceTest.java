@@ -53,6 +53,11 @@ public class AppearOnceTest {
         assertEquals(invalid,value);
     }
     @Test
+    public void given12_returnsInvalid(){
+        int value = appearOnce.find(new int[]{1,2});
+        assertEquals(invalid,value);
+    }
+    @Test
     public void given112_returns2(){
         int value = appearOnce.find(new int[]{1,1,2});
         assertEquals(2,value);
