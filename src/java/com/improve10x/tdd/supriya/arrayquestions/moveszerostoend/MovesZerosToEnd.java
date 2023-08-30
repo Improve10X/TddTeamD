@@ -30,6 +30,7 @@ public class MovesZerosToEnd {
                 numbers[2] = temp;
                 return numbers;
             }
+            return numbers;
         }
         return new int[]{};
     }
