@@ -22,8 +22,7 @@ public class MajorityElements {
 //                }
 //                if (numbers[0] == numbers[1] && numbers[0] == numbers[2]){
 //                    return numbers[0];
-//                }
-
+//
             for (int i = 0; i < numbers.length; i++) {//112
                 int count = 0;
                 for (int j = i; j < numbers.length; j++) {

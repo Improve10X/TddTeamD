@@ -37,4 +37,66 @@ public class AppearOnceTest {
         int value = appearOnce.find(new int[]{});
         assertEquals(invalid,value);
     }
+    @Test
+    public void given0_returns0(){
+        int value = appearOnce.find(new int[]{0});
+        assertEquals(0,value);
+    }
+    @Test
+    public void given1_returns1(){
+        int value = appearOnce.find(new int[]{1});
+        assertEquals(1,value);
+    }
+    @Test
+    public void given11_returnsInvalid(){
+        int value = appearOnce.find(new int[]{1,1});
+        assertEquals(invalid,value);
+    }
+    @Test
+    public void given12_returnsInvalid(){
+        int value = appearOnce.find(new int[]{1,2});
+        assertEquals(invalid,value);
+    }
+    @Test
+    public void given112_returns2(){
+        int value = appearOnce.find(new int[]{1,1,2});
+        assertEquals(2,value);
+    }
+    @Test
+    public void given122_returns1(){
+        int value = appearOnce.find(new int[]{1,2,2});
+        assertEquals(1,value);
+    }
+    @Test
+    public void given121_returns2(){
+        int value = appearOnce.find(new int[]{1,2,1});
+        assertEquals(2,value);
+    }
+    @Test
+    public void given1211_returns2(){
+        int value = appearOnce.find(new int[]{1,2,1,1});
+        assertEquals(2,value);
+    }
+    @Test
+    public void given2221_returns1(){
+        int value = appearOnce.find(new int[]{2,2,2,1});
+        assertEquals(1,value);
+    }
+    @Test
+    public void given1333_returns1(){
+        int value = appearOnce.find(new int[]{1,3,3,3});
+        assertEquals(1,value);
+    }
+    @Test
+    public void given12132_returns3(){
+        int value = appearOnce.find(new int[]{1,2,1,3,2});
+        assertEquals(3,value);
+    }
+    @Test
+    public void integrationTest(){
+        int value = appearOnce.find(new int[]{2,2,1});
+        assertEquals(1,value);
+        int value1 = appearOnce.find(new int[]{4,1,2,1,2});
+        assertEquals(4,value1);
+    }
 }
