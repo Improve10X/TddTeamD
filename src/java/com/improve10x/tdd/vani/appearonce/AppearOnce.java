@@ -8,8 +8,11 @@ public class AppearOnce {
                     return numbers[0];
                 }
             }
-            if (numbers[0] == numbers[1]){
+            if (numbers[0] == numbers[1] ){
                 return numbers[2];
+            }
+            if(numbers[1] == numbers[2]){
+                return numbers[0];
             }
         }
         return -1;
