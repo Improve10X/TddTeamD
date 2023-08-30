@@ -19,11 +19,13 @@ public class AppearOnce {
                     return numbers[1];
                 }
             }
-            if (numbers[0] == numbers[1] && numbers[0] == numbers[2]) {
-                return numbers[3];
-            }
-            if (numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
-                return numbers[1];
+            if (numbers.length == 4) {
+                if (numbers[0] == numbers[1] && numbers[0] == numbers[2]) {
+                    return numbers[3];
+                }
+                if (numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
+                    return numbers[1];
+                }
             }
         }
         return -1;
