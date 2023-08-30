@@ -9,6 +9,12 @@ public class LeadersInArray {
             if(numbers[0] < numbers[1]){
                 return new int[]{numbers[1]};
             }
+            return numbers;
+        }
+        if (numbers != null && numbers.length == 3){
+            if(numbers[0] < numbers[1] && numbers[1] < numbers[2]){
+                return new int[]{numbers[2]};
+            }
         }
         return new int[]{};
     }
