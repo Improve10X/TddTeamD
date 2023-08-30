@@ -44,4 +44,16 @@ public class SingleOneTest {
         int result = singleOne.findSingle(new int[]{1});
         assertEquals(1, result);
     }
+
+    @Test
+    public void given00_returnsMinusOne(){
+        int result = singleOne.findSingle(new int[]{0, 0});
+        assertEquals(invalid, result);
+    }
+
+    @Test
+    public void given11_returnsMinusOne(){
+        int result = singleOne.findSingle(new int[]{1, 1});
+        assertEquals(invalid, result);
+    }
 }
