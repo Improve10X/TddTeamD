@@ -62,4 +62,10 @@ public class SingleOneTest {
         int result = singleOne.findSingle(new int[]{0, 1, 1});
         assertEquals(0, result);
     }
+
+    @Test
+    public void given101_returns0(){
+        int result = singleOne.findSingle(new int[]{1, 0, 1});
+        assertEquals(0, result);
+    }
 }
