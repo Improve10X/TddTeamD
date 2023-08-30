@@ -9,7 +9,10 @@ public class MovesZerosToEnd {
             return new int[]{0};
         }
         if (numbers[0]<numbers[1]){
-            return new int[]{1,0};
+            int temp = numbers[0];
+            numbers[0] = numbers[1];
+            numbers[1] = temp;
+            return numbers;
         }
         return new int[]{};
     }
