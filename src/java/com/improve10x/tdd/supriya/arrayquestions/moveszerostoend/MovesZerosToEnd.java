@@ -41,6 +41,13 @@ public class MovesZerosToEnd {
                 numbers[3] = temp;
                 return numbers;
             }
+            if (numbers[0] != 0 && numbers[1] ==0 && numbers[2] != 0 && numbers[3] != 0){
+                int temp = numbers[1];
+                numbers[1] = numbers[2];
+                numbers[2] = numbers[3];
+                numbers[3] = temp;
+                return numbers;
+            }
         }
         return new int[]{};
     }
