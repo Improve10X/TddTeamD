@@ -82,4 +82,9 @@ public class AppearOnceTest {
         int value = appearOnce.find(new int[]{2,2,2,1});
         assertEquals(1,value);
     }
+    @Test
+    public void given1234_returnsMinus1(){
+        int value = appearOnce.find(new int[]{1,2,3,4});
+        assertEquals(-1,value);
+    }
 }
