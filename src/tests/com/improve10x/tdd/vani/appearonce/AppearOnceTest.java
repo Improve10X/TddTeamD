@@ -37,4 +37,9 @@ public class AppearOnceTest {
         int value = appearOnce.find(new int[]{});
         assertEquals(invalid,value);
     }
+    @Test
+    public void given0_returns0(){
+        int value = appearOnce.find(new int[]{0});
+        assertEquals(0,value);
+    }
 }
