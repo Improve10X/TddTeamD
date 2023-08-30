@@ -15,4 +15,12 @@ public class MovesZerosToEndTest {
         int[] zeros = movesZerosToEnd.find(null);
         Assertions.assertArrayEquals(new int[]{}, zeros);
     }
+
+    @Test
+    public void givenEmpty_returnEmpty(){
+        MovesZerosToEnd movesZerosToEnd = new MovesZerosToEnd();
+        int[] zeros = movesZerosToEnd.find(new int[]{});
+        Assertions.assertArrayEquals(new int[]{}, zeros);
+    }
+
 }
