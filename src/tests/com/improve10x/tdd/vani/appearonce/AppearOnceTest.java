@@ -62,4 +62,9 @@ public class AppearOnceTest {
         int value = appearOnce.find(new int[]{1,2,1});
         assertEquals(2,value);
     }
+    @Test
+    public void given1211_returns2(){
+        int value = appearOnce.find(new int[]{1,2,1,1});
+        assertEquals(2,value);
+    }
 }
