@@ -35,16 +35,41 @@ public class MajorityElementsTest {
     @Test
     public void givenNull_returnsMinus1(){
       int value = majorityElements.find(null);
-      assertEquals(-1,value);
+      assertEquals(-1, value);
     }
     @Test
     public void givenEmpty_returnsMinus1(){
         int value = majorityElements.find(new int[]{});
-        assertEquals(-1,value);
+        assertEquals(-1, value);
     }
     @Test
     public void given0_returns0(){
         int value = majorityElements.find(new int[]{0});
-        assertEquals(0,value);
+        assertEquals(0, value);
+    }
+    @Test
+    public void given1_returns1(){
+        int value = majorityElements.find(new int[]{1});
+        assertEquals(1, value);
+    }
+    @Test
+    public void given01_returnsMinus1(){
+        int value = majorityElements.find(new int[]{0,1});
+        assertEquals(-1, value);
+    }
+    @Test
+    public void given12_returnsMinus1(){
+        int value = majorityElements.find(new int[]{1,2});
+        assertEquals(-1, value);
+    }
+    @Test
+    public void given00_returns0(){
+        int value = majorityElements.find(new int[]{0,0});
+        assertEquals(0, value);
+    }
+    @Test
+    public void given123_returnsMinus1(){
+        int value = majorityElements.find(new int[]{1,2,3});
+        assertEquals(-1, value);
     }
 }
