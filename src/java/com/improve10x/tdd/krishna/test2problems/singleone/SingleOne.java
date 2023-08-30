@@ -23,6 +23,12 @@ public class SingleOne {
             if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[0] != numbers[3]) {
                 return numbers[3];
             }
+            if (numbers[0] != numbers[1] && numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
+                return numbers[1];
+            }
+            if (numbers[0] == numbers[1] && numbers[0] != numbers[2] && numbers[0] == numbers[3]) {
+                return numbers[2];
+            }
         }
         return -1;
     }
