@@ -112,4 +112,9 @@ public class MajorityElementsTest {
         int value = majorityElements.find(new int[]{0,0,0,0});
         assertEquals(0, value);
     }
+    @Test
+    public void given1234_returnsMinus1(){
+        int value = majorityElements.find(new int[]{1,2,3,4});
+        assertEquals(-1, value);
+    }
 }
