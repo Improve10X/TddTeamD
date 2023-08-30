@@ -132,4 +132,13 @@ public class MajorityElementsTest {
         int value = majorityElements.find(new int[]{2,2,1,1,1});
         assertEquals(1, value);
     }
+    @Test
+    public void integrationTest(){
+        int value = majorityElements.find(new int[]{3,2,3});
+        assertEquals(3, value);
+        int value1 = majorityElements.find(new int[]{2,2,1,1,1,2,2});
+        assertEquals(2, value1);
+        int value2 = majorityElements.find(new int[]{4,4,2,4,3,4,4,3,2,4});
+        assertEquals(4, value2);
+    }
 }
