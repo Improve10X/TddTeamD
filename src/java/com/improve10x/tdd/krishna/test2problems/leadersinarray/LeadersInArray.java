@@ -5,6 +5,11 @@ public class LeadersInArray {
         if(numbers != null && numbers.length == 1){
             return numbers;
         }
+        if(numbers != null && numbers.length == 2){
+            if(numbers[0] < numbers[1]){
+                return new int[]{numbers[1]};
+            }
+        }
         return new int[]{};
     }
 }
