@@ -82,4 +82,39 @@ public class MajorityElementsTest {
         int value = majorityElements.find(new int[]{1,2,1});
         assertEquals(1, value);
     }
+    @Test
+    public void given211_returns1(){
+        int value = majorityElements.find(new int[]{2,1,1});
+        assertEquals(1, value);
+    }
+    @Test
+    public void given111_returns1(){
+        int value = majorityElements.find(new int[]{1,1,1});
+        assertEquals(1, value);
+    }
+    @Test
+    public void given222_returns2(){
+        int value = majorityElements.find(new int[]{2,2,2});
+        assertEquals(2, value);
+    }
+    @Test
+    public void given0021_returnsMinus1(){
+        int value = majorityElements.find(new int[]{0,0,2,1});
+        assertEquals(-1, value);
+    }
+    @Test
+    public void given0001_returns0(){
+        int value = majorityElements.find(new int[]{0,0,0,1});
+        assertEquals(0, value);
+    }
+    @Test
+    public void given0000_returns0(){
+        int value = majorityElements.find(new int[]{0,0,0,0});
+        assertEquals(0, value);
+    }
+    @Test
+    public void given1234_returnsMinus1(){
+        int value = majorityElements.find(new int[]{1,2,3,4});
+        assertEquals(-1, value);
+    }
 }
