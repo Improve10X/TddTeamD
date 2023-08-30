@@ -13,95 +13,101 @@ public class SingleOneTest {
     private SingleOne singleOne;
 
     @BeforeEach
-    public void setup(){
+    public void setup() {
         singleOne = new SingleOne();
     }
 
     @Test
-    public void nothing(){
+    public void nothing() {
     }
 
     @Test
-    public void givenNull_returnsMinusOne(){
+    public void givenNull_returnsMinusOne() {
         int result = singleOne.findSingle(null);
         assertEquals(invalid, result);
     }
 
     @Test
-    public void givenEmpty_returnsMinusOne(){
+    public void givenEmpty_returnsMinusOne() {
         int result = singleOne.findSingle(new int[]{});
         assertEquals(invalid, result);
     }
 
     @Test
-    public void given0_returns0(){
+    public void given0_returns0() {
         int result = singleOne.findSingle(new int[]{0});
         assertEquals(0, result);
     }
 
     @Test
-    public void given1_returns1(){
+    public void given1_returns1() {
         int result = singleOne.findSingle(new int[]{1});
         assertEquals(1, result);
     }
 
     @Test
-    public void given00_returnsMinusOne(){
+    public void given00_returnsMinusOne() {
         int result = singleOne.findSingle(new int[]{0, 0});
         assertEquals(invalid, result);
     }
 
     @Test
-    public void given11_returnsMinusOne(){
+    public void given11_returnsMinusOne() {
         int result = singleOne.findSingle(new int[]{1, 1});
         assertEquals(invalid, result);
     }
 
     @Test
-    public void given011_returns0(){
+    public void given011_returns0() {
         int result = singleOne.findSingle(new int[]{0, 1, 1});
         assertEquals(0, result);
     }
 
     @Test
-    public void given101_returns0(){
+    public void given101_returns0() {
         int result = singleOne.findSingle(new int[]{1, 0, 1});
         assertEquals(0, result);
     }
 
     @Test
-    public void given110_returns0(){
+    public void given110_returns0() {
         int result = singleOne.findSingle(new int[]{1, 1, 0});
         assertEquals(0, result);
     }
 
     @Test
-    public void given1222_returns1(){
+    public void given1222_returns1() {
         int result = singleOne.findSingle(new int[]{1, 2, 2, 2});
         assertEquals(1, result);
     }
 
     @Test
-    public void given2221_returns1(){
+    public void given2221_returns1() {
         int result = singleOne.findSingle(new int[]{2, 2, 2, 1});
         assertEquals(1, result);
     }
 
     @Test
-    public void given2122_returns1(){
+    public void given2122_returns1() {
         int result = singleOne.findSingle(new int[]{2, 1, 2, 2});
         assertEquals(1, result);
     }
 
     @Test
-    public void given2212_returns1(){
+    public void given2212_returns1() {
         int result = singleOne.findSingle(new int[]{2, 2, 1, 2});
         assertEquals(1, result);
     }
 
     @Test
-    public void given12222_returns1(){
+    public void given12222_returns1() {
         int result = singleOne.findSingle(new int[]{1, 2, 2, 2, 2});
         assertEquals(1, result);
+    }
+
+    @Test
+    public void given41212_returns4() {
+        int result = singleOne.findSingle(new int[]{4, 1, 2, 1, 2});
+        assertEquals(4, result);
     }
 }
