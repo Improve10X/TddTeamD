@@ -49,6 +49,12 @@ public class LeadersInArrayTest {
     }
 
     @Test
+    public void given11_return11(){
+        int[] leader = leadersInArray.find(new int[]{1,1});
+        assertArrayEquals(new int[]{1,1},leader);
+    }
+
+    @Test
     public void given10_return10(){
         int[] leader = leadersInArray.find(new int[]{1,0});
         assertArrayEquals(new int[]{1,0},leader);
