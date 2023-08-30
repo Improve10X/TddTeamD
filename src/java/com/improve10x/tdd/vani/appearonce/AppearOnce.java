@@ -14,6 +14,9 @@ public class AppearOnce {
             if(numbers[1] == numbers[2]){
                 return numbers[0];
             }
+            if(numbers[0] == numbers[2]){
+                return numbers[1];
+            }
         }
         return -1;
     }
