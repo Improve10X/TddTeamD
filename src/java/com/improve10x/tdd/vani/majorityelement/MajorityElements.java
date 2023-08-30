@@ -3,6 +3,7 @@ package com.improve10x.tdd.vani.majorityelement;
 public class MajorityElements {
     public int find(int[] numbers) {
         if (numbers != null && numbers.length >= 1) {
+
 //                if (numbers.length == 1) {
 //                    return numbers[0];
 //                }
@@ -22,14 +23,15 @@ public class MajorityElements {
 //                if (numbers[0] == numbers[1] && numbers[0] == numbers[2]){
 //                    return numbers[0];
 //                }
-            int count = 0;
-            for (int i = 0; i < numbers.length; i++) {
+
+            for (int i = 0; i < numbers.length; i++) {//112
+                int count = 0;
                 for (int j = i; j < numbers.length; j++) {
                     if (numbers[i] == numbers[j]) {
                         count++;
                     }
                 }
-                if (count > numbers.length/2){
+                if (count > numbers.length / 2) {
                     return numbers[i];
                 }
             }
