@@ -62,5 +62,12 @@ public class MovesZerosToEndTest {
         Assertions.assertArrayEquals(new int[]{1,2,0}, zeros);
     }
 
+    @Test
+    public void given0123_return1230(){
+        MovesZerosToEnd movesZerosToEnd = new MovesZerosToEnd();
+        int[] zeros = movesZerosToEnd.find(new int[]{0,1,2,3});
+        Assertions.assertArrayEquals(new int[]{1,2,3,0}, zeros);
+    }
+
 
 }
