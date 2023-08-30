@@ -92,4 +92,11 @@ public class AppearOnceTest {
         int value = appearOnce.find(new int[]{1,2,1,3,2});
         assertEquals(3,value);
     }
+    @Test
+    public void integrationTest(){
+        int value = appearOnce.find(new int[]{2,2,1});
+        assertEquals(1,value);
+        int value1 = appearOnce.find(new int[]{4,1,2,1,2});
+        assertEquals(4,value1);
+    }
 }
