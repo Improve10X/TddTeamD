@@ -32,6 +32,9 @@ public class LeadersInArray {
             if(numbers[0] < numbers[1] && numbers[2] < numbers[1] && numbers[3] < numbers[1]){
                 return new int[]{numbers[1]};
             }
+            if(numbers[1] < numbers[0] && numbers[2] < numbers[0] && numbers[3] < numbers[0]){
+                return new int[]{numbers[0]};
+            }
         }
         return new int[]{};
     }
