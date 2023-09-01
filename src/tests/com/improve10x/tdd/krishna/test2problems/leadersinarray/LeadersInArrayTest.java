@@ -73,14 +73,14 @@ public class LeadersInArrayTest {
     }
 
     @Test
-    public void given121_returns2(){
+    public void given121_returns21(){
         int[] leaders = leadersInArray.findLeaders(new int[]{1, 2, 1});
-        assertArrayEquals(new int[]{2}, leaders);
+        assertArrayEquals(new int[]{2 , 1}, leaders);
     }
     @Test
-    public void given211_returns2(){
+    public void given211_returns211(){
         int[] leaders = leadersInArray.findLeaders(new int[]{2, 1, 1});
-        assertArrayEquals(new int[]{2}, leaders);
+        assertArrayEquals(new int[]{2, 1, 1}, leaders);
     }
 
     @Test
@@ -90,20 +90,20 @@ public class LeadersInArrayTest {
     }
 
     @Test
-    public void given1243_returns4(){
+    public void given1243_returns43(){
         int[] leaders = leadersInArray.findLeaders(new int[]{1, 2, 4, 3});
-        assertArrayEquals(new int[]{4}, leaders);
+        assertArrayEquals(new int[]{4, 3}, leaders);
     }
 
     @Test
-    public void given1423_returns4(){
+    public void given1423_returns43(){
         int[] leaders = leadersInArray.findLeaders(new int[]{1, 4, 2, 3});
-        assertArrayEquals(new int[]{4}, leaders);
+        assertArrayEquals(new int[]{4, 3}, leaders);
     }
 
     @Test
-    public void given4123_returns4(){
+    public void given4123_returns43(){
         int[] leaders = leadersInArray.findLeaders(new int[]{4, 1, 2, 3});
-        assertArrayEquals(new int[]{4}, leaders);
+        assertArrayEquals(new int[]{4, 3}, leaders);
     }
 }
