@@ -31,6 +31,9 @@ public class LeadersArray {
             if (numbers[0] < numbers[1] && numbers[0] > numbers[2]){
                 return new int[]{numbers[1],numbers[2]};
             }
+            if (numbers[0] == numbers[1] && numbers[0] == numbers[2]){
+                return new int[]{numbers[0],numbers[1],numbers[2]};
+            }
 
         }
         return new int[]{};
