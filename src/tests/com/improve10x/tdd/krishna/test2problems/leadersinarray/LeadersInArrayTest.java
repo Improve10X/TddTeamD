@@ -94,4 +94,10 @@ public class LeadersInArrayTest {
         int[] leaders = leadersInArray.findLeaders(new int[]{1, 2, 4, 3});
         assertArrayEquals(new int[]{4}, leaders);
     }
+
+    @Test
+    public void given1423_returns4(){
+        int[] leaders = leadersInArray.findLeaders(new int[]{1, 4, 2, 3});
+        assertArrayEquals(new int[]{4}, leaders);
+    }
 }
