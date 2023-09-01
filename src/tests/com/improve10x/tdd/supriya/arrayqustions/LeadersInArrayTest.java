@@ -1,7 +1,6 @@
 package com.improve10x.tdd.supriya.arrayqustions;
 
 import com.improve10x.tdd.supriya.arrayquestions.leadersinarray.LeadersInArray;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -61,14 +60,26 @@ public class LeadersInArrayTest {
     }
 
     @Test
-    public void given110_return110(){
-        int[] leader = leadersInArray.find(new int[]{1,1,0});
-        assertArrayEquals(new int[]{1,1,0},leader);
-    }
-    @Test
     public void given123_return3(){
         int[] leader = leadersInArray.find(new int[]{1,2,3});
         assertArrayEquals(new int[]{3},leader);
     }
 
+    @Test
+    public void given471_return71(){
+        int[] leader = leadersInArray.find(new int[]{4,7,1});
+        assertArrayEquals(new int[]{7,1},leader);
+    }
+
+    @Test
+    public void given110_return110(){
+        int[] leader = leadersInArray.find(new int[]{1,1,0});
+        assertArrayEquals(new int[]{1,1,0},leader);
+    }
+
+    @Test
+    public void given4710_return710(){
+        int[] leader = leadersInArray.find(new int[]{4,7,1,0});
+        assertArrayEquals(new int[]{7,1,0},leader);
+    }
 }
