@@ -82,4 +82,10 @@ public class LeadersInArrayTest {
         int[] leaders = leadersInArray.findLeaders(new int[]{2, 1, 1});
         assertArrayEquals(new int[]{2}, leaders);
     }
+
+    @Test
+    public void given1234_returns4(){
+        int[] leaders = leadersInArray.findLeaders(new int[]{1, 2, 3, 4});
+        assertArrayEquals(new int[]{4}, leaders);
+    }
 }
