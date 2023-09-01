@@ -60,4 +60,15 @@ public class LeadersInArrayTest {
         assertArrayEquals(new int[]{1,0},leader);
     }
 
+    @Test
+    public void given110_return110(){
+        int[] leader = leadersInArray.find(new int[]{1,1,0});
+        assertArrayEquals(new int[]{1,1,0},leader);
+    }
+    @Test
+    public void given123_return3(){
+        int[] leader = leadersInArray.find(new int[]{1,2,3});
+        assertArrayEquals(new int[]{3},leader);
+    }
+
 }
