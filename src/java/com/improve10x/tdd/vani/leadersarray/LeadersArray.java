@@ -19,22 +19,26 @@ public class LeadersArray {
                     return new int[]{numbers[0], numbers[1]};
                 }
             }
-            if (numbers[0] == numbers[1] && numbers[0] > numbers[2]){
-                return new int[]{numbers[0],numbers[1],numbers[2]};
+            if (numbers.length == 3) {
+                if (numbers[0] == numbers[1] && numbers[0] > numbers[2]) {
+                    return new int[]{numbers[0], numbers[1], numbers[2]};
+                }
+                if (numbers[0] < numbers[1] && numbers[0] < numbers[2]) {
+                    return new int[]{numbers[2]};
+                }
+                if (numbers[0] > numbers[1] && numbers[0] > numbers[2]) {
+                    return new int[]{numbers[0], numbers[1], numbers[2]};
+                }
+                if (numbers[0] < numbers[1] && numbers[0] > numbers[2]) {
+                    return new int[]{numbers[1], numbers[2]};
+                }
+                if (numbers[0] == numbers[1] && numbers[0] == numbers[2]) {
+                    return new int[]{numbers[0], numbers[1], numbers[2]};
+                }
             }
-            if (numbers[0] < numbers[1] && numbers[0] < numbers[2]){
-                return new int[]{numbers[2]};
+            if (numbers[0] == numbers[1] && numbers[0] == numbers[2] && numbers[0] == numbers[3]) {
+                return new int[]{numbers[0], numbers[1], numbers[2], numbers[3]};
             }
-            if (numbers[0] > numbers[1] && numbers[0] > numbers[2]){
-                return new int[]{numbers[0],numbers[1],numbers[2]};
-            }
-            if (numbers[0] < numbers[1] && numbers[0] > numbers[2]){
-                return new int[]{numbers[1],numbers[2]};
-            }
-            if (numbers[0] == numbers[1] && numbers[0] == numbers[2]){
-                return new int[]{numbers[0],numbers[1],numbers[2]};
-            }
-
         }
         return new int[]{};
     }
